@@ -29,21 +29,14 @@ $(function() {
 
 	// Poptrox.
 		$window.on('load', function() {
-
-			$('.thumbnails').poptrox({
-				onPopupClose: function() { $body.removeClass('is-covered'); },
-				onPopupOpen: function() { $body.addClass('is-covered'); },
-				baseZIndex: 10001,
-				useBodyOverflow: false,
-				usePopupEasyClose: true,
-				overlayColor: '#000000',
-				overlayOpacity: 0.75,
-				popupLoaderText: '',
-				fadeSpeed: 500,
-				usePopupDefaultStyling: false,
-				windowMargin: (skel.breakpoint('small').active ? 5 : 50)
-			});
-
+			// UALink Instagram
+			var iglink = document.getElementById("ualinkig")
+			var twlink = document.getElementById("ualinktw")
+			var ua = navigator.userAgent
+			if ((ua.indexOf('iPhone') > 0 && ua.indexOf('iPad') == -1) || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0) {
+				iglink.href = "instagram://user?username=ko_watanabe_ig"
+				twlink.href = "twitter://user?screen_name=@ko_watanabe_tw"
+			}
 		});
 
 });
