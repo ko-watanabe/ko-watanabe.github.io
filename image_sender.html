@@ -5,10 +5,11 @@
     <body>
         <div>
             <input type="button" class="btn btn-primary" value="ファイル選択" onClick="start_img_select();">
-            <p></p>
             <input type="file" name="image_data" multiple="multiple" accept="image/*" onChange="change_img(this)" id="image_data">
+            <button onclick="send_email();"></button>
         </div>    
         <!-- Scripts -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script src="assets/js/image_loader.js"></script>
     </body>
 
