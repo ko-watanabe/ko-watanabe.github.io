@@ -50,6 +50,20 @@ function nextOcr() {
     call_execute_form(fileList[ocrcount]);
 }
 
+function send_email() {
+    Email.sendWithAttachment({
+        Host : "smtp.yourisp.com",
+        Username : "username",
+        Password : "password",
+        To : 'ko.watanabe.0522@gmail.com',
+        From : "ko.watanabe.0522@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );    
+}
+
 // API リクエスト処理
 function call_execute_form(file) {
     var url = "https://ocrxxx.jp/execute";
