@@ -6,7 +6,7 @@
         <div>
             <input type="button" class="btn btn-primary" value="ファイル選択" onClick="start_img_select();">
             <input type="file" name="image_data" multiple="multiple" accept="image/*" onChange="change_img(this)" id="image_data">
-            <button onclick="send_email();"></button>
+            <input type="button" class="btn btn-primary" onClick="send_email();">
         </div>    
         <!-- Scripts -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
