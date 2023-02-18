@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+html {
+  /* 指定した文字サイズを正しく反映 */
+  font-size: 100%;
+}
+
+body {
+  font-family: "Clear Sans Bold", "DM Sans", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
