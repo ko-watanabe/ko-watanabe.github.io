@@ -59,6 +59,11 @@ body {
   height: 80%;
 }
 
+.mainImageSize {
+  width: 60%;
+  height: 80%;
+}
+
 #landingSection {
   margin: 0 auto;
   display: grid;
