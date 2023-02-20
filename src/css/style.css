@@ -1,15 +1,16 @@
-html,
-body {
-  height: 100%;
-  margin: 0 auto;
-  font-size: 100%;
-}
+/* Font Type */
 
 h1 {
   font-size: 44px;
-  margin: auto;
   font-family: 'Clear Sans', arial;
   text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: 'Clear Sans', arial;
+  text-align: left;
+  color: #535353;
 }
 
 h3 {
@@ -23,7 +24,35 @@ h4 {
   color: #535353;
 }
 
-#container {
+p {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'DM Sans';
+  color: #535353;
+}
+
+/* Layout type */
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.mainPadding {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mainSize {
+  width: 80%;
+  height: 80%;
+}
+
+#landingSection {
   margin: 0 auto;
   display: grid;
   height: 100%;
@@ -32,39 +61,28 @@ h4 {
   text-align: center;
 }
 
-#figure {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  grid-row: 1 / 2;
+.landingImageGrid {
   grid-column: 1 / 2;
 }
 
-img {
-  width: 80%;
-  height: 80%;
-}
-
-#description {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  grid-row: 1 / 2;
+.landingNameGrid {
   grid-column: 2 / 2;
 }
 
-.detail {
-  width: 80%;
-  height: 80%;
+#experienceSection {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 4fr;
 }
 
-p {
-  padding: 5px;
-  border-radius: 10px;
-  font-family: 'DM Sans';
-  color: #535353;
+.experienceTitleGrid {
+  grid-row: 1 / 5;
+  grid-column: 2 / 3;
+}
+
+.experienceYearGrid {
+  grid-column: 3 / 3;
+  margin: auto;
 }
