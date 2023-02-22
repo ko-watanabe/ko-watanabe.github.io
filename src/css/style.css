@@ -48,6 +48,18 @@ p {
   font-weight: lighter;
 }
 
+.publicationCitation {
+  height: 20px;
+  margin: 0 4px 4px 0;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid rgba(229, 228, 230, .4);
+  background: rgba(229, 228, 230, .4);
+}
+
 /* Layout type */
 
 html,
