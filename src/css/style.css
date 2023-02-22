@@ -82,8 +82,6 @@ body {
 
 #landingSection {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
   text-align: center;
 }
@@ -98,8 +96,6 @@ body {
 
 #experienceSection {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 2fr 2fr 6fr;
 }
 
@@ -113,7 +109,6 @@ body {
 
 #experienceDetailContainer {
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
 }
@@ -130,8 +125,6 @@ body {
 
 #publicationSection {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 2fr 2fr 6fr;
 }
 
@@ -145,7 +138,6 @@ body {
 
 #publicationDetailContainer {
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
 }
