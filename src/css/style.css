@@ -85,7 +85,7 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-columns: 1fr 3fr 6fr;
+  grid-template-columns: 2fr 2fr 6fr;
 }
 
 #experienceTitleGrid {
