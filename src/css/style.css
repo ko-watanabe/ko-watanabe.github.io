@@ -1,15 +1,15 @@
-html,
-body {
-  height: 100%;
-  margin: 0 auto;
-  font-size: 100%;
-}
+/* Font Type */
 
 h1 {
   font-size: 44px;
-  margin: auto;
   font-family: 'Clear Sans', arial;
   text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+  font-size: 44px;
+  font-family: 'Clear Sans', arial;
+  color: #535353;
 }
 
 h3 {
@@ -23,7 +23,48 @@ h4 {
   color: #535353;
 }
 
-#container {
+p {
+  font-family: 'DM Sans';
+  color: #535353;
+}
+
+.experienceYearFont {
+  font-weight: bold;
+  text-align: center;
+}
+
+.experienceDetailFont {
+  text-align: left;
+  font-weight: lighter;
+}
+
+/* Layout type */
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.mainPadding {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mainSize {
+  width: 80%;
+  height: 80%;
+}
+
+.mainImageSize {
+  width: 60%;
+  height: 80%;
+}
+
+#landingSection {
   margin: 0 auto;
   display: grid;
   height: 100%;
@@ -32,39 +73,43 @@ h4 {
   text-align: center;
 }
 
-#figure {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  grid-row: 1 / 2;
+.landingImageGrid {
   grid-column: 1 / 2;
 }
 
-img {
-  width: 80%;
-  height: 80%;
-}
-
-#description {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  grid-row: 1 / 2;
+.landingNameGrid {
   grid-column: 2 / 2;
 }
 
-.detail {
-  width: 80%;
-  height: 80%;
+#experienceSection {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 6fr;
 }
 
-p {
-  padding: 5px;
-  border-radius: 10px;
-  font-family: 'DM Sans';
-  color: #535353;
+#experienceTitleGrid {
+  grid-column: 2 / 3;
+}
+
+#experienceDetailGrid {
+  grid-column: 3 / 3;
+}
+
+#experienceDetailContainer {
+  display: grid;
+  height: 80%;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 70px;
+}
+
+.experienceYearGrid {
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.experienceDetailGrid {
+  grid-column: 2 / 2;
+  padding-right: 100px;
 }
