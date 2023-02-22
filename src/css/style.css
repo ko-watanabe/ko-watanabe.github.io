@@ -38,12 +38,40 @@ p {
   font-weight: lighter;
 }
 
+.publicationYearFont {
+  font-weight: bold;
+  text-align: center;
+}
+
+.publicationDetailFont {
+  text-align: left;
+  font-weight: lighter;
+}
+
+.publicationCitation {
+  height: 20px;
+  margin: 0 4px 4px 0;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid rgba(229, 228, 230, .4);
+  background: rgba(229, 228, 230, .4);
+}
+
 /* Layout type */
 
 html,
 body {
   margin: 0 auto;
   height: 100%;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 .mainPadding {
@@ -65,10 +93,7 @@ body {
 }
 
 #landingSection {
-  margin: 0 auto;
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 1fr 1fr;
   text-align: center;
 }
@@ -83,8 +108,6 @@ body {
 
 #experienceSection {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 2fr 2fr 6fr;
 }
 
@@ -98,8 +121,6 @@ body {
 
 #experienceDetailContainer {
   display: grid;
-  height: 80%;
-  width: 100%;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
 }
@@ -110,6 +131,35 @@ body {
 }
 
 .experienceDetailGrid {
+  grid-column: 2 / 2;
+  padding-right: 100px;
+}
+
+#publicationSection {
+  display: grid;
+  grid-template-columns: 2fr 2fr 6fr;
+}
+
+#publicationTitleGrid {
+  grid-column: 2 / 3;
+}
+
+#publicationDetailGrid {
+  grid-column: 3 / 3;
+}
+
+#publicationDetailContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 70px;
+}
+
+.publicationYearGrid {
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.publicationDetailGrid {
   grid-column: 2 / 2;
   padding-right: 100px;
 }
