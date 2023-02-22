@@ -38,6 +38,16 @@ p {
   font-weight: lighter;
 }
 
+.publicationYearFont {
+  font-weight: bold;
+  text-align: center;
+}
+
+.publicationDetailFont {
+  text-align: left;
+  font-weight: lighter;
+}
+
 /* Layout type */
 
 html,
@@ -65,7 +75,9 @@ body {
 }
 
 #landingSection {
+  position: relative;
   margin: 0 auto;
+  padding-bottom: 100px;
   display: grid;
   height: 100%;
   width: 100%;
@@ -82,6 +94,7 @@ body {
 }
 
 #experienceSection {
+  position: relative;
   display: grid;
   height: 100%;
   width: 100%;
@@ -110,6 +123,41 @@ body {
 }
 
 .experienceDetailGrid {
+  grid-column: 2 / 2;
+  padding-right: 100px;
+}
+
+#publicationSection {
+  position: relative;
+  margin: 100px auto;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 6fr;
+}
+
+#publicationTitleGrid {
+  grid-column: 2 / 3;
+}
+
+#publicationDetailGrid {
+  grid-column: 3 / 3;
+}
+
+#publicationDetailContainer {
+  display: grid;
+  height: 80%;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 70px;
+}
+
+.publicationYearGrid {
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.publicationDetailGrid {
   grid-column: 2 / 2;
   padding-right: 100px;
 }
