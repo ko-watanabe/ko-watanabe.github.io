@@ -56,6 +56,12 @@ body {
   height: 100%;
 }
 
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
 .mainPadding {
   top: 0;
   bottom: 0;
@@ -75,9 +81,6 @@ body {
 }
 
 #landingSection {
-  position: relative;
-  margin: 0 auto;
-  padding-bottom: 100px;
   display: grid;
   height: 100%;
   width: 100%;
@@ -94,7 +97,6 @@ body {
 }
 
 #experienceSection {
-  position: relative;
   display: grid;
   height: 100%;
   width: 100%;
@@ -111,7 +113,6 @@ body {
 
 #experienceDetailContainer {
   display: grid;
-  height: 80%;
   width: 100%;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
@@ -128,8 +129,6 @@ body {
 }
 
 #publicationSection {
-  position: relative;
-  margin: 100px auto;
   display: grid;
   height: 100%;
   width: 100%;
@@ -146,7 +145,6 @@ body {
 
 #publicationDetailContainer {
   display: grid;
-  height: 80%;
   width: 100%;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
