@@ -48,7 +48,9 @@ p {
   font-weight: lighter;
 }
 
-.publicationCitation {
+/* Design */
+
+.citation {
   height: 20px;
   margin: 0 4px 4px 0;
   padding: 5px;
@@ -58,6 +60,23 @@ p {
   cursor: pointer;
   border: 1px solid rgba(229, 228, 230, .4);
   background: rgba(229, 228, 230, .4);
+}
+
+.email {
+  height: 20px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  width: 80%;
+  cursor: pointer;
+  /* border: 1px solid rgba(229, 228, 230, .4); */
+  /* background: rgba(229, 228, 230, .4); */
+  vertical-align: middle;
+}
+
+.icon {
+  height: 13px;
 }
 
 /* Layout type */
@@ -92,6 +111,8 @@ body {
   height: 80%;
 }
 
+/* LandingSection */
+
 #landingSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -105,6 +126,8 @@ body {
 .landingNameGrid {
   grid-column: 2 / 2;
 }
+
+/* ExperienceSection */
 
 #experienceSection {
   display: grid;
@@ -135,6 +158,8 @@ body {
   padding-right: 100px;
 }
 
+/* PublicationSection */
+
 #publicationSection {
   display: grid;
   grid-template-columns: 2fr 2fr 6fr;
@@ -160,6 +185,37 @@ body {
 }
 
 .publicationDetailGrid {
+  grid-column: 2 / 2;
+  padding-right: 100px;
+}
+
+/* SkillSection */
+
+#skillSection {
+  display: grid;
+  grid-template-columns: 2fr 2fr 6fr;
+}
+
+#skillTitleGrid {
+  grid-column: 2 / 3;
+}
+
+#skillDetailGrid {
+  grid-column: 3 / 3;
+}
+
+#skillDetailContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 70px;
+}
+
+.skillYearGrid {
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.skillDetailGrid {
   grid-column: 2 / 2;
   padding-right: 100px;
 }
