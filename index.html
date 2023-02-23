@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
@@ -12,24 +12,32 @@
   <meta property="og:description" content="A personal page of Ko WATANABE">
   <meta property="og:url" content="https://ko.watanabe.github.io">
   <meta property="og:image" content="https://ko-watanabe.github.io/img/avatar_desktop.jpg">
-  <link rel="icon" type="image/jpg" href="./src/img/main.jpg">
-  <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+  <link rel="icon" type="image/jpg" href="./v2/src/img/main.jpg">
+  <link rel="stylesheet" type="text/css" href="./v2/src/css/style.css">
   <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
   <link href="https://allfont.net/allfont.css?fonts=clear-sans" rel="stylesheet" type="text/css" />
-
 </head>
 
 <body>
-  <!-- Landing -->
+  <header class="header__wrapper">
+    <div class="header__content">
+      <div class="header__menu">
+        <a class="header_menu_layout" href="./index.html">TOP</a>
+        <a class="header_menu_layout" href="./v2/en/experience.html">Experience & Education</a>
+        <a class="header_menu_layout" href="./v2/en/publications.html">Publications</a>
+        <a class="header_menu_layout" href="./v2/en/skills.html">Skills</a>
+      </div>
+    </div>
+  </header>
   <div class="container">
     <div id="landingSection">
       <div class="landingImageGrid mainPadding">
-        <img src="./src/img/main.jpg" , class="mainImageSize">
+        <img src="./v2/src/img/main.jpg" , class="mainImageSize">
       </div>
       <div class="landingNameGrid mainPadding">
         <div class="mainSize">
           <h1>Ko Watanabe</h1>
-          <h4>ML/Backend Engineer</h4>
+          <h4>ML/AI Researcher at DFKI Kaiserslautern</h4>
           <p>
             I am a software engineer based in Kaiserslautern, Germany.<br>
             My area of expertise encompasses the entire AI product implementation: from an idea or design generation of
@@ -38,389 +46,20 @@
             have business backend engineering experience from two years in Japan.
           </p>
           <p class="email">
-            <img src="./src/img/email_icon.png" class="icon">
+            <img src="./v2/src/img/email_icon.png" class="icon">
             Contact: ko.watanabe.business.email@gmail.com / ko.watanabe@dfki.uni-kl.de
           <p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Experience -->
-  <div class="container">
-    <div id="experienceSection">
-      <div id="experienceTitleGrid">
-        <h2>Experience <br> & Education</h2>
-      </div>
-      <div id="experienceDetailGrid">
-        <div id="experienceDetailContainer">
-          <div class="experienceYearGrid experienceYearFont">
-            <p>Current</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>Ph.D. STUDENT (COMPUTER SCIENCE / INFORMATICS)</p>
-            <p>
-              Studying at <a href="https://rptu.de/" target="_blank"
-                rel="noopener noreferrer">RHEINLAND-PFÄLZISCHE-TECHNISCHE-UNIVERSITÄT
-                KAISERSLAUTERN-LANDAU (RPTU)</a>.
-              Joined laboratory in <a href="https://psyberlab.de/" target="_blank"
-                rel="noopener noreferrer">Psybernetics
-                Lab</a>.
-              <br><br>
-              My planned Ph.D. thesis title is "Accelerating Knowledge Transfer by Sensing and Actuating
-              Social-Cognitive
-              States".
-              The concept is to enhance transfer of human learning to others using a software technology.
-              Keywords here are CHI, Human Augmentation, Transfer of Knowledge.
-              <br><br>
-              Ph.D. advisors are <a href="https://psyberlab.de/members/ishimaru" target="_blank"
-                rel="noopener noreferrer">Jun.-Prof.
-                Shoya Ishimaru</a>, a junior professor at RPTU, and <a href="http://agd.informatik.uni-kl.de/"
-                target="_blank" rel="noopener noreferrer">Prof. Andreas Dengel</a>, the scientific director of
-              <a href="https://www.dfki.de/web" target="_blank" rel="noopener noreferrer">German Research Center
-                of Artificial Intelligence(DFKI)</a>.
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2021</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>JUNIOR SOFTWARE ENGINEER</p>
-            <p>
-              Worked at the software company <a href="https://dena.com/intl/" target="_blank" rel="noopener noreferrer">
-                DeNA</a>, Shibuya, Japan.<br>
-              Joined as a software engineer at the service called <a href="https://www.pococha.com/en-us"
-                target="_blank" rel="noopener noreferrer">Pococha</a>.<br><br>
-              Pococha is a live-streaming service in Japan.
-              The service is scaling each year and the user traffic is huge.
-              My role in this team was to mainly work on coding native app and backend development.
-              Main programming skills obtained from here are Ruby on Rails, Swift, and Kotlin.
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2019</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>MASTER OF ENGINEERING (COMPUTER SCIENCE / INFORMATICS)</p>
-            <p>
-              Graduated in <a href="http://www.naist.jp/en/" target="_blank" rel="noopener noreferrer">
-                Nara Institute of Science and Technology (NAIST)</a>.<br>
-              Joined laboratory in <a href="http://ubi-lab.naist.jp/" target="_blank"
-                rel="noopener noreferrer">Ubiquitous
-                Computing Laboratory</a>.
-              <br><br>
-              In my 1st year research, I was mainly working on health-care application.
-              In specific studied on indoor activity recognition using smartphone and iBeacon.
-              The key idea is to predict users activity using the location information.
-              For example, when user is in the gym, the machine predict that user is training.
-              We implement, life-log application using this idea to automatically label the activities.
-              <br><br>
-              In my 2nd year research, I move to Kaiserslautern, Germany for the internship abroad.
-              I stayed in Germany for six month at this time, supervised by
-              <a href="https://shoya.io/" target="_blank" rel="noopener noreferrer">Jun.-Prof. Shoya Ishimaru</a>, a
-              junior professor at RPTU,
-              and <a href="https://www.dfki.de/en/web/about-us/employee/person/ande00/" target="_blank"
-                rel="noopener noreferrer">Prof. Andreas Dengel</a>, the scientific director of
-              <a href="https://www.dfki.de/web" target="_blank" rel="noopener noreferrer">German Research Center
-                of Artificial Intelligence(DFKI)</a>.
-              I was involved in the project HyperMind.
-              The idea is to implement a WYSIWYG GUI for the dynamic digital textbook creation.
-              My work has being published in UbiComp 2018 as the title "<a
-                href="https://dl.acm.org/doi/abs/10.1145/3267305.3267667" target="_blank"
-                rel="noopener noreferrer">HyperMind Builder: Pervasive User Interface to
-                Create Intelligent Interactive Documents</a>".
-              I wrote my master thesis on the topic I published in the UbiComp.
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2017</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>BACHELOR OF ENGINEERING (MECHANICAL SYSTEM)</p>
-            <p>
-              Graduated in Tokyo University of Science and Technology (TUAT).<br>
-              Joined laboratory in Venture Gentiane Laboratory.
-              <br><br>
-              The laboratory I joined was mainly working on Human Robot Interaction (HRI) and Human Activity Recognition
-              (HAR).
-              I did my bachelor thesis on "Activity Recognition Using Load Sensor".
-              <br><br>
-              In Japan, declining of birthrate and aging population is significant social issue.
-              The idea is to understand about elderly people's activity while seating together with the heart-rate.
-              The seat sensor was provided by the Nagoya University, Japan and this study is a joint-work.
-              QCR (Quartz Crystal Resonator) load sensor is a sensor available to collect micro-level frequency
-              including
-              heart-rate.
-              We made an application of recognizing training activity and the heart-rate synchronously.
-              However, now a days, smart-watch role better and easier for collecting heat-rate.
-            </p>
-          </div>
-        </div>
+  <footer class="footer__wrapper">
+    <div class="contact__wrapper section__wrapper">
+      <div class="text__wrapper">
+        <p>Contact: ko.watanabe.business.email [at] gmail.com</p>
       </div>
     </div>
-  </div>
-  <!-- Publication -->
-  <div class="container">
-    <div id="publicationSection">
-      <div id="publicationTitleGrid">
-        <h2>Publications</h2>
-      </div>
-      <div id="publicationDetailGrid">
-        <div id="publicationDetailContainer">
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2022</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Kanta Yamaoka, Ko Watanabe, Koichi Kise, Andreas Dengel and Shoya Ishimaru. “Experience is the Best
-              Teacher:
-              Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3”. In
-              Proceedings of the 2022 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct
-              Publication (UbiComp '22 Adjunct), 2022, to appear.
-            </p>
-            <p class="citation">
-              <a href="https://www.researchgate.net/publication/368691297_Experience_is_the_Best_Teacher_Personalized_Vocabulary_Building_Within_the_Context_of_Instagram_Posts_and_Sentences_from_GPT-3"
-                target="_blank" rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Haruki Suzawa, Ko Watanabe, Masakazu Iwamura, Koichi Kise, Andreas Dengel and Shoya Ishimaru. “Supporting
-              Smooth Interruption in a Video Conference by Dynamically Changing Background Music Depending on the Amount
-              of Utterance”. In Proceedings of the 2022 ACM International Joint Conference on Pervasive and Ubiquitous
-              Computing: Adjunct Publication (UbiComp '22 Adjunct), 2022, to appear.
-            </p>
-            <p class="citation">
-              <a href="https://www.researchgate.net/publication/368691471_Supporting_Smooth_Interruption_in_a_Video_Conference_by_Dynamically_Changing_Background_Music_Depending_on_the_Amount_of_Utterance"
-                target="_blank" rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Andrew Vargo, Motoi Iwata, Mathilde Hutin, Sofiya Kobylyanskaya, Ioana Vasilescu, Olivier Augereau, Ko
-              Watanabe, Shoya Ishimaru, Benjamin Tag, Tilman Dingler, Koichi Kise, Laurence Devillers and Andreas
-              Dengel. “Learning Cyclotron: An Ecosystem of Knowledge Circulation”. In Proceedings of the 2022 ACM
-              International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct Publication (UbiComp '22
-              Adjunct), 2022, to appear.
-            </p>
-            <p>
-            </p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Chenhao Chen, Yutaka Arakawa, Ko Watanabe and Shoya Ishimaru. “Quantitative Evaluation System for Online
-              Meetings Based on Multimodal Microbehavior Analysis”. Sensors and Materials 34 (8), pp. 3017–3027, 2022.
-            </p>
-            <p>
-            <p class="citation">
-              <a href="https://kyushu-u.pure.elsevier.com/en/publications/quantitative-evaluation-system-for-online-meetings-based-on-multi"
-                target="_blank" rel="noopener noreferrer">Detail</a>
-            </p>
-            </p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Ko Watanabe, Yuki Matsuda, Yugo Nakamura, Yutaka Arakawa and Shoya Ishimaru. “How do Programmers Use the
-              Internet? Discovering Domain Knowledge from Browsing and Coding Behaviors”. In 2022 IEEE International
-              Conferences on Internet of Things (iThings) and IEEE Green Computing & Communications (GreenCom) and IEEE
-              Cyber, Physical & Social Computing (CPSCom) and IEEE Smart Data (SmartData) and IEEE Congress on
-              Cybermatics (Cybermatics), pp. 605–610, 2022.
-            </p>
-            <p class="citation">
-              <a href="https://ieeexplore.ieee.org/document/9903185" target="_blank"
-                rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Jihed Makhlouf, Yutaka Arakawa and Ko Watanabe. “A Privacy-aware Browser Extension to Track User Search
-              Behavior for Programming Course Supplement”. In The Fourth International Workshop on Mobile Ubiquitous
-              Systems, Infrastructures, Communications and AppLications (MUSICAL) In conjunction with Mobiquitous 2021,
-              2021.
-            </p>
-            <p class="citation">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-030-94822-1_51" target="_blank"
-                rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2021</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Ko Watanabe, Yusuke Soneda, Yuki Matsuda, Yugo Nakamura, Yutaka Arakawa, Andreas Dengel and Shoya
-              Ishimaru. “DisCaaS: Micro Behavior Analysis on Discussion by Camera as a Sensor”. Sensors 21 (17), p.
-              5719, 2021.
-            </p>
-            <p class="citation">
-              <a href="https://www.mdpi.com/1424-8220/21/17/5719" target="_blank" rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2018</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Shoya Ishimaru, Ko Watanabe, Nicolas Großmann, Carina Heisel, Pascal Klein, Yutaka Arakawa, Jochen Kuhn
-              and Andreas Dengel. “HyperMind Builder: Pervasive User Interface to Create Intelligent Interactive
-              Documents”. In Proceedings of the 2018 ACM International Joint Conference on Pervasive and Ubiquitous
-              Computing: Adjunct Publication (UbiComp '18 Adjunct), pp. 357–360, 2018.
-            </p>
-            <p class="citation">
-              <a href="https://dl.acm.org/doi/10.1145/3267305.3267667" target="_blank"
-                rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-          <div class="experienceYearGrid experienceYearFont">
-            <p>2017</p>
-          </div>
-          <div class="experienceDetailGrid experienceDetailFont">
-            <p>
-              Akpa Akpro Elder Hippocrate, Edith Talina Luhanga, Takata Masashi, Ko Watanabe and Keiichi Yasumoto.
-              “Smart Gyms Need Smart Mirrors: Design of a Smart Gym Concept through Contextual Inquiry”. In Proceedings
-              of the 2017 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of
-              the 2017 ACM International Symposium on Wearable Computers (UbiComp '17), p. 658–661, 2017.
-            </p>
-            <p class="citation">
-              <a href="https://dl.acm.org/doi/10.1145/3123024.3124427" target="_blank"
-                rel="noopener noreferrer">Detail</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- Skill -->
-  <div class="container">
-    <div id="skillSection">
-      <div id="skillTitleGrid">
-        <h2>Skills</h2>
-      </div>
-      <div id="skillDetailGrid">
-        <div id="skillDetailContainer">
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              6 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Product Management / Scram Master
-            </p>
-            <p class="skillDescriptionFont">
-              Experience in management both in English and Japanese.
-              In Germany, I spent most of the time with International members to manage the research project.
-              My role is to make the clear contribution for the project.
-              In Japan, I spent time in working as a manager in the product development.
-              My role is to make the clear document, man-hour management and improve the development quality of the
-              scram development.
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              6 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Python
-            </p>
-            <p class="skillDescriptionFont">
-              Experience coding in the Machine learning research fields.<br>
-              Most of my works applied is in the Publication Section.
-              Image processing is my main field of study.
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              5 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Ruby on Rails
-            </p>
-            <p class="skillDescriptionFont">
-              Experience coding in the business level services.<br>
-              Example services are Pococha (Live-streaming), Pantrii (EC service), Ethical Shukatsu (HR service)...etc
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              3 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Swift/Kotlin
-            </p>
-            <p class="skillDescriptionFont">
-              Experience coding in native application for the business level services.<br>
-              Example service is Pococha (live-streaming).
-              Also some of my research work.
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              2 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Flutter
-            </p>
-            <p class="skillDescriptionFont">
-              Experience coding in native application for the business level services.<br>
-              Example service is Pantrii (EC service).
-              Also some of my research work.
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              2 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              Golang
-            </p>
-            <p class="skillDescriptionFont">
-              Experience coding in the business services.<br>
-              Example service domain is a food delivery.
-              Mainly worked on crawling/scraping of the website.
-            </p>
-          </div>
-          <div class="skillLevelGrid skillLevelFont">
-            <p>
-              2 years ~
-            </p>
-          </div>
-          <div class="skillDetailGrid skillDetailFont">
-            <p>
-              AWS
-            </p>
-            <p class="skillDescriptionFont">
-              Some experience in cloud for the business level services.<br>
-              Example service is Pococha, and Pantrii.
-              Mainly use cloudwatch for the error-log handlings.
-              Also I use it for the research.
-              Experience using AWS SageMaker.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Project -->
-  <!-- <div class="container">
-    <div id="projectSection">
-    </div>
-  </div> -->
-  <!-- Contact -->
-  <!-- <div class="container">
-    <div id="contactSection">
-    </div>
-  </div> -->
+  </footer>
 </body>
 
 </html>
