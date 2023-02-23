@@ -28,16 +28,6 @@ p {
   color: #535353;
 }
 
-.experienceYearFont {
-  font-weight: bold;
-  text-align: center;
-}
-
-.experienceDetailFont {
-  text-align: left;
-  font-weight: lighter;
-}
-
 .publicationYearFont {
   font-weight: bold;
   text-align: center;
@@ -46,6 +36,11 @@ p {
 .publicationDetailFont {
   text-align: left;
   font-weight: lighter;
+}
+
+.publicationYearFont {
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Design */
@@ -158,6 +153,16 @@ body {
   padding-right: 100px;
 }
 
+/* .experienceYearFont {
+  font-weight: bold;
+  text-align: center;
+}
+
+.experienceDetailFont {
+  text-align: left;
+  font-weight: lighter;
+} */
+
 /* PublicationSection */
 
 #publicationSection {
@@ -210,7 +215,7 @@ body {
   padding-top: 70px;
 }
 
-.skillYearGrid {
+.skillLevelGrid {
   text-align: center;
   grid-column: 1 / 2;
 }
@@ -218,4 +223,17 @@ body {
 .skillDetailGrid {
   grid-column: 2 / 2;
   padding-right: 100px;
+}
+
+
+.skillLevelFont {
+  font-size: 20px;
+}
+
+.skillDetailFont {
+  font-size: 20px;
+}
+
+.skillDescriptionFont {
+  font-size: 16px;
 }
