@@ -104,6 +104,7 @@ body {
 .mainImageSize {
   width: 60%;
   height: 80%;
+  border-radius: 20px;
 }
 
 .header__wrapper {
