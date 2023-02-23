@@ -84,7 +84,7 @@ body {
 
 .container {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   height: 100%;
   width: 100%;
 }
@@ -211,6 +211,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .experienceYearGrid {
@@ -252,6 +253,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .publicationYearGrid {
@@ -283,6 +285,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .skillLevelGrid {
