@@ -77,7 +77,6 @@ li {
 
 .header__logo {
   display: inline-block;
-  float: left;
   line-height: 48px;
   margin-left: 16px;
   font-size: 14px;
@@ -86,7 +85,6 @@ li {
 
 .header__language {
   display: inline-block;
-  float: right;
   line-height: 48px;
   margin-right: 16px;
   font-size: 14px;
