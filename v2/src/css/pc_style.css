@@ -116,7 +116,7 @@
     display: block;
     text-align: center;
     position: fixed;
-    background-color: rgba(229, 228, 230, .4);
+    background-color: rgba(229, 228, 230, .9);
   }
 
   .header__content {

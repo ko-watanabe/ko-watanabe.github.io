@@ -117,7 +117,7 @@
     left: 0;
     z-index: 9998;
     font-family: 'DM Sans';
-    background-color: rgba(229, 228, 230, .4);
+    background-color: rgba(229, 228, 230, .9);
   }
 
   .footer__content {
@@ -210,6 +210,7 @@
   }
 
   .skillDetailGrid {
+    padding-left: 20px;
     grid-column: 2 / 2;
   }
 }
