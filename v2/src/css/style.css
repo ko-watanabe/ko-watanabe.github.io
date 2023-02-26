@@ -191,22 +191,15 @@
   /* SkillSection */
 
   #skillSection {
-    display: grid;
-    grid-template-columns: 2fr 2fr 6fr;
-  }
-
-  #skillTitleGrid {
-    grid-column: 2 / 3;
-  }
-
-  #skillDetailGrid {
-    grid-column: 3 / 3;
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #skillDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 70px;
     padding-bottom: 100px;
   }
 
@@ -217,21 +210,8 @@
 
   .skillDetailGrid {
     grid-column: 2 / 2;
-    padding-right: 100px;
   }
 
-
-  .skillLevelFont {
-    font-size: 20px;
-  }
-
-  .skillDetailFont {
-    font-size: 20px;
-  }
-
-  .skillDescriptionFont {
-    font-size: 16px;
-  }
 }
 
 /*PC: 600px以上はこのスタイル*/
