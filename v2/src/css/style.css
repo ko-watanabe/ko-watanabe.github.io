@@ -57,19 +57,6 @@ p {
   background: rgba(229, 228, 230, .4);
 }
 
-.email {
-  height: 20px;
-  margin: auto;
-  padding: 5px;
-  border-radius: 3px;
-  text-align: center;
-  width: 80%;
-  cursor: pointer;
-  /* border: 1px solid rgba(229, 228, 230, .4); */
-  /* background: rgba(229, 228, 230, .4); */
-  vertical-align: middle;
-}
-
 .icon {
   height: 13px;
 }
