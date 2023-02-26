@@ -1,0 +1,213 @@
+/*600px以下はこのスタイル*/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    font-family: 'Clear Sans', arial;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Clear Sans', arial;
+    color: #535353;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-family: 'Clear Sans', arial;
+    color: #535353;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: auto;
+    font-family: 'DM Sans';
+    color: #535353;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: 'DM Sans';
+    color: #535353;
+  }
+
+  .publicationYearFont {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .publicationDetailFont {
+    text-align: left;
+    font-weight: lighter;
+  }
+
+  .publicationYearFont {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .icon {
+    height: 13px;
+  }
+
+  html,
+  body {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .mainPadding {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .mainSize {
+    width: 100%;
+    height: 80%;
+  }
+
+  .mainImageSize {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+  }
+
+  .header__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .header__content {
+    padding: 3px;
+  }
+
+  .header_menu_layout {
+    margin: 4px;
+    font-family: 'DM Sans';
+    color: #535353;
+  }
+
+  .header__menu {
+    font-size: 16px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    height: 48px;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    height: 60px;
+    font-family: 'DM Sans';
+    background-color: rgba(229, 228, 230, .4);
+  }
+
+  .footer__content {
+    width: 1000px;
+  }
+
+  .footer_content {
+    width: 1000px;
+  }
+
+  /* LandingSection */
+
+  #landingSection {
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* ExperienceSection */
+
+  #experienceSection {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #experienceDetailContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 100px;
+  }
+
+  .experienceYearGrid {
+    text-align: center;
+    grid-column: 1 / 2;
+  }
+
+  .experienceDetailGrid {
+    grid-column: 2 / 2;
+  }
+
+  /* PublicationSection */
+
+  #publicationSection {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #publicationDetailContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 100px;
+  }
+
+  .publicationYearGrid {
+    text-align: center;
+    grid-column: 1 / 2;
+  }
+
+  .publicationDetailGrid {
+    grid-column: 2 / 2;
+  }
+
+  /* SkillSection */
+
+  #skillSection {
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #skillDetailContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 100px;
+  }
+
+  .skillLevelGrid {
+    text-align: center;
+    grid-column: 1 / 2;
+  }
+
+  .skillDetailGrid {
+    grid-column: 2 / 2;
+  }
+}
