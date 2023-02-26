@@ -89,7 +89,15 @@
   }
 
   .mainImageSize {
-    width: 70%;
+    position: relative;
+    width: 65%;
+    border-radius: 20px;
+  }
+
+  .snsImageSize {
+    position: relative;
+    width: 3vw;
+    padding: 1vw;
     border-radius: 20px;
   }
 
