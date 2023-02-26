@@ -76,8 +76,7 @@
 
   .mainImageSize {
     margin: auto;
-    width: 80%;
-    height: 60%;
+    width: 100%;
     border-radius: 10px;
   }
 
@@ -135,7 +134,7 @@
     padding-top: 10vh;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
   }
 
   /* ExperienceSection */
