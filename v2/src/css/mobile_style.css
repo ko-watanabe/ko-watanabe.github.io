@@ -115,7 +115,6 @@
     bottom: 0;
     left: 0;
     z-index: 9998;
-    font-family: 'DM Sans';
     background-color: rgba(229, 228, 230, .9);
   }
 
@@ -125,6 +124,12 @@
 
   .footer_content {
     width: 10vh;
+  }
+
+  .contact__wrapper {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 
   /* LandingSection */
