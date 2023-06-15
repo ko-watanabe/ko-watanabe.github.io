@@ -1,13 +1,13 @@
 /*PC: 600px以上はこのスタイル*/
 @media screen and (min-width: 600px) {
   h1 {
-    font-size: 44px;
+    font-size: 40px;
     font-family: 'Clear Sans', arial;
     text-shadow: 4px 4px 4px #aaa;
   }
 
   h2 {
-    font-size: 44px;
+    font-size: 40px;
     font-family: 'Clear Sans', arial;
     color: #535353;
   }
@@ -191,7 +191,7 @@
 
   #experienceSection {
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr;
+    grid-template-columns: 3fr 2fr 6fr 2fr;
   }
 
   #experienceTitleGrid {
@@ -216,14 +216,13 @@
 
   .experienceDetailGrid {
     grid-column: 2 / 2;
-    padding-right: 100px;
   }
 
   /* PublicationSection */
 
   #publicationSection {
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr;
+    grid-template-columns: 3fr 2fr 6fr 2fr;
   }
 
   #publicationTitleGrid {
@@ -248,14 +247,13 @@
 
   .publicationDetailGrid {
     grid-column: 2 / 2;
-    padding-right: 100px;
   }
 
   /* SkillSection */
 
   #skillSection {
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr;
+    grid-template-columns: 3fr 2fr 6fr 2fr;
   }
 
   #skillTitleGrid {
@@ -280,9 +278,7 @@
 
   .skillDetailGrid {
     grid-column: 2 / 2;
-    padding-right: 100px;
   }
-
 
   .skillLevelFont {
     font-size: 20px;
