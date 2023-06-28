@@ -20,20 +20,25 @@
   <link rel="icon" type="image/jpg" href="../src/img/main.jpg">
   <link rel="stylesheet" type="text/css" href="../src/css/pc_style.css">
   <link rel="stylesheet" type="text/css" href="../src/css/mobile_style.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
 </head>
 
 <body>
   <header class="header__wrapper">
     <div class="header__content">
-      <div class="header__menu">
-        <a class="header_menu_layout" href="../../index.html">Home</a>
-        <a class="header_menu_layout" href="./education.html">Education</a>
-        <a class="header_menu_layout" href="./experience.html">Work</a>
-        <a class="header_menu_layout" href="./publication.html">Publication</a>
-        <a class="header_menu_layout" href="./skill.html">Skill</a>
-        <!-- <a class="header_menu_layout" href="./contact.html">Contact</a> -->
-      </div>
+      <nav class="flex justify-center space-x-4 header__menu">
+        <a href="./../../index.html"
+          class="header_menu_layout font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+        <a href="./education.html"
+          class="header_menu_layout font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Education</a>
+        <a href="./experience.html"
+          class="header_menu_layout font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Work</a>
+        <a href="./publication.html"
+          class="header_menu_layout font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Publication</a>
+        <a href="./publication.html"
+          class="header_menu_layout font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Skill</a>
+      </nav>
     </div>
   </header>
   <div class="container">
