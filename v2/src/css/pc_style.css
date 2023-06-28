@@ -122,6 +122,10 @@
     text-align: center;
   }
 
+  .footer_font_size {
+    font-size: 14px;
+  }
+
   .contact__wrapper {
     text-align: center;
     grid-column: 2 / 3;
@@ -192,10 +196,11 @@
 
   #experienceSection {
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr 1fr;
+    grid-template-columns: 3fr 1fr 5fr 3fr;
   }
 
   #experienceTitleGrid {
+    text-align: right;
     grid-column: 2 / 3;
   }
 
@@ -223,11 +228,12 @@
 
   #publicationSection {
     display: grid;
-    grid-template-columns: 3fr 2fr 6fr 2fr;
+    grid-template-columns: 3fr 1fr 5fr 3fr;
     background: rgba(229, 228, 230, .2);
   }
 
   #publicationTitleGrid {
+    text-align: right;
     grid-column: 2 / 3;
   }
 
@@ -255,10 +261,11 @@
 
   #skillSection {
     display: grid;
-    grid-template-columns: 3fr 2fr 6fr 2fr;
+    grid-template-columns: 3fr 1fr 5fr 3fr;
   }
 
   #skillTitleGrid {
+    text-align: right;
     grid-column: 2 / 3;
   }
 
