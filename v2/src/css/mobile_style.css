@@ -115,6 +115,8 @@
     text-align: center;
     position: fixed;
     bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     background-color: #EEE8E0;
   }
 
