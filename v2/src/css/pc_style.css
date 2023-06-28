@@ -69,10 +69,11 @@
   }
 
   .body_container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     position: relative;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    position: relative;
     padding-top: 3vh;
   }
 
@@ -92,7 +93,7 @@
 
   .mainImageSize {
     position: relative;
-    width: 50%;
+    width: 25%;
   }
 
   .header__wrapper {
@@ -126,14 +127,8 @@
   /* LandingSection */
 
   #landingSection {
-    display: grid;
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
     text-align: center;
-    position: relative;
-  }
-
-  .landingImageGrid {
-    grid-column: 2 / 3;
   }
 
   /* ExperienceSection */
