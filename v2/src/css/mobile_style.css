@@ -2,32 +2,27 @@
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 30px;
-    font-family: 'Clear Sans', arial;
     text-shadow: 4px 4px 4px #aaa;
   }
 
   h2 {
     font-size: 24px;
-    font-family: 'Clear Sans', arial;
     color: #535353;
   }
 
   h3 {
     font-size: 16px;
-    font-family: 'Clear Sans', arial;
     color: #535353;
   }
 
   h4 {
     font-size: 20px;
     margin: auto;
-    font-family: 'DM Sans';
     color: #535353;
   }
 
   p {
     font-size: 16px;
-    font-family: 'DM Sans';
     color: #535353;
   }
 
@@ -54,9 +49,11 @@
   body {
     margin: 0 auto;
     height: 100%;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #EEE8E0;
   }
 
-  .container {
+  .body_container {
     height: 100%;
     width: 100%;
   }
@@ -82,14 +79,13 @@
 
   .header__wrapper {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 9998;
-    width: 100vw;
     display: block;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: #EEE8E0;
   }
 
   .header__content {
@@ -99,8 +95,7 @@
 
   .header_menu_layout {
     margin: 4px;
-    font-family: 'DM Sans';
-    color: #535353;
+    color: #B24A1D
   }
 
   .header__menu {
@@ -111,11 +106,9 @@
     width: 100%;
     display: block;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 0;
-    z-index: 9998;
-    background-color: rgba(229, 228, 230, .9);
+    background-color: #EEE8E0;
   }
 
   .footer__content {
@@ -128,8 +121,7 @@
 
   .contact__wrapper {
     text-align: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    grid-column: 2 / 3;
   }
 
   /* LandingSection */
@@ -139,7 +131,6 @@
     padding-top: 10vh;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 20vh;
   }
 
   /* ExperienceSection */
@@ -181,6 +172,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-bottom: 100px;
+    background: rgba(229, 228, 230, .2);
   }
 
   .publicationYearGrid {
@@ -190,6 +182,18 @@
 
   .publicationDetailGrid {
     grid-column: 2 / 2;
+  }
+
+  .citation {
+    height: 20px;
+    margin: 0 4px 4px 0;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+    border: 1px solid rgba(229, 228, 230, .4);
+    background: rgba(0, 111, 93, .6);
   }
 
   /* SkillSection */
