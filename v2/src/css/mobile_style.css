@@ -8,6 +8,7 @@
   h2 {
     font-size: 24px;
     color: rgb(32, 105, 188);
+    padding-bottom: 5vh;
   }
 
   h3 {
@@ -45,19 +46,25 @@
     height: 13px;
   }
 
+  header {
+    position: relative;
+  }
+
   html,
   body {
-    margin: 0 auto;
+    position: relative;
     height: 100%;
     line-height: 1.5em;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     background-color: rgb(238, 232, 224);
+    padding-bottom: 10vh;
   }
 
   .body_container {
+    position: relative;
     height: 100%;
     width: 100%;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
   }
 
   .container {
@@ -89,14 +96,13 @@
     top: 0;
     left: 0;
     z-index: 9998;
-    display: block;
     text-align: center;
     background-color: #EEE8E0;
   }
 
   .header__content {
-    position: relative;
-    padding: 1vh;
+    grid-column: 2 / 3;
+    margin: 0 auto;
   }
 
   .header_menu_layout {
@@ -137,13 +143,12 @@
     grid-column: 2 / 3;
   }
 
-  /* LandingSection */
-
   #landingSection {
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 8vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 13vh;
   }
 
   /* ExperienceSection */
@@ -153,6 +158,7 @@
     padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 13vh;
   }
 
   #experienceDetailContainer {
@@ -177,6 +183,7 @@
     padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 13vh;
   }
 
   #publicationDetailContainer {
@@ -190,7 +197,6 @@
   }
 
   .publicationDetailGrid {
-    padding-left: 10%;
     grid-column: 2 / 2;
   }
 
@@ -213,6 +219,7 @@
     padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 13vh;
   }
 
   #skillDetailContainer {
