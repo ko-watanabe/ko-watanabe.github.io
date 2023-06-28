@@ -112,6 +112,8 @@
     position: relative;
     bottom: 0;
     background-color: #EEE8E0;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
 
   .footer__content {
