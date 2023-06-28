@@ -156,7 +156,7 @@
   }
 
   .experienceDetailGrid {
-    padding-left: 20px;
+    padding-left: 10%;
     grid-column: 2 / 2;
   }
 
@@ -180,7 +180,7 @@
   }
 
   .publicationDetailGrid {
-    padding-left: 20px;
+    padding-left: 10%;
     grid-column: 2 / 2;
   }
 
@@ -216,7 +216,7 @@
   }
 
   .skillDetailGrid {
-    padding-left: 20px;
+    padding-left: 10%;
     grid-column: 2 / 2;
   }
 }
