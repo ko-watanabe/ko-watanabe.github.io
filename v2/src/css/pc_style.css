@@ -73,6 +73,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     position: relative;
     text-align: center;
+    padding-top: 3vh;
   }
 
   .mainPadding {
@@ -132,14 +133,13 @@
   }
 
   .header__content {
+    width: 100%;
     grid-column: 2 / 3;
     margin: 0 auto;
   }
 
   .header_menu_layout {
-    padding-left: 10px;
     color: #B24A1D;
-    font-weight: bold;
   }
 
   @media screen and (min-width: 1025px) {
