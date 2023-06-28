@@ -57,6 +57,11 @@
   .body_container {
     height: 100%;
     width: 100%;
+    padding-bottom: 20vh;
+  }
+
+  .container {
+    padding-bottom: 20vh;
   }
 
   .mainPadding {
@@ -98,7 +103,6 @@
     margin: 4px;
     color: #B24A1D;
     font-weight: bold;
-
   }
 
   .header__menu {
@@ -109,11 +113,9 @@
     width: 100%;
     display: block;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     background-color: #EEE8E0;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
   }
 
   .footer__content {
