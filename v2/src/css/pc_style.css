@@ -131,7 +131,8 @@
 
   .header_menu_layout {
     padding-left: 10px;
-    color: #B24A1D
+    color: #B24A1D;
+    font-weight: bold;
   }
 
   @media screen and (min-width: 1025px) {
