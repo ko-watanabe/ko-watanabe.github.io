@@ -22,7 +22,7 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     color: #535353;
   }
 
@@ -49,6 +49,7 @@
   body {
     margin: 0 auto;
     height: 100%;
+    line-height: 1.5em;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     background-color: #EEE8E0;
   }
@@ -139,16 +140,14 @@
 
   #experienceSection {
     text-align: left;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10vh;
   }
 
   #experienceDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-bottom: 100px;
   }
 
   .experienceYearGrid {
@@ -157,6 +156,7 @@
   }
 
   .experienceDetailGrid {
+    padding-left: 20px;
     grid-column: 2 / 2;
   }
 
@@ -164,17 +164,14 @@
 
   #publicationSection {
     text-align: left;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10vh;
   }
 
   #publicationDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-bottom: 100px;
-    background: rgba(229, 228, 230, .2);
   }
 
   .publicationYearGrid {
@@ -183,6 +180,7 @@
   }
 
   .publicationDetailGrid {
+    padding-left: 20px;
     grid-column: 2 / 2;
   }
 
@@ -202,16 +200,14 @@
 
   #skillSection {
     text-align: left;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10vh;
   }
 
   #skillDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-bottom: 100px;
   }
 
   .skillLevelGrid {

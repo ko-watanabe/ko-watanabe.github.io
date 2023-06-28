@@ -7,7 +7,7 @@
 
   h2 {
     font-size: 40px;
-    color: rgb(58, 117, 188);
+    color: rgb(32, 105, 188);
   }
 
   h3 {
@@ -17,10 +17,11 @@
   h4 {
     font-size: 20px;
     margin: auto;
-    color: #535353;
+    /* color: #535353; */
   }
 
   p {
+    font-size: 16px;
     color: #535353;
   }
 
@@ -63,6 +64,7 @@
   body {
     margin: 0 auto;
     height: 100%;
+    line-height: 1.5em;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     background-color: #EEE8E0;
   }
@@ -103,15 +105,17 @@
   }
 
   .header__wrapper {
+    position: relative;
+    background-color: #EEE8E0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    position: relative;
     text-align: center;
     background: transparent;
   }
 
   .footer__wrapper {
     position: fixed;
+    background-color: #EEE8E0;
     width: 100%;
     bottom: 0;
     display: grid;
