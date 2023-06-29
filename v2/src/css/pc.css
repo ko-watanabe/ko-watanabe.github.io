@@ -135,7 +135,7 @@
   /* LandingSection */
 
   #landingSection {
-    padding-top: 5vh;
+    padding-top: 50px;
     text-align: center;
   }
 
@@ -159,7 +159,7 @@
   #experienceDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 5vh;
+    padding-top: 60px;
     padding-bottom: 100px;
   }
 
@@ -193,7 +193,7 @@
   #publicationDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 5vh;
+    padding-top: 60px;
     padding-bottom: 100px;
   }
 
@@ -226,7 +226,7 @@
   #skillDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 5vh;
+    padding-top: 60px;
     padding-bottom: 100px;
     background: rgba(229, 228, 230, .2);
   }
