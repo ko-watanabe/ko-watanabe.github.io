@@ -131,8 +131,7 @@
   /* LandingSection */
 
   #landingSection {
-    /* grid-column: 2 / 3; */
-    padding-top: 7vh;
+    padding-top: 3vh;
     text-align: center;
   }
 
