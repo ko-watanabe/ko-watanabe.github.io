@@ -233,3 +233,16 @@
     grid-column: 2 / 2;
   }
 }
+
+/* Contact */
+
+#contactSection {
+  padding-top: 3vh;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+}
+
+#contactGrid {
+  width: 100%;
+  grid-column: 2 / 3;
+}

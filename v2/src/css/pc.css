@@ -262,9 +262,6 @@
 }
 
 #contactGrid {
+  width: 100%;
   grid-column: 2 / 3;
-}
-
-.formPadding {
-  padding-top: 10px;
 }
