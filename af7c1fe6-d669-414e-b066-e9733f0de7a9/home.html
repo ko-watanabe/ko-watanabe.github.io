@@ -73,7 +73,8 @@
               focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 
               dark:placeholder:text-neutral-200 dark:focus:border-primary" placeholder="ドイツのことを調べる" aria-label="Search"
               aria-describedby="button-addon1" />
-            <button id="button-addon1" type="button" data-te-ripple-init data-te-ripple-color="light"
+            <button id="button-addon1" action="javascript:search();" method="post" type="button" data-te-ripple-init
+              data-te-ripple-color="light"
               class="relative z-[2] flex items-center rounded-r bg-primary px-6 py-2.5 text-xs font-medium 
               uppercase leading-tight text-white bg-blue-700 hover:bg-blue-800 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 
               hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">
@@ -86,28 +87,28 @@
           </div>
         </div>
       </div>
-      <div id="search_result">
-        <div class="search_result_1">
+      <div id="search_result_section">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">ビザの取得方…</p>
         </div>
-        <div class="search_result_2">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">生活の始め方…</p>
         </div>
-        <div class="search_result_3">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">渡航費の調べ…</p>
         </div>
-        <div class="search_result_4">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">友達の作り方…</p>
         </div>
-        <div class="search_result_5">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">ドイツ語でお…</p>
         </div>
-        <div class="search_result_6">
+        <div class="search_result" hidden>
           <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
           <p class="mt-3 text-slate-500">渡航費の調べ…</p>
         </div>
@@ -115,15 +116,23 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+  <script type="text/javascript" src="./js/home.js"></script>
 </body>
 
 </html>
 
 <script>
-  import {
-    Ripple,
-    initTE,
-  } from "tw-elements";
+  document.getElementById("button-addon1").addEventListener(
+    "click",
+    () => {
+      console.log("pressed button");
+      elements = document.getElementsByClassName("search_result");
 
-  initTE({ Ripple });
+      Array.from(elements).forEach((element) => {
+        console.log(element);
+        element.hidden = false;
+      });
+    },
+    false
+  );
 </script>
