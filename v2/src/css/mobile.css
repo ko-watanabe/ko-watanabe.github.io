@@ -134,10 +134,6 @@
     width: 10vh;
   }
 
-  .footer_content {
-    width: 10vh;
-  }
-
   .contact__wrapper {
     text-align: center;
     grid-column: 2 / 3;

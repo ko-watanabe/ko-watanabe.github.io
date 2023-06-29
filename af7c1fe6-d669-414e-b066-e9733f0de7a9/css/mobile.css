@@ -1,0 +1,35 @@
+/* Header Info */
+
+.header__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  background: transparent;
+}
+
+.header__content {
+  width: 100%;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+}
+
+/* Footer Info */
+
+.footer__wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footer_font_size {
+  font-size: 14px;
+}
+
+.footer__content {
+  width: 10vh;
+}

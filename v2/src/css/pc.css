@@ -74,7 +74,7 @@
     width: 100%;
     display: grid;
     position: relative;
-    padding-top: 3vh;
+    padding-top: 5vh;
   }
 
   .mainPadding {
@@ -97,11 +97,14 @@
   }
 
   .header__wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    position: fixed;
     text-align: center;
+    display: grid;
+    z-index: 9000;
+    grid-template-columns: 1fr 2fr 1fr;
     background: transparent;
+    background-color: rgb(238, 232, 224, 0.8);
   }
 
   .footer__wrapper {
@@ -131,13 +134,14 @@
   /* LandingSection */
 
   #landingSection {
-    padding-top: 3vh;
+    padding-top: 5vh;
     text-align: center;
   }
 
   /* ExperienceSection */
 
   #experienceSection {
+    padding-top: 3vh;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
   }
@@ -154,7 +158,7 @@
   #experienceDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 70px;
+    padding-top: 5vh;
     padding-bottom: 100px;
   }
 
@@ -170,6 +174,7 @@
   /* PublicationSection */
 
   #publicationSection {
+    padding-top: 3vh;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
     background: rgba(229, 228, 230, .2);
@@ -187,7 +192,7 @@
   #publicationDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 70px;
+    padding-top: 5vh;
     padding-bottom: 100px;
   }
 
@@ -203,6 +208,7 @@
   /* SkillSection */
 
   #skillSection {
+    padding-top: 3vh;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
   }
@@ -219,7 +225,7 @@
   #skillDetailContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-top: 70px;
+    padding-top: 5vh;
     padding-bottom: 100px;
     background: rgba(229, 228, 230, .2);
   }
