@@ -67,6 +67,13 @@ body {
   padding: 10px;
 }
 
+.search_result_2 {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
 /* Footer Info */
 
 .footer__wrapper {
