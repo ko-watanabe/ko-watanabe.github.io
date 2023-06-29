@@ -252,16 +252,3 @@
     font-size: 16px;
   }
 }
-
-/* Contact */
-
-#contactSection {
-  padding-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#contactGrid {
-  width: 100%;
-  grid-column: 2 / 3;
-}

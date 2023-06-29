@@ -63,36 +63,39 @@
 
 <body>
   <div class="body_container">
-    <div class="contact_grid">
-      <section>
-        <div class="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-          <form action="javascript:sendMail();" method="post" id="form" class="space-y-8">
-            <div>
-              <label for="subject" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">メールアドレス</label>
-              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
-                focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
-                dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="your@email.com" required>
-            </div>
-            <div>
-              <label for="subject" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">件名</label>
-              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
-                focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
-                dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="件名を記入してください" required>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">本文</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 
-                focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-                dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="本文をこちらに記入してください"></textarea>
-            </div>
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
-              font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 
-              dark:focus:ring-blue-800">送信</button>
-          </form>
-        </div>
-      </section>
-    </div>
+    <d<div id="contact_section">
+      <div id="contact_grid">
+        <section>
+          <div class="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
+            <form action="javascript:sendMail();" method="post" id="form" class="space-y-8">
+              <div>
+                <label for="subject"
+                  class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">メールアドレス</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
+                  focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                  dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="your@email.com" required>
+              </div>
+              <div>
+                <label for="subject" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">件名</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
+                  focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                  dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="件名を記入してください" required>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">本文</label>
+                <textarea id="message" rows="12" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 
+                  focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
+                  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="本文をこちらに記入してください"></textarea>
+              </div>
+              <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 
+                dark:focus:ring-blue-800">送信</button>
+            </form>
+          </div>
+        </section>
+      </div>
+  </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
   <script type="text/javascript" src="./js/contact.js"></script>
