@@ -14,7 +14,16 @@
   margin: 0 auto;
 }
 
-/* Body Info */
+/* home Info */
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #EEE8E0;
+}
 
 .body_container {
   position: relative;
@@ -22,7 +31,23 @@
   width: 100%;
   display: grid;
   position: relative;
-  padding-top: 3vh;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.body_section {
+  padding-top: 50px;
+  width: 90%;
+  text-align: center;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+}
+
+.main_padding {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /* Footer Info */
@@ -43,4 +68,13 @@
 
 .footer_font_size {
   font-size: 14px;
+}
+
+/* Contact */
+
+/* Contact */
+
+.contact_grid {
+  width: 100%;
+  grid-column: 2 / 3;
 }
