@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>会社名未定のHP</title>
-  <meta name="description" content="オフィシャルサイト" />
+  <title>QURIKOH HP</title>
+  <meta name="description" content="Quirko Home Page" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="未定">
-  <meta property="og:site_name" content="未定">
-  <meta property="og:description" content="未定">
+  <meta property="og:title" content="Quirko HP">
+  <meta property="og:site_name" content="Quirko HP">
+  <meta property="og:description" content="Quirko Home Page">
   <meta property="og:url" content="https://ko.watanabe.github.io">
   <link rel="stylesheet" type="text/css" href="./css/pc.css">
   <link rel="stylesheet" type="text/css" href="./css/mobile.css">
@@ -21,7 +21,7 @@
     <nav>
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="./index.html" class="flex items-center">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">会社名</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">QUIRKOH</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 
           rounded-lg md:hidden focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400"
@@ -68,24 +68,27 @@
         <div class="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
           <form action="javascript:sendMail();" method="post" id="form" class="space-y-8">
             <div>
-              <label for="subject"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <label for="subject" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">メールアドレス</label>
               <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
                 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
-                dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let me know how I can help you"
-                required>
+                dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="your@email.com" required>
+            </div>
+            <div>
+              <label for="subject" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">件名</label>
+              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 
+                focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="件名を記入してください" required>
             </div>
             <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
-                message</label>
+              <label for="message" class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">本文</label>
               <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 
                 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
                 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Please write details here..."></textarea>
+                placeholder="本文をこちらに記入してください"></textarea>
             </div>
             <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
               font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 
-              dark:focus:ring-blue-800">Submit</button>
+              dark:focus:ring-blue-800">送信</button>
           </form>
         </div>
       </section>

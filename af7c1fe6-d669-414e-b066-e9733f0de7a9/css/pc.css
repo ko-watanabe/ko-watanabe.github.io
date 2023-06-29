@@ -3,7 +3,8 @@
 .header__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
   text-align: center;
   background: transparent;
 }
@@ -31,7 +32,7 @@ body {
   width: 100%;
   display: grid;
   position: relative;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
 }
 
 .body_section {
@@ -48,6 +49,56 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+#search_result {
+  width: 100%;
+  padding-top: 100px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search_result_1 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.search_result_2 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 1/2;
+}
+
+.search_result_3 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 3;
+  grid-row: 1/2;
+}
+
+.search_result_4 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 2/2;
+}
+
+.search_result_5 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 2/2;
+}
+
+.search_result_6 {
+  text-align: center;
+  padding: 10px;
+  grid-column: 3;
+  grid-row: 2/2;
 }
 
 /* Footer Info */
@@ -69,8 +120,6 @@ body {
 .footer_font_size {
   font-size: 14px;
 }
-
-/* Contact */
 
 /* Contact */
 
