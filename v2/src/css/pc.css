@@ -103,7 +103,7 @@
     text-align: center;
     display: grid;
     z-index: 9000;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     background: transparent;
     background-color: rgb(238, 232, 224, 0.8);
   }
@@ -142,7 +142,7 @@
   /* ExperienceSection */
 
   #experienceSection {
-    padding-top: 3vh;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
   }
@@ -175,7 +175,7 @@
   /* PublicationSection */
 
   #publicationSection {
-    padding-top: 3vh;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
     background: rgba(229, 228, 230, .2);
@@ -209,7 +209,7 @@
   /* SkillSection */
 
   #skillSection {
-    padding-top: 3vh;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 3fr 1fr 5fr 3fr;
   }
@@ -256,7 +256,7 @@
 /* Contact */
 
 #contactSection {
-  padding-top: 3vh;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
