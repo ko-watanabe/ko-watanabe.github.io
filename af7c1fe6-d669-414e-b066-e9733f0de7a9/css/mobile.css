@@ -37,6 +37,8 @@
   }
 
   .body_container {
+    position: relative;
+    padding-top: 50px;
     grid-template-columns: 1fr 10fr 1fr;
   }
 
