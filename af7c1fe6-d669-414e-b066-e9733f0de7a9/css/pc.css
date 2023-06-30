@@ -34,7 +34,7 @@ body {
   display: grid;
   z-index: 9000;
   background: transparent;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .body_section {
