@@ -38,7 +38,7 @@
 
   .body_container {
     position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
     grid-template-columns: 1fr 10fr 1fr;
   }
 
@@ -73,6 +73,11 @@
 
   .footer__content {
     width: 10vh;
+  }
+
+  /* Contact Section */
+  .contact_form {
+    padding-top: 30px;
   }
 
 }
