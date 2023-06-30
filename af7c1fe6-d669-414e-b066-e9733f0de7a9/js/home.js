@@ -1,9 +1,25 @@
-function search() {
-  console.log("pressed button");
-  document.getElementById("search_result_1").hidden = true;
-  document.getElementById("search_result_2").hidden = true;
-  document.getElementById("search_result_3").hidden = true;
-  document.getElementById("search_result_4").hidden = true;
-  document.getElementById("search_result_5").hidden = true;
-  document.getElementById("search_result_6").hidden = true;
-}
+document.getElementById("button-addon1").addEventListener(
+  "click",
+  () => {
+    console.log("pressed button");
+    elements = document.getElementsByClassName("search_result");
+    elements_2 = document.getElementsByClassName("search_result_2");
+
+    Array.from(elements).forEach((element) => {
+      if (element.hidden == true) {
+        element.hidden = false;
+      } else {
+        element.hidden = true;
+      }
+    });
+
+    Array.from(elements_2).forEach((element) => {
+      if (elements[0].hidden == false) {
+        element.hidden = true;
+      } else {
+        element.hidden = false;
+      }
+    });
+  },
+  false
+);
