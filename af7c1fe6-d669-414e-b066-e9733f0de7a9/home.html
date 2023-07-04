@@ -33,20 +33,23 @@
           </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-2 md:p-0 mt-4 border border-gray-100
-               rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0
-               dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 header__menu">
+          <ul class="font-medium flex flex-col p-2 md:p-0 mt-4
+               rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-black header__menu">
             <li>
               <a href="./home.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
               md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white 
               md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                aria-current="page">ホーム</a>
+                aria-current="page">弊社が選ばれる理由</a>
             </li>
             <li>
               <a href="./about.html"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
                   md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white 
-                  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">会社概要</a>
+                  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">サービス</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+                  md:hover:bg-transparent md:border-100 md:hover:text-blue-700 md:p-0 dark:text-white">お客様の声</a>
             </li>
             <li>
               <a href="./contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
@@ -63,85 +66,6 @@
   <div class="body_container">
     <div class="body_section">
       <div class="main_padding">
-        <div class="mb-3">
-          <div class="relative mb-4 flex w-full flex-wrap items-stretch">
-            <input type="search" class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-gray-300 
-              bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none 
-              transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 bg-white
-              focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 
-              dark:placeholder:text-neutral-200 dark:focus:border-primary" placeholder="ドイツのことを調べる" aria-label="Search"
-              aria-describedby="button-addon1" />
-            <button id="button-addon1" action="javascript:search();" method="post" type="button" data-te-ripple-init
-              data-te-ripple-color="light"
-              class="relative z-[2] flex items-center rounded-r bg-primary px-6 py-2.5 text-xs font-medium 
-              uppercase leading-tight text-white bg-blue-700 hover:bg-blue-800 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 
-              hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                <path fill-rule="evenodd"
-                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div id="search_result_section">
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">ビザの取得方…</p>
-        </div>
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">生活の始め方…</p>
-        </div>
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">渡航費の調べ…</p>
-        </div>
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">友達の作り方…</p>
-        </div>
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">ドイツ語でお…</p>
-        </div>
-        <div class="search_result" hidden>
-          <img src="https://blog.feedspot.com/wp-content/uploads/2017/04/german-news.jpg" alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">渡航費の調べ…</p>
-        </div>
-      </div>
-      <div id="search_result_section">
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">ビザの返却方…</p>
-        </div>
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">生活の終わり…</p>
-        </div>
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">渡航費の返済…</p>
-        </div>
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">友達の別れ方…</p>
-        </div>
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">日本語でお…</p>
-        </div>
-        <div class="search_result_2" hidden>
-          <img src="https://th.bing.com/th/id/OIP.kznXP_7rjmvN9wQcLui71QHaE8?pid=ImgDet&w=1920&h=1280&rs=1"
-            alt="Geeksforgeeks.org">
-          <p class="mt-3 text-slate-500">渡航費の返し…</p>
-        </div>
       </div>
     </div>
   </div>
