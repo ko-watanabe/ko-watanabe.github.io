@@ -1,0 +1,86 @@
+/* Header Info */
+
+.header__wrapper {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+  text-align: center;
+  background: transparent;
+}
+
+.header__content {
+  width: 100%;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+}
+
+/* home Info */
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #f9fafb;
+}
+
+.body_container {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  text-align: center;
+  display: grid;
+  z-index: 9000;
+  background: transparent;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.body_section {
+  padding-top: 50px;
+  width: 90%;
+  text-align: center;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+}
+
+.main_padding {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#search_result_section {
+  width: 100%;
+  padding-top: 50px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search_result {
+  text-align: center;
+  padding: 10px;
+}
+
+.search_result_2 {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* contact */
+
+#contact_section {
+  width: 100%;
+  text-align: left;
+  grid-column: 2;
+}
+
+#contact_grid {
+  width: 100%;
+}
