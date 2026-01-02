@@ -20,25 +20,76 @@ async function fetchScholarPublications() {
 
     // User-Agentを設定してボット検出を回避
     await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+    
+    // 追加のヘッダーを設定
+    await page.setExtraHTTPHeaders({
+      'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    })
+    
+    // ビューポートを設定
+    await page.setViewport({ width: 1920, height: 1080 })
 
     // 引用件数順でデータを取得
     console.log('Navigating to Google Scholar (by citations)...')
     await page.goto(SCHOLAR_URL, {
-      waitUntil: 'networkidle2',
-      timeout: 30000,
+      waitUntil: 'domcontentloaded',
+      timeout: 60000,
     })
 
-    // 論文リストが読み込まれるまで待つ
+    // ページが完全に読み込まれるまで待つ
+    await new Promise(resolve => setTimeout(resolve, 5000))
+    
+    // スクロールしてコンテンツを読み込む
+    await page.evaluate(() => {
+      window.scrollTo(0, document.body.scrollHeight)
+    })
+    await new Promise(resolve => setTimeout(resolve, 3000))
+    
+    // ページの状態を確認
+    const pageTitle = await page.title()
+    console.log('Page title:', pageTitle)
+    const currentUrl = page.url()
+    console.log('Current URL:', currentUrl)
+
+    // 論文リストが読み込まれるまで待つ（複数のセレクターを試す）
+    let publicationsFound = false
     try {
-      await page.waitForSelector('tr.gsc_a_tr', { timeout: 10000 })
+      await page.waitForSelector('tr.gsc_a_tr', { timeout: 15000 })
+      publicationsFound = true
+      console.log('✓ Found publications list (gsc_a_tr)')
     } catch (error) {
-      console.warn('Publications list not found, continuing anyway...')
+      console.warn('tr.gsc_a_tr not found, trying alternative selectors...')
+      try {
+        await page.waitForSelector('table.gsc_a_t', { timeout: 10000 })
+        publicationsFound = true
+        console.log('✓ Found publications list (gsc_a_t)')
+      } catch (error2) {
+        console.warn('Alternative selector also not found')
+        // ページの内容を確認
+        const pageContent = await page.evaluate(() => document.body.textContent)
+        console.log('Page content preview:', pageContent.substring(0, 1000))
+        // HTMLの構造も確認
+        const htmlContent = await page.evaluate(() => document.body.innerHTML)
+        console.log('HTML contains "gsc_a_tr":', htmlContent.includes('gsc_a_tr'))
+        console.log('HTML contains "gsc_a_t":', htmlContent.includes('gsc_a_t'))
+        console.log('HTML contains "publication":', htmlContent.toLowerCase().includes('publication'))
+      }
     }
 
     // 引用件数順でデータを取得
     const publicationsByCitations = await page.evaluate(() => {
       const results = []
-      const rows = document.querySelectorAll('tr.gsc_a_tr')
+      // 複数のセレクターを試す
+      let rows = document.querySelectorAll('tr.gsc_a_tr')
+      if (rows.length === 0) {
+        rows = document.querySelectorAll('table.gsc_a_t tr')
+      }
+      if (rows.length === 0) {
+        rows = document.querySelectorAll('tbody tr')
+      }
+      
+      console.log(`Found ${rows.length} publication rows`)
 
       rows.forEach((row) => {
         try {
@@ -133,25 +184,61 @@ async function fetchScholarPublications() {
 
       return results
     })
+    
+    console.log(`Found ${publicationsByCitations.length} publications by citations`)
 
     // 最新順でデータを取得
     console.log('Navigating to Google Scholar (by date)...')
     await page.goto(SCHOLAR_URL_LATEST, {
-      waitUntil: 'networkidle2',
-      timeout: 30000,
+      waitUntil: 'domcontentloaded',
+      timeout: 60000,
     })
 
+    // ページが完全に読み込まれるまで待つ
+    await new Promise(resolve => setTimeout(resolve, 5000))
+    
+    // スクロールしてコンテンツを読み込む
+    await page.evaluate(() => {
+      window.scrollTo(0, document.body.scrollHeight)
+    })
+    await new Promise(resolve => setTimeout(resolve, 3000))
+    
+    // ページの状態を確認
+    const pageTitle2 = await page.title()
+    console.log('Page title (by date):', pageTitle2)
+    const currentUrl2 = page.url()
+    console.log('Current URL (by date):', currentUrl2)
+
     // 論文リストが読み込まれるまで待つ
+    let publicationsFoundByDate = false
     try {
-      await page.waitForSelector('tr.gsc_a_tr', { timeout: 10000 })
+      await page.waitForSelector('tr.gsc_a_tr', { timeout: 15000 })
+      publicationsFoundByDate = true
+      console.log('✓ Found publications list (by date)')
     } catch (error) {
-      console.warn('Publications list not found, continuing anyway...')
+      console.warn('Publications list not found (by date), trying alternative selectors...')
+      try {
+        await page.waitForSelector('table.gsc_a_t', { timeout: 10000 })
+        publicationsFoundByDate = true
+        console.log('✓ Found publications list (alternative selector)')
+      } catch (error2) {
+        console.warn('Alternative selector also not found')
+      }
     }
 
     // 最新順でデータを取得（順序を保持）
     const publicationsByDate = await page.evaluate(() => {
       const results = []
-      const rows = document.querySelectorAll('tr.gsc_a_tr')
+      // 複数のセレクターを試す
+      let rows = document.querySelectorAll('tr.gsc_a_tr')
+      if (rows.length === 0) {
+        rows = document.querySelectorAll('table.gsc_a_t tr')
+      }
+      if (rows.length === 0) {
+        rows = document.querySelectorAll('tbody tr')
+      }
+      
+      console.log(`Found ${rows.length} publication rows (by date)`)
 
       rows.forEach((row) => {
         try {
