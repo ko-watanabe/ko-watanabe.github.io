@@ -357,6 +357,30 @@ async function fetchScholarPublications() {
     const allPublications = Array.from(publicationsMap.values())
 
     console.log(`Found ${allPublications.length} publications (${sortedPublications.length} by citations, ${publicationsByDate.length} by date)`)
+    
+    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
+    
+    // スクレイピングが失敗した場合（0件の場合）、既存のファイルがあればそれを使用
+    if (allPublications.length === 0) {
+      console.warn('⚠ No publications found from scraping. Checking for existing file...')
+      if (fs.existsSync(outputPath)) {
+        try {
+          const existingData = JSON.parse(fs.readFileSync(outputPath, 'utf8'))
+          if (existingData.length > 0) {
+            console.log(`✓ Using existing publications data: ${existingData.length} publications`)
+            console.log('⚠ Note: Using cached data because scraping failed (likely due to Google Scholar bot detection)')
+            return // 既存のデータを使用して終了
+          } else {
+            console.warn('⚠ Existing file is empty, cannot use as fallback')
+          }
+        } catch (error) {
+          console.warn('⚠ Failed to read existing file:', error.message)
+        }
+      } else {
+        console.warn('⚠ No existing file found, will save empty array')
+      }
+    }
+
     console.log('Skipping BibTeX fetch (requires authentication)')
 
     // BibTeX取得はスキップ（ログインが必要なため）
@@ -369,12 +393,11 @@ async function fetchScholarPublications() {
 
     // public/scholar-publications.jsonに保存
     fs.writeFileSync(
-      path.join(process.cwd(), 'public', 'scholar-publications.json'),
+      outputPath,
       JSON.stringify(finalPublications, null, 2)
     )
 
     const bibtexCount = finalPublications.filter(p => p.bibtex).length
-    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
     console.log(`Scholar publications data saved (${finalPublications.length} publications, ${bibtexCount} with BibTeX)`)
     
     // ファイルが正しく保存されたか確認
@@ -391,9 +414,25 @@ async function fetchScholarPublications() {
   } catch (error) {
     console.error('Failed to fetch scholar publications:', error.message)
     console.error('Error stack:', error.stack)
-    // エラー時も空の配列を保存（ビルドを続行するため）
-    const defaultPublications = []
+    
     const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
+    
+    // エラー時、既存のファイルがあればそれを使用
+    if (fs.existsSync(outputPath)) {
+      try {
+        const existingData = JSON.parse(fs.readFileSync(outputPath, 'utf8'))
+        if (existingData.length > 0) {
+          console.log(`✓ Using existing publications data after error: ${existingData.length} publications`)
+          console.log('⚠ Note: Using cached data because scraping failed')
+          return // 既存のデータを使用して終了
+        }
+      } catch (readError) {
+        console.warn('⚠ Failed to read existing file:', readError.message)
+      }
+    }
+    
+    // 既存のファイルがない、または空の場合は空の配列を保存（ビルドを続行するため）
+    const defaultPublications = []
     fs.writeFileSync(
       outputPath,
       JSON.stringify(defaultPublications, null, 2)
