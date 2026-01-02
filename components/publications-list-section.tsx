@@ -48,15 +48,27 @@ export function PublicationsListSection() {
     // ビルド時に生成されたJSONファイルを読み込む
     const loadPublications = async () => {
       try {
-        const response = await fetch('/scholar-publications.json')
+        const response = await fetch('/scholar-publications.json', {
+          cache: 'no-cache',
+        })
         if (response.ok) {
           const data: Publication[] = await response.json()
-          setPublications(data)
+          if (Array.isArray(data) && data.length > 0) {
+            setPublications(data)
+            console.log(`Loaded ${data.length} publications`)
+          } else {
+            console.warn('Publications data is empty or invalid')
+          }
         } else {
-          console.warn('Failed to load publications data')
+          console.error(`Failed to load publications data: ${response.status} ${response.statusText}`)
         }
       } catch (error) {
         console.error('Error loading publications data:', error)
+        // デバッグ用: エラーの詳細を表示
+        if (error instanceof Error) {
+          console.error('Error message:', error.message)
+          console.error('Error stack:', error.stack)
+        }
       } finally {
         setIsLoading(false)
       }

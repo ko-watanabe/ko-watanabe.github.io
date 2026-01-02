@@ -287,15 +287,32 @@ async function fetchScholarPublications() {
     )
 
     const bibtexCount = finalPublications.filter(p => p.bibtex).length
+    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
     console.log(`Scholar publications data saved (${finalPublications.length} publications, ${bibtexCount} with BibTeX)`)
+    
+    // ファイルが正しく保存されたか確認
+    if (fs.existsSync(outputPath)) {
+      const savedData = JSON.parse(fs.readFileSync(outputPath, 'utf8'))
+      if (savedData.length === finalPublications.length) {
+        console.log(`✓ Verified: ${savedData.length} publications saved to ${outputPath}`)
+      } else {
+        console.warn(`⚠ Warning: Saved ${savedData.length} publications, expected ${finalPublications.length}`)
+      }
+    } else {
+      throw new Error(`Failed to save publications to ${outputPath}`)
+    }
   } catch (error) {
     console.error('Failed to fetch scholar publications:', error.message)
-    // エラー時も空の配列を保存
+    console.error('Error stack:', error.stack)
+    // エラー時も空の配列を保存（ビルドを続行するため）
     const defaultPublications = []
+    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
     fs.writeFileSync(
-      path.join(process.cwd(), 'public', 'scholar-publications.json'),
+      outputPath,
       JSON.stringify(defaultPublications, null, 2)
     )
+    console.warn(`Warning: Saved empty publications array to ${outputPath}`)
+    // エラーを再スローしない（ビルドを続行するため）
   } finally {
     if (browser) {
       await browser.close()
