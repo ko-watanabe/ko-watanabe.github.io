@@ -1,0 +1,307 @@
+// ビルド時にGoogle Scholarから論文データを取得してJSONファイルに保存するスクリプト
+const fs = require('fs')
+const path = require('path')
+const puppeteer = require('puppeteer')
+const cheerio = require('cheerio')
+
+const SCHOLAR_URL = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ'
+const SCHOLAR_URL_LATEST = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ&view_op=list_works&sortby=pubdate'
+
+async function fetchScholarPublications() {
+  let browser = null
+  try {
+    console.log('Launching browser...')
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    })
+
+    const page = await browser.newPage()
+
+    // User-Agentを設定してボット検出を回避
+    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+    // 引用件数順でデータを取得
+    console.log('Navigating to Google Scholar (by citations)...')
+    await page.goto(SCHOLAR_URL, {
+      waitUntil: 'networkidle2',
+      timeout: 30000,
+    })
+
+    // 論文リストが読み込まれるまで待つ
+    try {
+      await page.waitForSelector('tr.gsc_a_tr', { timeout: 10000 })
+    } catch (error) {
+      console.warn('Publications list not found, continuing anyway...')
+    }
+
+    // 引用件数順でデータを取得
+    const publicationsByCitations = await page.evaluate(() => {
+      const results = []
+      const rows = document.querySelectorAll('tr.gsc_a_tr')
+
+      rows.forEach((row) => {
+        try {
+          // タイトルとリンク
+          const titleElement = row.querySelector('a.gsc_a_at')
+          if (!titleElement) return
+
+          const title = titleElement.textContent.trim()
+          const relativeUrl = titleElement.getAttribute('href')
+          const url = relativeUrl ? `https://scholar.google.com${relativeUrl}` : undefined
+
+          // citation_for_viewパラメータを抽出（BibTeX取得用）
+          let citationForView = null
+          if (relativeUrl) {
+            const match = relativeUrl.match(/citation_for_view=([^&]+)/)
+            if (match) {
+              citationForView = match[1]
+            }
+          }
+
+          // 著者、会場、年の情報
+          const grayDivs = row.querySelectorAll('div.gs_gray')
+          let authors = ''
+          let venue = ''
+          let year = ''
+
+          if (grayDivs.length >= 1) {
+            authors = grayDivs[0].textContent.trim()
+          }
+          if (grayDivs.length >= 2) {
+            const secondText = grayDivs[1].textContent.trim()
+            const parts = secondText.split(',').map(p => p.trim())
+            if (parts.length >= 1) {
+              const lastPart = parts[parts.length - 1]
+              if (/^\d{4}$/.test(lastPart)) {
+                year = lastPart
+                venue = parts.slice(0, parts.length - 1).join(', ')
+              } else {
+                venue = secondText
+              }
+            }
+          }
+
+          // 引用件数
+          let citations = 0
+          // 引用件数は td.gsc_a_c の中にある
+          const citationsCell = row.querySelector('td.gsc_a_c')
+          if (citationsCell) {
+            // まず a.gsc_a_c を探す
+            const citationsLink = citationsCell.querySelector('a.gsc_a_c')
+            if (citationsLink) {
+              const citationsText = citationsLink.textContent.trim()
+              const citationsMatch = citationsText.match(/\d+/)
+              if (citationsMatch) {
+                citations = parseInt(citationsMatch[0])
+              }
+            } else {
+              // リンクがない場合、span.gsc_a_c を探す
+              const citationsSpan = citationsCell.querySelector('span.gsc_a_c')
+              if (citationsSpan) {
+                const citationsText = citationsSpan.textContent.trim()
+                const citationsMatch = citationsText.match(/\d+/)
+                if (citationsMatch) {
+                  citations = parseInt(citationsMatch[0])
+                }
+              } else {
+                // セル全体のテキストから数字を抽出
+                const citationsText = citationsCell.textContent.trim()
+                const citationsMatch = citationsText.match(/\d+/)
+                if (citationsMatch) {
+                  citations = parseInt(citationsMatch[0])
+                }
+              }
+            }
+          }
+
+          if (title) {
+            results.push({
+              title,
+              authors: authors || 'N/A',
+              venue: venue || 'N/A',
+              year: year || 'N/A',
+              citations,
+              url,
+              citationForView, // BibTeX取得用
+            })
+          }
+        } catch (error) {
+          console.warn('Error parsing publication:', error)
+        }
+      })
+
+      return results
+    })
+
+    // 最新順でデータを取得
+    console.log('Navigating to Google Scholar (by date)...')
+    await page.goto(SCHOLAR_URL_LATEST, {
+      waitUntil: 'networkidle2',
+      timeout: 30000,
+    })
+
+    // 論文リストが読み込まれるまで待つ
+    try {
+      await page.waitForSelector('tr.gsc_a_tr', { timeout: 10000 })
+    } catch (error) {
+      console.warn('Publications list not found, continuing anyway...')
+    }
+
+    // 最新順でデータを取得（順序を保持）
+    const publicationsByDate = await page.evaluate(() => {
+      const results = []
+      const rows = document.querySelectorAll('tr.gsc_a_tr')
+
+      rows.forEach((row) => {
+        try {
+          // タイトルとリンク
+          const titleElement = row.querySelector('a.gsc_a_at')
+          if (!titleElement) return
+
+          const title = titleElement.textContent.trim()
+          const relativeUrl = titleElement.getAttribute('href')
+          const url = relativeUrl ? `https://scholar.google.com${relativeUrl}` : undefined
+
+          // citation_for_viewパラメータを抽出（BibTeX取得用）
+          let citationForView = null
+          if (relativeUrl) {
+            const match = relativeUrl.match(/citation_for_view=([^&]+)/)
+            if (match) {
+              citationForView = match[1]
+            }
+          }
+
+          // 著者、会場、年の情報
+          const grayDivs = row.querySelectorAll('div.gs_gray')
+          let authors = ''
+          let venue = ''
+          let year = ''
+
+          if (grayDivs.length >= 1) {
+            authors = grayDivs[0].textContent.trim()
+          }
+          if (grayDivs.length >= 2) {
+            const secondText = grayDivs[1].textContent.trim()
+            const parts = secondText.split(',').map(p => p.trim())
+            if (parts.length >= 1) {
+              const lastPart = parts[parts.length - 1]
+              if (/^\d{4}$/.test(lastPart)) {
+                year = lastPart
+                venue = parts.slice(0, parts.length - 1).join(', ')
+              } else {
+                venue = secondText
+              }
+            }
+          }
+
+          // 引用件数
+          let citations = 0
+          const citationsCell = row.querySelector('td.gsc_a_c')
+          if (citationsCell) {
+            const citationsLink = citationsCell.querySelector('a.gsc_a_c')
+            if (citationsLink) {
+              const citationsText = citationsLink.textContent.trim()
+              const citationsMatch = citationsText.match(/\d+/)
+              if (citationsMatch) {
+                citations = parseInt(citationsMatch[0])
+              }
+            } else {
+              const citationsSpan = citationsCell.querySelector('span.gsc_a_c')
+              if (citationsSpan) {
+                const citationsText = citationsSpan.textContent.trim()
+                const citationsMatch = citationsText.match(/\d+/)
+                if (citationsMatch) {
+                  citations = parseInt(citationsMatch[0])
+                }
+              } else {
+                const citationsText = citationsCell.textContent.trim()
+                const citationsMatch = citationsText.match(/\d+/)
+                if (citationsMatch) {
+                  citations = parseInt(citationsMatch[0])
+                }
+              }
+            }
+          }
+
+          if (title) {
+            results.push({
+              title,
+              authors: authors || 'N/A',
+              venue: venue || 'N/A',
+              year: year || 'N/A',
+              citations,
+              url,
+              citationForView,
+            })
+          }
+        } catch (error) {
+          console.warn('Error parsing publication:', error)
+        }
+      })
+
+      return results
+    })
+
+    // 引用件数でソート（降順）
+    const sortedPublications = publicationsByCitations.sort((a, b) => b.citations - a.citations)
+
+    // 最新順のデータをマージ（引用件数順のデータに最新順の情報を追加）
+    // タイトルをキーとしてマージ
+    const publicationsMap = new Map()
+    sortedPublications.forEach(pub => {
+      publicationsMap.set(pub.title, { ...pub })
+    })
+
+    // 最新順のデータで順序を更新（既存のデータがあれば更新、なければ追加）
+    publicationsByDate.forEach((pub, index) => {
+      if (publicationsMap.has(pub.title)) {
+        // 既存のデータを更新（順序情報を保持）
+        const existing = publicationsMap.get(pub.title)
+        existing.dateOrder = index
+      } else {
+        // 新しいデータを追加
+        const newPub = { ...pub, dateOrder: index }
+        publicationsMap.set(pub.title, newPub)
+      }
+    })
+
+    // 最終的なリストを作成（引用件数順を優先）
+    const allPublications = Array.from(publicationsMap.values())
+
+    console.log(`Found ${allPublications.length} publications (${sortedPublications.length} by citations, ${publicationsByDate.length} by date)`)
+    console.log('Skipping BibTeX fetch (requires authentication)')
+
+    // BibTeX取得はスキップ（ログインが必要なため）
+    allPublications.forEach(pub => {
+      pub.bibtex = null
+    })
+
+    // 引用件数でソート（降順）して保存
+    const finalPublications = allPublications.sort((a, b) => b.citations - a.citations)
+
+    // public/scholar-publications.jsonに保存
+    fs.writeFileSync(
+      path.join(process.cwd(), 'public', 'scholar-publications.json'),
+      JSON.stringify(finalPublications, null, 2)
+    )
+
+    const bibtexCount = finalPublications.filter(p => p.bibtex).length
+    console.log(`Scholar publications data saved (${finalPublications.length} publications, ${bibtexCount} with BibTeX)`)
+  } catch (error) {
+    console.error('Failed to fetch scholar publications:', error.message)
+    // エラー時も空の配列を保存
+    const defaultPublications = []
+    fs.writeFileSync(
+      path.join(process.cwd(), 'public', 'scholar-publications.json'),
+      JSON.stringify(defaultPublications, null, 2)
+    )
+  } finally {
+    if (browser) {
+      await browser.close()
+    }
+  }
+}
+
+fetchScholarPublications()
+
