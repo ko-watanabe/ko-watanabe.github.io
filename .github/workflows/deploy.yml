@@ -35,11 +35,11 @@ jobs:
       - name: Install Puppeteer dependencies
         run: |
           sudo apt-get update
+          # 必須パッケージをインストール（エラーがあっても続行）
           sudo apt-get install -y \
             ca-certificates \
             fonts-liberation \
             libappindicator3-1 \
-            libasound2 \
             libatk-bridge2.0-0 \
             libatk1.0-0 \
             libc6 \
@@ -72,7 +72,11 @@ jobs:
             libxtst6 \
             lsb-release \
             wget \
-            xdg-utils
+            xdg-utils 2>&1 | grep -v "has no installation candidate" || true
+          # libasound2 の代替パッケージを試す（Ubuntu 24.04+ では libasound2t64）
+          sudo apt-get install -y libasound2t64 2>/dev/null || \
+          sudo apt-get install -y libasound2 2>/dev/null || \
+          echo "Note: libasound2 not available, but Puppeteer may still work"
 
       - name: Build
         run: yarn build
