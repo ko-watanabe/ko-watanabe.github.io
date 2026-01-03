@@ -156,7 +156,7 @@ export function PublicationsListSection() {
                   {mostCitedPublications.map((pub, index) => (
                     <Card key={`cited-${index}`} className="transition-shadow hover:shadow-md">
                       <CardContent className="p-4 flex flex-col min-h-[180px]">
-                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3">
+                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem]">
                           {pub.url ? (
                             <a
                               href={pub.url}
@@ -211,7 +211,7 @@ export function PublicationsListSection() {
                   {latestPublications.map((pub, index) => (
                     <Card key={`latest-${index}`} className="transition-shadow hover:shadow-md">
                       <CardContent className="p-4 flex flex-col min-h-[180px]">
-                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3">
+                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem]">
                           {pub.url ? (
                             <a
                               href={pub.url}

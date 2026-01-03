@@ -10,6 +10,7 @@ const newsItemsJa = [
   {
     date: "2026年1月",
     title: "The Future of Education with AI - Springer Book Chapter出版 🎉",
+    location: "Shonan, Japan 🇯🇵",
     links: [
       {
         text: "The Future of Education with AI",
@@ -49,7 +50,8 @@ const newsItemsJa = [
   },
   {
     date: "2025年10月",
-    title: "UbiComp-ISWC 2025で2本の論文を発表(エスポー、フィンランド🇫🇮)",
+    title: "UbiComp-ISWC 2025で2本の論文を発表",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "From Neck to Head: Bio-Impedance Sensing",
@@ -67,19 +69,33 @@ const newsItemsJa = [
   },
   {
     date: "2025年9月",
-    title: "Open IFAC WC OIT webpage: Learning-Enabled and Human-Centric Robotics with Wearable and Sensor Systems 🇰🇷",
+    title: "IFACにてワークショップ主催",
+    links: [
+      {
+        text: "Learning-Enabled and Human-Centric Robotics with Wearable and Sensor Systems",
+        url: "https://ifac-wc-oit-45f2x.netlify.app/",
+      },
+    ],
   },
   {
     date: "2025年9月",
-    title: "IATM conferenceで「Trustworthy AI」ワークショップを開催(フランクフルト、ドイツ🇩🇪)",
+    title: "IATM conferenceで「Trustworthy AI」ワークショップを開催",
+    location: "Frankfurt, Germany 🇩🇪",
+    links: [
+      {
+        text: "Trustworthy AI Workshop",
+        url: "https://www.iatm.museum/conferences/48th-conference-2025/",
+      },
+    ],
   },
   {
     date: "2025年9月",
-    title: "DFKIで開催されたMedical AIに関するAspireワークショップに参加(カイザースラウテルン、ドイツ🇩🇪)",
+    title: "DFKIで開催されたMedical AIに関するAspireワークショップに参加",
+    location: "Kaiserslautern, Germany 🇩🇪",
   },
   {
     date: "2025年9月",
-    title: "9月1日に愛息誕生🎉",
+    title: "9月1日に息子が産まれました🎉",
   },
   {
     date: "2025年8月",
@@ -87,7 +103,8 @@ const newsItemsJa = [
   },
   {
     date: "2025年7月",
-    title: "ISWC 2025 (Note)に論文が採択。エスポー、フィンランド🇫🇮で発表予定",
+    title: "ISWC 2025 (Note)に論文が採択",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "From Neck to Head: Bio-Impedance Sensing",
@@ -97,7 +114,8 @@ const newsItemsJa = [
   },
   {
     date: "2025年6月",
-    title: "UbiComp 2025 (Poster)に論文が採択。エスポー、フィンランド🇫🇮で発表予定",
+    title: "UbiComp 2025 (Poster)に論文が採択",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "Push or Light: Nudging Standing",
@@ -107,7 +125,8 @@ const newsItemsJa = [
   },
   {
     date: "2025年6月",
-    title: "HCII 2025に参加(イェーテボリ、スウェーデン🇸🇪)",
+    title: "HCII 2025に参加",
+    location: "Gothenburg, Sweden 🇸🇪",
     links: [
       {
         text: "SensPS: Sensing Personal Space Comfortable Distance Between Human-Human",
@@ -135,37 +154,41 @@ const newsItemsJa = [
   },
   {
     date: "2025年5月",
-    title: "ETRA 2025に参加(東京、日本🇯🇵)",
+    title: "ETRA 2025に参加",
+    location: "Tokyo, Japan 🇯🇵",
   },
   {
     date: "2025年4月",
-    title: "CHI 2025に参加(横浜、日本🇯🇵)",
+    title: "CHI 2025に参加",
+    location: "Yokohama, Japan 🇯🇵",
   },
   {
     date: "2025年4月",
     title: "ABC 2025で発表 🇦🇪",
+    location: "Abu Dhabi, UAE 🇦🇪",
     links: [
       {
         text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study (IJABC)",
-        url: "",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_48/_article/-char/ja/",
       },
       {
         text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning (IJABC)",
-        url: "",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_46/_article/-char/ja/",
       },
     ],
   },
   {
     date: "2025年3月",
     title: "AHs 2025に参加。1本のフルペーパーと1本のデモペーパーを発表。デモチェアとしても活動 🇦🇪",
+    location: "Abu Dhabi, UAE 🇦🇪",
     links: [
       {
         text: "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks (Full Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/full/10.1145/3745900.3746066",
       },
       {
         text: "Augmenting Online Meetings with Context-Aware Real-time Music Generation (Demo Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3745900.3746116",
       },
     ],
   },
@@ -175,7 +198,7 @@ const newsItemsJa = [
     links: [
       {
         text: "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3715669.3723125",
       },
     ],
   },
@@ -185,11 +208,11 @@ const newsItemsJa = [
     links: [
       {
         text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study (IJABC)",
-        url: "",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_48/_article/-char/ja/",
       },
       {
         text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning (IJABC)",
-        url: "",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_46/_article/-char/ja/",
       },
     ],
   },
@@ -199,7 +222,7 @@ const newsItemsJa = [
     links: [
       {
         text: "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/11092342/",
       },
     ],
   },
@@ -209,17 +232,18 @@ const newsItemsJa = [
     links: [
       {
         text: "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks (Full Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/full/10.1145/3745900.3746066",
       },
       {
         text: "Augmenting Online Meetings with Context-Aware Real-time Music Generation (Demo Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3745900.3746116",
       },
     ],
   },
   {
     date: "2025年2月",
     title: "ICAART 2025に参加 🇵🇹",
+    location: "Portugal 🇵🇹",
     links: [
       {
         text: "Webcam-based Pupil Diameter Prediction Benefits from Upscaling",
@@ -233,7 +257,7 @@ const newsItemsJa = [
     links: [
       {
         text: "Img2Vocab: Explore Words Tied to Your Life with LLMs and Social Media Images",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10851279",
       },
     ],
   },
@@ -243,7 +267,7 @@ const newsItemsJa = [
     links: [
       {
         text: "Estimating Self-Confidence in Video-Based Learning Using Eye-Tracking and Deep Neural Networks",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10792912",
       },
     ],
   },
@@ -271,7 +295,7 @@ const newsItemsJa = [
     links: [
       {
         text: "Feature Estimation of Global Language Processing in EEG Using Attention Maps",
-        url: "",
+        url: "https://link.springer.com/chapter/10.1007/978-981-96-0901-7_6",
       },
     ],
   },
@@ -281,13 +305,14 @@ const newsItemsJa = [
     links: [
       {
         text: "Estimating Unknown English Words From User Smartphone Reading Behaviors",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10670436",
       },
     ],
   },
   {
     date: "2024年8月",
-    title: "EUSIPCO 2024で発表(リヨン、フランス🇫🇷)",
+    title: "EUSIPCO 2024で発表",
+    location: "Lyon, France 🇫🇷",
   },
   {
     date: "2024年7月",
@@ -295,27 +320,29 @@ const newsItemsJa = [
     links: [
       {
         text: "Gaze Generation for Avatars using GANs",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10601689/",
       },
     ],
   },
   {
     date: "2024年7月",
-    title: "UbiComp' 24に論文が採択。メルボルン、オーストラリア🇦🇺で発表",
+    title: "UbiComp' 24に論文が採択",
+    location: "Melbourne, Australia 🇦🇺",
     links: [
       {
         text: "Comparing Web Browsing Behaviors with High and Low Information Literacy",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3675094.3677575",
       },
       {
         text: "Concentration Estimation in Online Video Lecture Using Multimodal Sensors",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3675094.3677587",
       },
     ],
   },
   {
     date: "2024年5月",
-    title: "EUSIPCO 2024に論文が採択。リヨン、フランス🇫🇷で発表予定",
+    title: "EUSIPCO 2024に論文が採択",
+    location: "Lyon, France 🇫🇷",
     links: [
       {
         text: "Edge-based Denoising Image Compression",
@@ -325,11 +352,12 @@ const newsItemsJa = [
   },
   {
     date: "2024年4月",
-    title: "AHs 2024で発表(メルボルン、オーストラリア🇦🇺)",
+    title: "AHs 2024で発表",
+    location: "Melbourne, Australia 🇦🇺",
     links: [
       {
         text: "Metacognition-EnGauge: Real-time Augmentation of Self-and-Group Engagement Levels",
-        url: "",
+        url: "https://dl.acm.org/doi/abs/10.1145/3652920.3653054",
       },
     ],
   },
@@ -339,45 +367,50 @@ const newsItemsJa = [
   },
   {
     date: "2024年3月",
-    title: "ETRA 2024 Short Paperに論文が採択。グラスゴー、イギリス🇬🇧で発表",
+    title: "ETRA 2024 Short Paperに論文が採択",
+    location: "Glasgow, UK 🇬🇧",
     links: [
       {
         text: "Eye Movement in a Controlled Dialogue Setting",
-        url: "",
+        url: "https://dl.acm.org/doi/abs/10.1145/3649902.3653337",
       },
     ],
   },
   {
     date: "2024年3月",
     title: "NII Shonan-Meetingに参加 🇯🇵",
+    location: "Shonan, Japan 🇯🇵",
     links: [
       {
         text: "The Future of Education with AI",
-        url: "",
+        url: "https://shonan.nii.ac.jp/seminars/214/",
       },
     ],
   },
   {
     date: "2023年11月",
-    title: "Deutsche Forschungsgemeinschaft (DFG)のLeCycl Workshopに参加(ボン、ドイツ🇩🇪)",
+    title: "Deutsche Forschungsgemeinschaft (DFG)のLeCycl Workshopに参加",
+    location: "Bonn, Germany 🇩🇪",
   },
   {
     date: "2023年10月",
-    title: "UbiComp 2023に参加(カンクン、メキシコ🇲🇽)",
+    title: "UbiComp 2023に参加",
+    location: "Cancun, Mexico 🇲🇽",
     links: [
       {
         text: "Accelerating Knowledge Transfer by Sensing and Actuating Social-Cognitive States",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3594739.3610769",
       },
     ],
   },
   {
     date: "2023年8月",
-    title: "CHI 2023に参加(ハンブルク、ドイツ🇩🇪)",
+    title: "CHI 2023に参加",
+    location: "Hamburg, Germany 🇩🇪",
     links: [
       {
         text: "Combining the Knowledge of Experienced Programmers to Extract Useful Web Resources",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3604571.3604575",
       },
     ],
   },
@@ -387,6 +420,7 @@ const newsItemsEn = [
   {
     date: "January 2026",
     title: "The Future of Education with AI - Springer Book Chapter Published 🎉",
+    location: "Shonan, Japan 🇯🇵",
     links: [
       {
         text: "The Future of Education with AI",
@@ -426,7 +460,8 @@ const newsItemsEn = [
   },
   {
     date: "October 2025",
-    title: "Presenting two papers at UbiComp-ISWC 2025 (Espoo, Finland 🇫🇮)",
+    title: "Presenting two papers at UbiComp-ISWC 2025",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "From Neck to Head: Bio-Impedance Sensing",
@@ -448,11 +483,13 @@ const newsItemsEn = [
   },
   {
     date: "September 2025",
-    title: "Hosted workshop 'Trustworthy AI' at IATM conference (Frankfurt, Germany 🇩🇪)",
+    title: "Hosted workshop 'Trustworthy AI' at IATM conference",
+    location: "Frankfurt, Germany 🇩🇪",
   },
   {
     date: "September 2025",
-    title: "Joined Aspire workshop about Medical AI held in DFKI (Kaiserslautern, Germany 🇩🇪)",
+    title: "Joined Aspire workshop about Medical AI held in DFKI",
+    location: "Kaiserslautern, Germany 🇩🇪",
   },
   {
     date: "September 2025",
@@ -464,7 +501,8 @@ const newsItemsEn = [
   },
   {
     date: "July 2025",
-    title: "Accepted work in ISWC 2025 (Note). Will be presented at Espoo, Finland 🇫🇮",
+    title: "Accepted work in ISWC 2025 (Note)",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "From Neck to Head: Bio-Impedance Sensing",
@@ -474,7 +512,8 @@ const newsItemsEn = [
   },
   {
     date: "June 2025",
-    title: "Accepted work in UbiComp 2025 (Poster). Will be presented at Espoo, Finland 🇫🇮",
+    title: "Accepted work in UbiComp 2025 (Poster)",
+    location: "Espoo, Finland 🇫🇮",
     links: [
       {
         text: "Push or Light: Nudging Standing",
@@ -484,7 +523,8 @@ const newsItemsEn = [
   },
   {
     date: "June 2025",
-    title: "Attending HCII 2025 in Gothenburg, Sweden 🇸🇪",
+    title: "Attending HCII 2025",
+    location: "Gothenburg, Sweden 🇸🇪",
     links: [
       {
         text: "SensPS: Sensing Personal Space Comfortable Distance Between Human-Human",
@@ -512,37 +552,41 @@ const newsItemsEn = [
   },
   {
     date: "May 2025",
-    title: "Attending ETRA 2025 in Tokyo, Japan 🇯🇵",
+    title: "Attending ETRA 2025",
+    location: "Tokyo, Japan 🇯🇵",
   },
   {
     date: "April 2025",
-    title: "Attend CHI 2025 in Yokohama, Japan 🇯🇵",
+    title: "Attend CHI 2025",
+    location: "Yokohama, Japan 🇯🇵",
   },
   {
     date: "April 2025",
     title: "Presenting work at ABC 2025 🇦🇪",
+    location: "Abu Dhabi, UAE 🇦🇪",
     links: [
       {
-        text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study (IJABC)",
-        url: "",
+        text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_48/_article/-char/ja/",
       },
       {
-        text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning (IJABC)",
-        url: "",
+        text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_46/_article/-char/ja/",
       },
     ],
   },
   {
     date: "March 2025",
     title: "Attended AHs 2025 presenting 1 full-paper and 1 demo-paper. Also, role as a demo chair 🇦🇪",
+    location: "Abu Dhabi, UAE 🇦🇪",
     links: [
       {
         text: "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks (Full Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/full/10.1145/3745900.3746066",
       },
       {
         text: "Augmenting Online Meetings with Context-Aware Real-time Music Generation (Demo Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3745900.3746116",
       },
     ],
   },
@@ -552,7 +596,7 @@ const newsItemsEn = [
     links: [
       {
         text: "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3715669.3723125",
       },
     ],
   },
@@ -561,12 +605,12 @@ const newsItemsEn = [
     title: "Accepted work in ABC 2025 (Journal Paper)",
     links: [
       {
-        text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study (IJABC)",
-        url: "",
+        text: "TrackThink Dashboard: Understanding Student Self-Regulated Learning in Programming Study",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_48/_article/-char/ja/",
       },
       {
-        text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning (IJABC)",
-        url: "",
+        text: "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning",
+        url: "https://www.jstage.jst.go.jp/article/ijabc/2025/1/2025_46/_article/-char/ja/",
       },
     ],
   },
@@ -576,7 +620,7 @@ const newsItemsEn = [
     links: [
       {
         text: "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/11092342/",
       },
     ],
   },
@@ -586,17 +630,18 @@ const newsItemsEn = [
     links: [
       {
         text: "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks (Full Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/full/10.1145/3745900.3746066",
       },
       {
         text: "Augmenting Online Meetings with Context-Aware Real-time Music Generation (Demo Paper)",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3745900.3746116",
       },
     ],
   },
   {
     date: "February 2025",
     title: "Attended ICAART 2025 🇵🇹",
+    location: "Porto,Portugal 🇵🇹",
     links: [
       {
         text: "Webcam-based Pupil Diameter Prediction Benefits from Upscaling",
@@ -610,7 +655,7 @@ const newsItemsEn = [
     links: [
       {
         text: "Img2Vocab: Explore Words Tied to Your Life with LLMs and Social Media Images",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10851279",
       },
     ],
   },
@@ -620,7 +665,7 @@ const newsItemsEn = [
     links: [
       {
         text: "Estimating Self-Confidence in Video-Based Learning Using Eye-Tracking and Deep Neural Networks",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10792912",
       },
     ],
   },
@@ -648,7 +693,7 @@ const newsItemsEn = [
     links: [
       {
         text: "Feature Estimation of Global Language Processing in EEG Using Attention Maps",
-        url: "",
+        url: "https://link.springer.com/chapter/10.1007/978-981-96-0901-7_6",
       },
     ],
   },
@@ -658,13 +703,14 @@ const newsItemsEn = [
     links: [
       {
         text: "Estimating Unknown English Words From User Smartphone Reading Behaviors",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10670436",
       },
     ],
   },
   {
     date: "August 2024",
-    title: "Presented work in EUSIPCO 2024 at Lyon, France 🇫🇷",
+    title: "Presented work in EUSIPCO 2024",
+    location: "Lyon, France 🇫🇷",
   },
   {
     date: "July 2024",
@@ -672,27 +718,29 @@ const newsItemsEn = [
     links: [
       {
         text: "Gaze Generation for Avatars using GANs",
-        url: "",
+        url: "https://ieeexplore.ieee.org/document/10601689/",
       },
     ],
   },
   {
     date: "July 2024",
-    title: "Accepted work in UbiComp' 24 presenting work at Melbourne, Australia 🇦🇺",
+    title: "Accepted work in UbiComp' 24",
+    location: "Melbourne, Australia 🇦🇺",
     links: [
       {
         text: "Comparing Web Browsing Behaviors with High and Low Information Literacy",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3675094.3677575",
       },
       {
         text: "Concentration Estimation in Online Video Lecture Using Multimodal Sensors",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3675094.3677587",
       },
     ],
   },
   {
     date: "May 2024",
-    title: "Accepted work in EUSIPCO 2024 presenting work at Lyon, France 🇫🇷",
+    title: "Accepted work in EUSIPCO 2024",
+    location: "Lyon, France 🇫🇷",
     links: [
       {
         text: "Edge-based Denoising Image Compression",
@@ -702,11 +750,12 @@ const newsItemsEn = [
   },
   {
     date: "April 2024",
-    title: "Presenting work at AHs 2024 in Melbourne, Australia 🇦🇺",
+    title: "Presenting work at AHs 2024",
+    location: "Melbourne, Australia 🇦🇺",
     links: [
       {
         text: "Metacognition-EnGauge: Real-time Augmentation of Self-and-Group Engagement Levels",
-        url: "",
+        url: "https://dl.acm.org/doi/abs/10.1145/3652920.3653054",
       },
     ],
   },
@@ -716,45 +765,50 @@ const newsItemsEn = [
   },
   {
     date: "March 2024",
-    title: "Accepted work in ETRA 2024 Short Paper presenting work at Glasgow, UK 🇬🇧",
+    title: "Accepted work in ETRA 2024 Short Paper",
+    location: "Glasgow, UK 🇬🇧",
     links: [
       {
         text: "Eye Movement in a Controlled Dialogue Setting",
-        url: "",
+        url: "https://dl.acm.org/doi/abs/10.1145/3649902.3653337",
       },
     ],
   },
   {
     date: "March 2024",
     title: "Attend NII Shonan-Meeting 🇯🇵",
+    location: "Shonan, Japan 🇯🇵",
     links: [
       {
         text: "The Future of Education with AI",
-        url: "",
+        url: "https://shonan.nii.ac.jp/seminars/214/",
       },
     ],
   },
   {
     date: "November 2023",
-    title: "Attend LeCycl Workshop in Deutsche Forschungsgemeinschaft (DFG) in Bonn 🇩🇪",
+    title: "Attend LeCycl Workshop in Deutsche Forschungsgemeinschaft (DFG)",
+    location: "Bonn, Germany 🇩🇪",
   },
   {
     date: "October 2023",
-    title: "Attend UbiComp 2023 in Cancun, Mexico 🇲🇽",
+    title: "Attend UbiComp 2023",
+    location: "Cancun, Mexico 🇲🇽",
     links: [
       {
         text: "Accelerating Knowledge Transfer by Sensing and Actuating Social-Cognitive States",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3594739.3610769",
       },
     ],
   },
   {
     date: "August 2023",
-    title: "Attend CHI 2023 in Hamburg, Germany 🇩🇪",
+    title: "Attend CHI 2023",
+    location: "Hamburg, Germany 🇩🇪",
     links: [
       {
         text: "Combining the Knowledge of Experienced Programmers to Extract Useful Web Resources",
-        url: "",
+        url: "https://dl.acm.org/doi/10.1145/3604571.3604575",
       },
     ],
   },
@@ -795,13 +849,23 @@ export function NewsSection() {
 
         <div className="space-y-4">
           {displayedItems.map((item, index) => (
-            <Card key={index} className="transition-shadow hover:shadow-md">
-              <CardContent className="p-6">
+            <Card
+              key={index}
+              className="transition-shadow hover:shadow-md"
+            >
+              <CardContent className="relative p-6">
+                {(item as { location?: string }).location && (
+                  <div className="absolute right-4 top-4 z-10">
+                    <Badge variant="outline" className="text-xs">
+                      {(item as { location?: string }).location}
+                    </Badge>
+                  </div>
+                )}
                 <div className="flex flex-col gap-4 md:flex-row md:items-start">
                   <Badge variant="secondary" className="w-fit shrink-0">
                     {item.date}
                   </Badge>
-                  <div className="flex-1">
+                  <div className="flex-1 pr-20">
                     <p className="mb-2 text-base leading-relaxed text-foreground">{item.title}</p>
                     {item.links && (
                       <ul className="space-y-1">
