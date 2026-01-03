@@ -824,17 +824,24 @@ export function NewsSection() {
 
   const displayedItems = newsItems.slice(0, displayCount)
   const hasMore = displayCount < newsItems.length
+  const canShowLess = displayCount > INITIAL_DISPLAY_COUNT
 
   const handleLoadMore = () => {
     setDisplayCount(prev => Math.min(prev + LOAD_MORE_COUNT, newsItems.length))
   }
 
+  const handleShowLess = () => {
+    setDisplayCount(prev => Math.max(prev - 3, INITIAL_DISPLAY_COUNT))
+  }
+
   const content = {
     ja: {
       showMore: "もっと見る",
+      showLess: "閉じる",
     },
     en: {
       showMore: "Show More",
+      showLess: "Show Less",
     },
   }
 
@@ -894,16 +901,28 @@ export function NewsSection() {
           ))}
         </div>
 
-        {hasMore && (
-          <div className="mt-8 text-center">
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={handleLoadMore}
-              className="gap-2"
-            >
-              {texts.showMore}
-            </Button>
+        {(hasMore || canShowLess) && (
+          <div className="mt-8 flex justify-center gap-2">
+            {hasMore && (
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={handleLoadMore}
+                className="gap-2"
+              >
+                {texts.showMore}
+              </Button>
+            )}
+            {canShowLess && (
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={handleShowLess}
+                className="gap-2"
+              >
+                {texts.showLess}
+              </Button>
+            )}
           </div>
         )}
       </div>

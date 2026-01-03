@@ -122,3 +122,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes bubble-up {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100vh);
+  }
+}

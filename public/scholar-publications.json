@@ -14,7 +14,7 @@
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
     "year": "2021",
-    "citations": 26,
+    "citations": 27,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null
@@ -215,6 +215,17 @@
     "bibtex": null
   },
   {
+    "title": "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
+    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
+    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference, 13031 …",
+    "year": "2025",
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
+    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
+    "dateOrder": 17,
+    "bibtex": null
+  },
+  {
     "title": "EyeUnderstand: Dashboard for Gaze and Deep-Learning Driven Comprehension Estimation in Online Lectures",
     "authors": "K Watanabe, G Gund, J Santhosh, H Sakagami, Y Matsuda, A Dengel, ...",
     "venue": "IEEE Access",
@@ -226,14 +237,14 @@
     "bibtex": null
   },
   {
-    "title": "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
-    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
-    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference, 13031 …",
+    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
+    "authors": "K Watanabe, N Förster, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 257–270",
     "year": "2025",
     "citations": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "dateOrder": 17,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "dateOrder": 11,
     "bibtex": null
   },
   {
@@ -256,17 +267,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
     "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
     "dateOrder": 10,
-    "bibtex": null
-  },
-  {
-    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
-    "authors": "K Watanabe, N Förster, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 257–270",
-    "year": "2025",
-    "citations": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "dateOrder": 11,
     "bibtex": null
   },
   {

@@ -2,6 +2,7 @@
 
 import { Github, Linkedin, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { LocationBadge } from "@/components/location-badge"
 import { LanguageSwitcher } from "@/components/language-switcher"
@@ -9,7 +10,7 @@ import { useLanguage } from "@/contexts/language-context"
 
 const content = {
   ja: {
-    description: "ドイツ・カイザースラウテルンを拠点とする信頼できるAI＆HCI研究者です。AIプロダクトの実装全体を専門としており、アイデアやデザインから機械学習機能の生成、ウェブクラウドを使用したソフトウェア開発、モデル実装、そしてサービス展開後の改善まで携わっています。また、AIの説明可能性や公平性などの信頼できるAIにも関心があります。",
+    description: "ドイツ・カイザースラウテルンを拠点とする信頼できるAI＆HCI研究者です。\nAIプロダクトの実装全体を専門としており、アイデアやデザインから機械学習機能の生成、ウェブクラウドを使用したソフトウェア開発、モデル実装、そしてサービス展開後の改善まで携わっています。また、AIの説明可能性や公平性などの信頼できるAIにも関心があります。",
     scholarLink: "https://scholar.google.com/citations?user=AluAUmEAAAAJ&hl=ja",
   },
   en: {
@@ -40,7 +41,16 @@ export function HeroSection() {
           </div>
         </div>
 
-        <h1 className="mb-6 text-balance font-serif text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl">
+        <h1 className="relative mb-6 inline-block text-balance font-serif text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+          <div className="absolute left-0 top-0 -translate-y-full">
+            <Badge
+              variant="secondary"
+              className="absolute -left-24 -top-4 text-base px-2 py-0.5 w-auto min-w-0 md:text-lg md:px-3 md:py-1 md:min-w-0 lg:text-xl lg:px-4 lg:py-1 lg:min-w-0 whitespace-nowrap"
+              style={{ left: '-6rem', top: '-2rem' }}
+            >
+              Dr.-Ing
+            </Badge>
+          </div>
           Ko Watanabe
         </h1>
 
@@ -93,7 +103,7 @@ export function HeroSection() {
         </div>
 
         <div className="mx-auto max-w-3xl">
-          <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="text-pretty text-lg leading-relaxed text-muted-foreground whitespace-pre-line">
             {texts.description}
           </p>
         </div>
