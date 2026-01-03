@@ -41,33 +41,33 @@ export function HeroSection() {
           </div>
         </div>
 
-        <h1 className="relative mb-6 inline-block text-balance font-serif text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-          <div className="absolute left-0 top-0 -translate-y-full">
+        <div className="flex justify-center">
+          <h1 className="relative mb-2 md:mb-6 inline-block text-balance font-serif text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl ml-2 md:ml-4">
             <Badge
               variant="secondary"
-              className="absolute -left-24 -top-4 text-base px-2 py-0.5 w-auto min-w-0 md:text-lg md:px-3 md:py-1 md:min-w-0 lg:text-xl lg:px-4 lg:py-1 lg:min-w-0 whitespace-nowrap"
-              style={{ left: '-6rem', top: '-2rem' }}
+              className="absolute -left-15 -top-8 text-base px-2 py-0.5 w-auto min-w-0 md:left-0 md:-left-24 md:-top-4 md:text-lg md:px-3 md:py-1 md:min-w-0 lg:text-xl lg:px-4 lg:py-1 lg:min-w-0 whitespace-nowrap"
             >
               Dr.-Ing
             </Badge>
-          </div>
-          Ko Watanabe
-        </h1>
+            Ko Watanabe
+          </h1>
+        </div>
 
         <p className="mb-4 text-xl text-foreground md:text-2xl">Trustworthy AI & HCI Researcher</p>
 
         <p className="mb-8 text-lg text-muted-foreground md:text-xl">
-          German Research Center for Artificial Intelligence (DFKI)
+          <span className="md:hidden">DFKI GmbH</span>
+          <span className="hidden md:inline">German Research Center for Artificial Intelligence (DFKI)</span>
         </p>
 
-        <div className="mb-12 flex flex-wrap justify-center gap-3">
-          <Button variant="outline" size="lg" asChild>
+        <div className="mb-12 grid grid-cols-2 gap-3 justify-center max-w-md mx-auto md:flex md:flex-nowrap md:justify-center md:max-w-none md:gap-3">
+          <Button variant="outline" size="lg" asChild className="w-full md:w-auto">
             <a href="https://github.com/ko-watanabe" target="_blank" rel="noopener noreferrer" className="gap-2">
               <Github className="h-5 w-5" />
               GitHub
             </a>
           </Button>
-          <Button variant="outline" size="lg" asChild>
+          <Button variant="outline" size="lg" asChild className="w-full md:w-auto">
             <a
               href="https://www.linkedin.com/in/ko-watanabe/"
               target="_blank"
@@ -78,7 +78,7 @@ export function HeroSection() {
               LinkedIn
             </a>
           </Button>
-          <Button variant="outline" size="lg" asChild>
+          <Button variant="outline" size="lg" asChild className="w-full md:w-auto">
             <a
               href={texts.scholarLink}
               target="_blank"
@@ -89,7 +89,7 @@ export function HeroSection() {
               Google Scholar
             </a>
           </Button>
-          <Button variant="outline" size="lg" asChild>
+          <Button variant="outline" size="lg" asChild className="w-full md:w-auto">
             <a
               href="https://www.researchgate.net/profile/Ko-Watanabe-3"
               target="_blank"
