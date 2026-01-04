@@ -5,7 +5,6 @@ import { NewsSection } from "@/components/news-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { PublicationsSection } from "@/components/publications-section"
 import { ContactSection } from "@/components/contact-section"
-import { PositiveWordDisplay } from "@/components/positive-word-display"
 
 export default function HomePage() {
   return (
@@ -17,7 +16,6 @@ export default function HomePage() {
       <ExperienceSection />
       <PublicationsSection />
       <ContactSection />
-      <PositiveWordDisplay />
     </main>
   )
 }

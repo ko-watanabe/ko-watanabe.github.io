@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from "react"
-import { Award, Users, FileText, ExternalLink } from "lucide-react"
+import { useState, useMemo } from "react"
+import { Award, Users, FileText, ExternalLink, CheckCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
@@ -105,14 +105,188 @@ const committees = [
   },
 ]
 
+const reviews = [
+  {
+    name: "AHs'26",
+    count: 4,
+    url: "https://www.augmented-humans.org",
+    type: "conference",
+  },
+  {
+    name: "IMWUT",
+    count: 1,
+    url: "https://dl.acm.org/journal/imwut",
+    type: "journal",
+  },
+  {
+    name: "IUI'26",
+    count: 4,
+    url: "https://iui.acm.org/2026/",
+    type: "conference",
+  },
+  {
+    name: "CHI'26",
+    count: 5,
+    url: "https://chi2026.acm.org/",
+    type: "conference",
+  },
+  {
+    name: "Discover Artificial Intelligence",
+    count: 3,
+    url: "https://link.springer.com/journal/44163",
+    type: "journal",
+  },
+  {
+    name: "ML4H",
+    count: 4,
+    url: "https://ahli.cc/ml4h/",
+    type: "conference",
+  },
+  {
+    name: "MUM",
+    count: 5,
+    url: "https://dl.acm.org/doi/proceedings/10.1145/3771882",
+    type: "conference",
+  },
+  {
+    name: "npj Artificial Intelligence",
+    count: 1,
+    url: "https://www.nature.com/npjai/",
+    type: "journal",
+  },
+  {
+    name: "BMC Medical Education",
+    count: 1,
+    url: "https://link.springer.com/journal/12909",
+    type: "journal",
+  },
+  {
+    name: "Cognitive Neurodynamics",
+    count: 1,
+    url: "https://link.springer.com/journal/11571",
+    type: "journal",
+  },
+  {
+    name: "SiPS",
+    count: 1,
+    url: "https://signalprocessingsociety.org/blog/sips-2025-2025-ieee-international-workshop-signal-processing-systems",
+    type: "conference",
+  },
+  {
+    name: "ICMU",
+    count: 3,
+    url: "https://www.icmu.org/icmu2025/",
+    type: "conference",
+  },
+  {
+    name: "ISWC Notes and Briefs",
+    count: 8,
+    url: "https://www.ubicomp.org/ubicomp-iswc-2025/iswc-notes-and-briefs/",
+    type: "conference",
+  },
+  {
+    name: "CAVW",
+    count: 1,
+    url: "https://onlinelibrary.wiley.com/journal/1546427X",
+    type: "conference",
+  },
+  {
+    name: "DIS'25",
+    count: 2,
+    url: "https://dis.acm.org/2025/",
+    type: "conference",
+  },
+  {
+    name: "IDC'25",
+    count: 1,
+    url: "https://idc.acm.org/2025/full-and-short/",
+    type: "conference",
+  },
+  {
+    name: "ETRA'25",
+    count: 3,
+    url: "https://etra.acm.org/2025/",
+    type: "conference",
+  },
+  {
+    name: "CHI'25",
+    count: 13,
+    url: "https://chi2025.acm.org/",
+    type: "conference",
+  },
+  {
+    name: "Decision Support System",
+    count: 1,
+    url: "https://www.sciencedirect.com/journal/decision-support-systems",
+    type: "journal",
+  },
+  {
+    name: "Springer Nature -Scientific Reports",
+    count: 3,
+    url: "https://www.nature.com/srep/",
+    type: "journal",
+  },
+  {
+    name: "Springer Nature - Quality & Quantity",
+    count: 1,
+    url: "https://link.springer.com/journal/11135/submission-guidelines",
+    type: "journal",
+  },
+  {
+    name: "IUI'25",
+    count: 3,
+    url: "https://iui.acm.org/2025/",
+    type: "conference",
+  },
+  {
+    name: "IEEE Transactions on Human-Machine Systems",
+    count: 1,
+    url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221037",
+    type: "journal",
+  },
+  {
+    name: "SMARTCOMP'24",
+    count: 3,
+    url: "https://smartcomp.w.waseda.jp/",
+    type: "conference",
+  },
+  {
+    name: "CHI' 24",
+    count: 1,
+    url: "https://dl.acm.org/doi/proceedings/10.1145/3613904",
+    type: "conference",
+  },
+  {
+    name: "AHs' 24",
+    count: 2,
+    url: "https://dl.acm.org/doi/proceedings/10.1145/3652920",
+    type: "conference",
+  },
+  {
+    name: "AHs' 23",
+    count: 2,
+    url: "https://dl.acm.org/doi/proceedings/10.1145/3582700",
+    type: "conference",
+  },
+  {
+    name: "International Journal of Dynamics and Control",
+    count: 1,
+    url: "https://link.springer.com/journal/40435",
+    type: "journal",
+  },
+]
+
 const content = {
   ja: {
-    title: "Awards & Activities",
+    title: "受賞・活動一覧",
     awardsTitle: "受賞",
     fundingTitle: "研究助成金・奨学金",
     committeesTitle: "学会運営・委員会",
-    view: "View",
-    awardDetail: "Award Detail",
+    reviewsTitle: "査読リスト",
+    conferenceTitle: "国際会議",
+    journalTitle: "学術誌",
+    view: "詳細",
+    awardDetail: "受賞詳細",
     showMore: "もっと見る",
     showLess: "閉じる",
   },
@@ -121,6 +295,9 @@ const content = {
     awardsTitle: "Awards",
     fundingTitle: "Fundings",
     committeesTitle: "Committee Activities",
+    reviewsTitle: "Reviews",
+    conferenceTitle: "Conference",
+    journalTitle: "Journal",
     view: "View",
     awardDetail: "Award Detail",
     showMore: "Show More",
@@ -159,6 +336,36 @@ export function PublicationsSection() {
   const handleShowLessFunding = () => {
     setVisibleFundingCount(prev => Math.max(prev - 3, 3))
   }
+
+  // ConferenceとJournalに分けてソート
+  const { sortedConferences, sortedJournals } = useMemo(() => {
+    const conferences = reviews.filter(r => r.type === 'conference')
+    const journals = reviews.filter(r => r.type === 'journal')
+
+    // Conference: 年+アルファベット順（年は降順、同じ年ならアルファベット順）
+    const sortedConferences = conferences.sort((a, b) => {
+      // 年を抽出（'26, '25, '24, '23など、または' 24, ' 23など）
+      const yearMatchA = a.name.match(/'\s*(\d{2})/)?.[1]
+      const yearMatchB = b.name.match(/'\s*(\d{2})/)?.[1]
+      const yearA = yearMatchA || '00'
+      const yearB = yearMatchB || '00'
+
+      // 年で降順ソート
+      if (yearA !== yearB) {
+        return yearB.localeCompare(yearA)
+      }
+
+      // 同じ年ならアルファベット順
+      return a.name.localeCompare(b.name)
+    })
+
+    // Journal: アルファベット順
+    const sortedJournals = journals.sort((a, b) => {
+      return a.name.localeCompare(b.name)
+    })
+
+    return { sortedConferences, sortedJournals }
+  }, [])
 
   return (
     <section className="bg-muted/30 px-4 py-20" id="publications">
@@ -363,6 +570,79 @@ export function PublicationsSection() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
+                  <CheckCircle className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-bold">{texts.reviewsTitle}</h3>
+              </div>
+
+              <div className="space-y-6">
+                {/* Conference */}
+                <div>
+                  <h4 className="mb-3 text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                    {texts.conferenceTitle}
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {sortedConferences.map((review, index) => {
+                      const displayText = review.count !== null ? `${review.name} (${review.count})` : review.name
+                      return review.url ? (
+                        <a
+                          key={index}
+                          href={review.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                        >
+                          {displayText}
+                        </a>
+                      ) : (
+                        <span
+                          key={index}
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+                        >
+                          {displayText}
+                        </span>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                {/* Journal */}
+                <div>
+                  <h4 className="mb-3 text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                    {texts.journalTitle}
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {sortedJournals.map((review, index) => {
+                      const displayText = review.count !== null ? `${review.name} (${review.count})` : review.name
+                      return review.url ? (
+                        <a
+                          key={index}
+                          href={review.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                        >
+                          {displayText}
+                        </a>
+                      ) : (
+                        <span
+                          key={index}
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+                        >
+                          {displayText}
+                        </span>
+                      )
+                    })}
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
