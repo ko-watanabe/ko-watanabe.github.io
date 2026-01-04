@@ -44,7 +44,7 @@
     "authors": "S Ishimaru, N Großmann, A Dengel, K Watanabe, Y Arakawa, C Heisel, ...",
     "venue": "Proceedings of the 2018 ACM International Joint Conference and 2018 …",
     "year": "2018",
-    "citations": 16,
+    "citations": 17,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
     "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
     "bibtex": null
@@ -54,7 +54,7 @@
     "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
     "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
     "year": "2022",
-    "citations": 13,
+    "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
     "bibtex": null
@@ -281,6 +281,17 @@
     "bibtex": null
   },
   {
+    "title": "Comparing Web Browsing Behaviors with High and Low Information Literacy: A Case Study for Fact Check Against GPT Generated Fake News",
+    "authors": "K Watanabe, S Tanaka, A Vargo, K Kise, A Dengel",
+    "venue": "Companion of the 2024 on ACM International Joint Conference on Pervasive and …",
+    "year": "2024",
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hC7cP41nSMkC",
+    "citationForView": "AluAUmEAAAAJ:hC7cP41nSMkC",
+    "dateOrder": 19,
+    "bibtex": null
+  },
+  {
     "title": "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
     "authors": "N Kushina, K Watanabe, A Kannan, A Ashok, A Dengel, K Berns",
     "venue": "arXiv preprint arXiv:2512.08518",
@@ -366,17 +377,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:4JMBOYKVnBMC",
     "citationForView": "AluAUmEAAAAJ:4JMBOYKVnBMC",
     "dateOrder": 15,
-    "bibtex": null
-  },
-  {
-    "title": "Comparing Web Browsing Behaviors with High and Low Information Literacy: A Case Study for Fact Check Against GPT Generated Fake News",
-    "authors": "K Watanabe, S Tanaka, A Vargo, K Kise, A Dengel",
-    "venue": "Companion of the 2024 on ACM International Joint Conference on Pervasive and …",
-    "year": "2024",
-    "citations": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hC7cP41nSMkC",
-    "citationForView": "AluAUmEAAAAJ:hC7cP41nSMkC",
-    "dateOrder": 19,
     "bibtex": null
   }
 ]

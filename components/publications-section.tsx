@@ -68,6 +68,12 @@ const committees = [
     image: "/committee/ahs2026.png",
   },
   {
+    organization: "MUM 2025",
+    role: "Program Committee",
+    url: "https://www.mum-conf.org/2025/index.php?web=committee",
+    image: "/committee/mum2025.png",
+  },
+  {
     organization: "ISWC 2025",
     role: "Program Committee",
     url: "https://www.ubicomp.org/ubicomp-iswc-2025/organizing-committee/iswc-program-committee/",
