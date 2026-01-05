@@ -59,13 +59,19 @@ const committees = [
     organization: "IUI 2026",
     role: "Program Committee",
     url: "https://iui.acm.org/2026/",
-    image: "/committee/iui2026.jpg",
+    image: "/committee/iui2026.png",
   },
   {
     organization: "Augmented Humans 2026",
     role: "Demo & Poster Chair",
     url: "https://www.augmented-humans.org/",
     image: "/committee/ahs2026.png",
+  },
+  {
+    organization: "IUI 2025",
+    role: "Program Committee",
+    url: "https://iui.acm.org/2025/reviewers.html",
+    image: "/committee/iui2025.png",
   },
   {
     organization: "MUM 2025",
