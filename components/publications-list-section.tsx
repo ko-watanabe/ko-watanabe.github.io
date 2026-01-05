@@ -170,8 +170,8 @@ export function PublicationsListSection() {
                             pub.title
                           )}
                         </h4>
-                        <p className="mb-1 text-xs text-muted-foreground line-clamp-2">{pub.authors}</p>
-                        <p className="mb-2 text-xs text-muted-foreground line-clamp-2">
+                        <p className="mb-1 text-xs text-muted-foreground truncate" title={pub.authors}>{pub.authors}</p>
+                        <p className="mb-2 text-xs text-muted-foreground truncate" title={`${pub.venue} (${pub.year})`}>
                           {pub.venue} ({pub.year})
                         </p>
                         <div className="mt-auto flex items-center gap-2">
@@ -225,8 +225,8 @@ export function PublicationsListSection() {
                             pub.title
                           )}
                         </h4>
-                        <p className="mb-1 text-xs text-muted-foreground line-clamp-2">{pub.authors}</p>
-                        <p className="mb-2 text-xs text-muted-foreground line-clamp-2">
+                        <p className="mb-1 text-xs text-muted-foreground truncate" title={pub.authors}>{pub.authors}</p>
+                        <p className="mb-2 text-xs text-muted-foreground truncate" title={`${pub.venue} (${pub.year})`}>
                           {pub.venue} ({pub.year})
                         </p>
                         {pub.url && (
