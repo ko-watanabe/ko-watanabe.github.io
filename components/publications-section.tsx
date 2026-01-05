@@ -137,13 +137,13 @@ const reviews = [
     type: "journal",
   },
   {
-    name: "ML4H",
+    name: "ML4H'25",
     count: 4,
     url: "https://ahli.cc/ml4h/",
     type: "conference",
   },
   {
-    name: "MUM",
+    name: "MUM'25",
     count: 5,
     url: "https://dl.acm.org/doi/proceedings/10.1145/3771882",
     type: "conference",
@@ -167,19 +167,19 @@ const reviews = [
     type: "journal",
   },
   {
-    name: "SiPS",
+    name: "SiPS'25",
     count: 1,
     url: "https://signalprocessingsociety.org/blog/sips-2025-2025-ieee-international-workshop-signal-processing-systems",
     type: "conference",
   },
   {
-    name: "ICMU",
+    name: "ICMU'25",
     count: 3,
     url: "https://www.icmu.org/icmu2025/",
     type: "conference",
   },
   {
-    name: "ISWC Notes and Briefs",
+    name: "ISWC'25",
     count: 8,
     url: "https://www.ubicomp.org/ubicomp-iswc-2025/iswc-notes-and-briefs/",
     type: "conference",
@@ -188,7 +188,7 @@ const reviews = [
     name: "CAVW",
     count: 1,
     url: "https://onlinelibrary.wiley.com/journal/1546427X",
-    type: "conference",
+    type: "journal",
   },
   {
     name: "DIS'25",
