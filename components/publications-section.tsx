@@ -374,45 +374,46 @@ export function PublicationsSection() {
   }, [])
 
   return (
-    <section className="bg-muted/30 px-4 py-20" id="publications">
-      <div className="container mx-auto max-w-5xl">
+    <section className="bg-muted/30 py-20 overflow-x-hidden" id="publications">
+      <div className="container mx-auto max-w-4xl w-full px-4 md:px-6 overflow-hidden">
         <h2 className="mb-16 text-balance text-center font-serif text-4xl font-bold tracking-tight md:text-5xl">
           {texts.title}
         </h2>
 
-        <div className="space-y-8">
-          <div className="grid gap-12 md:grid-cols-2 md:items-start">
-            <div>
+        <div className="space-y-8 w-full min-w-0">
+          <div className="grid gap-6 md:gap-12 md:grid-cols-2 md:items-start w-full min-w-0 grid-cols-1">
+            <div className="w-full min-w-0">
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
                   <Award className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-bold">{texts.awardsTitle}</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 w-full min-w-0">
                 {displayedAwards.map((award, index) => (
-                  <Card key={index}>
-                    <CardContent className="p-6">
+                  <Card key={index} className="w-full max-w-full overflow-hidden box-border min-w-0">
+                    <CardContent className="p-4 md:p-6">
                       <div className="flex items-start justify-between gap-3">
-                        <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-foreground">
+                        <div className="flex-1 min-w-0 overflow-hidden">
+                          <p className="font-semibold text-foreground break-words overflow-wrap-anywhere">
                             {award.icon} {award.title}
                           </p>
-                          <p className="text-sm text-muted-foreground">{award.event}</p>
-                          <div className="mt-2 flex gap-2">
+                          <p className="text-sm text-muted-foreground break-words overflow-wrap-anywhere">{award.event}</p>
+                          <div className="mt-2 flex gap-2 flex-wrap w-full">
                             {award.url && (
                               <Button
                                 variant="outline"
                                 size="sm"
                                 asChild
-                                className="h-7 text-xs"
+                                className="h-7 text-xs flex-shrink-0"
                               >
                                 <a
                                   href={award.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
+                                  className="whitespace-nowrap"
                                 >
-                                  <ExternalLink className="h-3 w-3 mr-1" />
+                                  <ExternalLink className="h-3 w-3 mr-1 flex-shrink-0" />
                                   {texts.view}
                                 </a>
                               </Button>
@@ -422,14 +423,15 @@ export function PublicationsSection() {
                                 variant="outline"
                                 size="sm"
                                 asChild
-                                className="h-7 text-xs"
+                                className="h-7 text-xs flex-shrink-0"
                               >
                                 <a
                                   href={award.awardDetailUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
+                                  className="whitespace-nowrap"
                                 >
-                                  <ExternalLink className="h-3 w-3 mr-1" />
+                                  <ExternalLink className="h-3 w-3 mr-1 flex-shrink-0" />
                                   {texts.awardDetail}
                                 </a>
                               </Button>
@@ -476,22 +478,22 @@ export function PublicationsSection() {
               </div>
             </div>
 
-            <div>
+            <div className="w-full min-w-0">
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
                   <FileText className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-bold">{texts.fundingTitle}</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 w-full min-w-0">
                 {displayedFunding.map((fund, index) => (
-                  <Card key={index}>
-                    <CardContent className="p-6">
-                      <div className="flex items-start justify-between gap-2">
-                        <p className="font-semibold text-foreground">{fund.title}</p>
-                        <span className="shrink-0 text-sm font-bold text-secondary">{fund.amount}</span>
+                  <Card key={index} className="w-full max-w-full overflow-hidden box-border min-w-0">
+                    <CardContent className="p-4 md:p-6">
+                      <div className="flex items-start justify-between gap-2 flex-wrap">
+                        <p className="font-semibold text-foreground flex-1 min-w-0 break-words overflow-wrap-anywhere">{fund.title}</p>
+                        <span className="shrink-0 text-sm font-bold text-secondary whitespace-nowrap">{fund.amount}</span>
                       </div>
-                      <p className="text-sm text-muted-foreground">{fund.description}</p>
+                      <p className="text-sm text-muted-foreground break-words overflow-wrap-anywhere">{fund.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -521,22 +523,22 @@ export function PublicationsSection() {
             </div>
           </div>
 
-          <Card>
-            <CardContent className="p-6">
+          <Card className="w-full max-w-full overflow-hidden box-border min-w-0">
+            <CardContent className="p-4 md:p-6">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
                   <Users className="h-5 w-5" />
                 </div>
                 <h3 className="text-xl font-bold">{texts.committeesTitle}</h3>
               </div>
-              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full min-w-0">
                 {committees.map((committee, index) => (
                   <div
                     key={index}
-                    className="relative rounded-md border border-border bg-background p-3 text-sm"
+                    className="relative w-full max-w-full rounded-md border border-border bg-background p-3 text-sm overflow-hidden min-w-0"
                   >
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between gap-3 min-w-0">
+                      <div className="flex-1 min-w-0 overflow-hidden">
                         {committee.url ? (
                           <a
                             href={committee.url}
@@ -544,19 +546,19 @@ export function PublicationsSection() {
                             rel="noopener noreferrer"
                             className="block hover:text-secondary"
                           >
-                            <p className="font-semibold text-foreground hover:underline">
+                            <p className="font-semibold text-foreground hover:underline break-words overflow-wrap-anywhere">
                               {committee.organization}
                             </p>
-                            <p className="mt-1 text-muted-foreground">
+                            <p className="mt-1 text-muted-foreground break-words overflow-wrap-anywhere">
                               {committee.role}
                             </p>
                           </a>
                         ) : (
                           <>
-                            <p className="font-semibold text-foreground">
+                            <p className="font-semibold text-foreground break-words overflow-wrap-anywhere">
                               {committee.organization}
                             </p>
-                            <p className="mt-1 text-muted-foreground">
+                            <p className="mt-1 text-muted-foreground break-words overflow-wrap-anywhere">
                               {committee.role}
                             </p>
                           </>
@@ -580,8 +582,8 @@ export function PublicationsSection() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardContent className="p-6">
+          <Card className="w-full max-w-full overflow-hidden box-border min-w-0">
+            <CardContent className="p-4 md:p-6">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
                   <CheckCircle className="h-5 w-5" />
@@ -589,13 +591,13 @@ export function PublicationsSection() {
                 <h3 className="text-xl font-bold">{texts.reviewsTitle}</h3>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-6 min-w-0 w-full">
                 {/* Conference */}
-                <div>
+                <div className="min-w-0 w-full">
                   <h4 className="mb-3 text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {texts.conferenceTitle}
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 w-full">
                     {sortedConferences.map((review, index) => {
                       const displayText = review.count !== null ? `${review.name} (${review.count})` : review.name
                       return review.url ? (
@@ -604,16 +606,16 @@ export function PublicationsSection() {
                           href={review.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors whitespace-nowrap max-w-full"
                         >
-                          {displayText}
+                          <span className="truncate">{displayText}</span>
                         </a>
                       ) : (
                         <span
                           key={index}
-                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm whitespace-nowrap max-w-full"
                         >
-                          {displayText}
+                          <span className="truncate">{displayText}</span>
                         </span>
                       )
                     })}
@@ -621,11 +623,11 @@ export function PublicationsSection() {
                 </div>
 
                 {/* Journal */}
-                <div>
+                <div className="min-w-0 w-full">
                   <h4 className="mb-3 text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {texts.journalTitle}
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 w-full">
                     {sortedJournals.map((review, index) => {
                       const displayText = review.count !== null ? `${review.name} (${review.count})` : review.name
                       return review.url ? (
@@ -634,16 +636,16 @@ export function PublicationsSection() {
                           href={review.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground transition-colors whitespace-nowrap max-w-full"
                         >
-                          {displayText}
+                          <span className="truncate">{displayText}</span>
                         </a>
                       ) : (
                         <span
                           key={index}
-                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+                          className="inline-flex items-center rounded-md border border-border bg-background px-3 py-1.5 text-sm whitespace-nowrap max-w-full"
                         >
-                          {displayText}
+                          <span className="truncate">{displayText}</span>
                         </span>
                       )
                     })}

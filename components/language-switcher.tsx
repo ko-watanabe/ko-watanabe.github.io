@@ -28,13 +28,13 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex gap-2">
-      <div className="flex gap-2 rounded-none border border-border bg-card p-1 shadow-lg">
+    <div className="fixed top-2 right-2 z-50 flex gap-1.5 md:top-4 md:right-4 md:gap-2">
+      <div className="flex gap-1 rounded-none border border-border bg-card p-0.5 shadow-lg md:gap-2 md:p-1">
         <Button
           variant={language === 'ja' ? 'default' : 'ghost'}
           size="sm"
           onClick={toggleLanguage}
-          className="rounded-none px-3 py-1 text-xs"
+          className="rounded-none px-2 py-1 text-xs md:px-3"
         >
           JP
         </Button>
@@ -42,7 +42,7 @@ export function LanguageSwitcher() {
           variant={language === 'en' ? 'default' : 'ghost'}
           size="sm"
           onClick={toggleLanguage}
-          className="rounded-none px-3 py-1 text-xs"
+          className="rounded-none px-2 py-1 text-xs md:px-3"
         >
           EN
         </Button>
@@ -51,12 +51,12 @@ export function LanguageSwitcher() {
         variant="outline"
         size="sm"
         onClick={toggleTheme}
-        className="rounded-none border border-border bg-card px-3 py-1 shadow-lg"
+        className="rounded-none border border-border bg-card px-2 py-1 shadow-lg md:px-3"
       >
         {theme === 'dark' ? (
-          <Sun className="h-4 w-4" />
+          <Sun className="h-3.5 w-3.5 md:h-4 md:w-4" />
         ) : (
-          <Moon className="h-4 w-4" />
+          <Moon className="h-3.5 w-3.5 md:h-4 md:w-4" />
         )}
       </Button>
     </div>

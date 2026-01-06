@@ -115,8 +115,8 @@ export function PublicationsListSection() {
     : 'https://scholar.google.com/citations?user=AluAUmEAAAAJ&hl=en'
 
   return (
-    <section className="px-4 py-20" id="publications-list">
-      <div className="container mx-auto max-w-5xl">
+    <section className="py-20 overflow-x-hidden" id="publications-list">
+      <div className="container mx-auto max-w-5xl px-4 md:px-6 overflow-hidden">
         <h2 className="mb-12 text-balance text-center font-serif text-4xl font-bold tracking-tight md:text-5xl">
           {texts.title}
         </h2>
@@ -146,17 +146,17 @@ export function PublicationsListSection() {
           </div>
         ) : (
           <>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full min-w-0">
               {/* 左カラム: 引用数上位 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col w-full min-w-0">
                 <h3 className="mb-4 text-xl font-semibold text-foreground">
                   {texts.mostCited}
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-4 w-full min-w-0">
                   {mostCitedPublications.map((pub, index) => (
-                    <Card key={`cited-${index}`} className="transition-shadow hover:shadow-md">
+                    <Card key={`cited-${index}`} className="transition-shadow hover:shadow-md w-full max-w-full overflow-hidden min-w-0">
                       <CardContent className="p-4 flex flex-col min-h-[180px]">
-                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem]">
+                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem] break-words overflow-wrap-anywhere">
                           {pub.url ? (
                             <a
                               href={pub.url}
@@ -170,12 +170,12 @@ export function PublicationsListSection() {
                             pub.title
                           )}
                         </h4>
-                        <p className="mb-1 text-xs text-muted-foreground truncate" title={pub.authors}>{pub.authors}</p>
-                        <p className="mb-2 text-xs text-muted-foreground truncate" title={`${pub.venue} (${pub.year})`}>
+                        <p className="mb-1 text-xs text-muted-foreground truncate w-full" title={pub.authors}>{pub.authors}</p>
+                        <p className="mb-2 text-xs text-muted-foreground truncate w-full" title={`${pub.venue} (${pub.year})`}>
                           {pub.venue} ({pub.year})
                         </p>
-                        <div className="mt-auto flex items-center gap-2">
-                          <Badge variant="secondary" className="text-xs w-fit">
+                        <div className="mt-auto flex items-center gap-2 flex-wrap w-full">
+                          <Badge variant="secondary" className="text-xs w-fit flex-shrink-0 whitespace-nowrap">
                             {texts.citations}: {pub.citations}
                           </Badge>
                           {pub.url && (
@@ -183,14 +183,15 @@ export function PublicationsListSection() {
                               variant="outline"
                               size="sm"
                               asChild
-                              className="h-7 text-xs"
+                              className="h-7 text-xs flex-shrink-0"
                             >
                               <a
                                 href={pub.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="whitespace-nowrap"
                               >
-                                <ExternalLink className="h-3 w-3 mr-1" />
+                                <ExternalLink className="h-3 w-3 mr-1 flex-shrink-0" />
                                 View
                               </a>
                             </Button>
@@ -203,15 +204,15 @@ export function PublicationsListSection() {
               </div>
 
               {/* 右カラム: 最新論文 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col w-full min-w-0">
                 <h3 className="mb-4 text-xl font-semibold text-foreground">
                   {texts.latest}
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-4 w-full min-w-0">
                   {latestPublications.map((pub, index) => (
-                    <Card key={`latest-${index}`} className="transition-shadow hover:shadow-md">
+                    <Card key={`latest-${index}`} className="transition-shadow hover:shadow-md w-full max-w-full overflow-hidden min-w-0">
                       <CardContent className="p-4 flex flex-col min-h-[180px]">
-                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem]">
+                        <h4 className="mb-2 text-base font-semibold text-foreground line-clamp-3 min-h-[4.5rem] break-words overflow-wrap-anywhere">
                           {pub.url ? (
                             <a
                               href={pub.url}
@@ -225,24 +226,25 @@ export function PublicationsListSection() {
                             pub.title
                           )}
                         </h4>
-                        <p className="mb-1 text-xs text-muted-foreground truncate" title={pub.authors}>{pub.authors}</p>
-                        <p className="mb-2 text-xs text-muted-foreground truncate" title={`${pub.venue} (${pub.year})`}>
+                        <p className="mb-1 text-xs text-muted-foreground truncate w-full" title={pub.authors}>{pub.authors}</p>
+                        <p className="mb-2 text-xs text-muted-foreground truncate w-full" title={`${pub.venue} (${pub.year})`}>
                           {pub.venue} ({pub.year})
                         </p>
                         {pub.url && (
-                          <div className="mt-auto">
+                          <div className="mt-auto w-full">
                             <Button
                               variant="outline"
                               size="sm"
                               asChild
-                              className="h-7 text-xs"
+                              className="h-7 text-xs flex-shrink-0"
                             >
                               <a
                                 href={pub.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="whitespace-nowrap"
                               >
-                                <ExternalLink className="h-3 w-3 mr-1" />
+                                <ExternalLink className="h-3 w-3 mr-1 flex-shrink-0" />
                                 View
                               </a>
                             </Button>
