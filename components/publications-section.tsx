@@ -280,6 +280,12 @@ const reviews = [
     url: "https://link.springer.com/journal/40435",
     type: "journal",
   },
+  {
+    name: "Journal of King Saud University Computer and Information Sciences",
+    count: 1,
+    url: "https://www.sciencedirect.com/journal/journal-of-king-saud-university-computer-and-information-sciences",
+    type: "journal",
+  },
 ]
 
 const content = {
