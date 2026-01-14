@@ -9,6 +9,28 @@ import { useLanguage } from "@/contexts/language-context"
 const newsItemsJa = [
   {
     date: "2026年1月",
+    title: "IPSJインタラクション に採択 🎉",
+    location: "Tokyo, Japan 🇯🇵",
+    links: [
+      {
+        text: "IPSJインタラクション",
+        url: "https://www.interaction-ipsj.org/2026/",
+      },
+    ],
+  },
+  {
+    date: "2026年1月",
+    title: "WACV workshop (P2P-CV) に採択 🎉",
+    location: "Tucson, Arizona, USA 🇺🇸",
+    links: [
+      {
+        text: "P2P-CV",
+        url: "https://p2pcv-wacv.github.io/p2pcv.github.io/",
+      },
+    ],
+  },
+  {
+    date: "2026年1月",
     title: "The Future of Education with AI - Springer Book Chapter出版 🎉",
     location: "Shonan, Japan 🇯🇵",
     links: [
@@ -417,6 +439,17 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "January 2026",
+    title: "Accepted in WACV workshop (P2P-CV) 🎉",
+    location: "Tucson, Arizona, USA 🇺🇸",
+    links: [
+      {
+        text: "P2P-CV",
+        url: "https://p2pcv-wacv.github.io/p2pcv.github.io/",
+      },
+    ],
+  },
   {
     date: "January 2026",
     title: "The Future of Education with AI - Springer Book Chapter Published 🎉",
