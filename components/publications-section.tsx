@@ -62,7 +62,7 @@ const committees = [
     image: "/committee/iui2026.png",
   },
   {
-    organization: "Augmented Humans 2026",
+    organization: "AHs 2026",
     role: "Demo & Poster Chair",
     url: "https://www.augmented-humans.org/",
     image: "/committee/ahs2026.png",
@@ -86,13 +86,19 @@ const committees = [
     image: "/committee/iswc2025.jpeg",
   },
   {
+    organization: "ETRA 2025",
+    role: "Program Committee",
+    url: "https://etra.acm.org/2025/",
+    image: "/committee/etra2025.png",
+  },
+  {
     organization: "CHI 2025",
     role: "Late-Breaking-Work AC",
     url: "https://chi2025.acm.org/",
     image: "/committee/chi2025.png",
   },
   {
-    organization: "Augmented Humans 2025",
+    organization: "AHs 2025",
     role: "Demo Chair",
     url: "https://2025.augmented-humans.org/committee/",
     image: "/committee/ahs2025.png",

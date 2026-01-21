@@ -9,6 +9,16 @@ import { useLanguage } from "@/contexts/language-context"
 const newsItemsJa = [
   {
     date: "2026年1月",
+    title: "Augmented Humans フルペーパーに採択 🎉",
+    links: [
+      {
+        text: "AHs 2026",
+        url: "https://www.augmented-humans.org/",
+      },
+    ],
+  },
+  {
+    date: "2026年1月",
     title: "IPSJインタラクション に採択 🎉",
     location: "Tokyo, Japan 🇯🇵",
     links: [
@@ -439,6 +449,16 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "January 2026",
+    title: "Accepted in Augmented Humans (Full Paper) 🎉",
+    links: [
+      {
+        text: "Augmented Humans 2026",
+        url: "https://www.augmented-humans.org/",
+      },
+    ],
+  },
   {
     date: "January 2026",
     title: "Accepted in WACV workshop (P2P-CV) 🎉",

@@ -4,7 +4,7 @@
     "authors": "K Watanabe, T Sathyanarayana, A Dengel, S Ishimaru",
     "venue": "IEEE Access 11, 52886-52898",
     "year": "2023",
-    "citations": 31,
+    "citations": 30,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
     "bibtex": null
@@ -14,7 +14,7 @@
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
     "year": "2021",
-    "citations": 30,
+    "citations": 29,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null
@@ -34,7 +34,7 @@
     "authors": "S Ishimaru, N Großmann, A Dengel, K Watanabe, Y Arakawa, C Heisel, ...",
     "venue": "Proceedings of the 2018 ACM International Joint Conference and 2018 …",
     "year": "2018",
-    "citations": 19,
+    "citations": 18,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
     "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
     "bibtex": null
@@ -54,20 +54,9 @@
     "authors": "K Watanabe, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
     "year": "2024",
-    "citations": 15,
+    "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
     "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
-    "bibtex": null
-  },
-  {
-    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
-    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
-    "year": "2025",
-    "citations": 14,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "dateOrder": 15,
     "bibtex": null
   },
   {
@@ -78,6 +67,17 @@
     "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
+    "bibtex": null
+  },
+  {
+    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
+    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
+    "year": "2025",
+    "citations": 13,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "dateOrder": 15,
     "bibtex": null
   },
   {
