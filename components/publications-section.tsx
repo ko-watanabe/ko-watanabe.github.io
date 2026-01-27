@@ -56,6 +56,18 @@ const fundingEn = [
 
 const committees = [
   {
+    organization: "CHI 2026",
+    role: "Poster AC",
+    url: "https://chi2026.acm.org/",
+    image: "/committee/chi2026.png",
+  },
+  {
+    organization: "ETRA 2026",
+    role: "Program Committee",
+    url: "https://etra.acm.org/2026/",
+    image: "/committee/etra2026.png",
+  },
+  {
     organization: "IUI 2026",
     role: "Program Committee",
     url: "https://iui.acm.org/2026/",

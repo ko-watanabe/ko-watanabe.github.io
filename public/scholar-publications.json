@@ -50,6 +50,16 @@
     "bibtex": null
   },
   {
+    "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
+    "year": "2022",
+    "citations": 15,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
+    "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
+    "bibtex": null
+  },
+  {
     "title": "Metacognition-engauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
     "authors": "K Watanabe, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
@@ -57,16 +67,6 @@
     "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
     "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
-    "bibtex": null
-  },
-  {
-    "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
-    "year": "2022",
-    "citations": 14,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
-    "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
     "bibtex": null
   },
   {
@@ -111,6 +111,17 @@
     "bibtex": null
   },
   {
+    "title": "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
+    "authors": "V Shah, K Watanabe, B Moser, A Dengel",
+    "venue": "Proceedings of the 2025 Symposium on Eye Tracking Research and Applications …",
+    "year": "2025",
+    "citations": 8,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
+    "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
+    "dateOrder": 13,
+    "bibtex": null
+  },
+  {
     "title": "Concentration Estimation in Online Video Lecture Using Multimodal Sensors",
     "authors": "N Tanaka, K Watanabe, S Ishimaru, A Dengel, S Ata, M Fujimoto",
     "venue": "Companion of the 2024 on ACM International Joint Conference on Pervasive and …",
@@ -118,17 +129,6 @@
     "citations": 8,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qUcmZB5y_30C",
     "citationForView": "AluAUmEAAAAJ:qUcmZB5y_30C",
-    "bibtex": null
-  },
-  {
-    "title": "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
-    "authors": "V Shah, K Watanabe, B Moser, A Dengel",
-    "venue": "Proceedings of the 2025 Symposium on Eye Tracking Research and Applications …",
-    "year": "2025",
-    "citations": 7,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "dateOrder": 13,
     "bibtex": null
   },
   {
@@ -280,6 +280,17 @@
     "bibtex": null
   },
   {
+    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
+    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
+    "venue": "Japanese Journal of Radiology, 1-11",
+    "year": "2025",
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "dateOrder": 14,
+    "bibtex": null
+  },
+  {
     "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
     "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
     "venue": "IEEE Access",
@@ -365,17 +376,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:NMxIlDl6LWMC",
     "citationForView": "AluAUmEAAAAJ:NMxIlDl6LWMC",
     "dateOrder": 7,
-    "bibtex": null
-  },
-  {
-    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
-    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
-    "venue": "Japanese Journal of Radiology, 1-11",
-    "year": "2025",
-    "citations": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "dateOrder": 14,
     "bibtex": null
   },
   {

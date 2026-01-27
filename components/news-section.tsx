@@ -12,7 +12,7 @@ const newsItemsJa = [
     title: "Augmented Humans フルペーパーに採択 🎉",
     links: [
       {
-        text: "AHs 2026",
+        text: "Augmented Humans 2026",
         url: "https://www.augmented-humans.org/",
       },
     ],
