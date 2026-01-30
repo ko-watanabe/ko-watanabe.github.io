@@ -9,11 +9,21 @@ import { useLanguage } from "@/contexts/language-context"
 const newsItemsJa = [
   {
     date: "2026年1月",
+    title: "IJABCのジャーナルに3件、Position Paper に1件採択 🎉",
+    links: [
+      {
+        text: "IJABC (International Journal of Affective Engineering)",
+        url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
+    date: "2026年1月",
     title: "Augmented Humans フルペーパーに採択 🎉",
     links: [
       {
-        text: "Augmented Humans 2026",
-        url: "https://www.augmented-humans.org/",
+        text: "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
+        // url: "https://www.augmented-humans.org/",
       },
     ],
   },
@@ -451,11 +461,21 @@ const newsItemsJa = [
 const newsItemsEn = [
   {
     date: "January 2026",
+    title: "Accepted 3 papers in IJABC (Journal) and 1 Position Paper 🎉",
+    links: [
+      {
+        text: "IJABC (International Journal of Affective Engineering)",
+        url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
+    date: "January 2026",
     title: "Accepted in Augmented Humans (Full Paper) 🎉",
     links: [
       {
-        text: "Augmented Humans 2026",
-        url: "https://www.augmented-humans.org/",
+        text: "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
+        // url: "https://www.augmented-humans.org/",
       },
     ],
   },
@@ -931,7 +951,7 @@ export function NewsSection() {
                       <ul className="space-y-1">
                         {item.links.map((link, linkIndex) => (
                           <li key={linkIndex}>
-                            {link.url ? (
+                            {'url' in link && link.url ? (
                               <a
                                 href={link.url}
                                 target="_blank"

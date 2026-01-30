@@ -173,6 +173,17 @@
     "bibtex": null
   },
   {
+    "title": "TrackThinkDashboard: Understanding Student Self-Regulated Learning in Programming Study",
+    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
+    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
+    "year": "2025",
+    "citations": 4,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "dateOrder": 8,
+    "bibtex": null
+  },
+  {
     "title": "Webcam-based pupil diameter prediction benefits from upscaling",
     "authors": "V Shah, BB Moser, K Watanabe, A Dengel",
     "venue": "In Proceedings of the 17th International Conference on Agents and Artificial …",
@@ -193,27 +204,6 @@
     "bibtex": null
   },
   {
-    "title": "Supporting smooth interruption in a video conference by dynamically changing background music depending on the amount of utterance",
-    "authors": "H Suzawa, K Watanabe, M Iwamura, K Kise, A Dengel, S Ishimaru",
-    "venue": "Adjunct Proceedings of the 2022 ACM International Joint Conference on …",
-    "year": "2022",
-    "citations": 4,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:3fE2CSJIrl8C",
-    "citationForView": "AluAUmEAAAAJ:3fE2CSJIrl8C",
-    "bibtex": null
-  },
-  {
-    "title": "TrackThinkDashboard: Understanding Student Self-Regulated Learning in Programming Study",
-    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
-    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
-    "year": "2025",
-    "citations": 3,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "dateOrder": 8,
-    "bibtex": null
-  },
-  {
     "title": "Unifying VXAI: A Systematic Review and Framework for the Evaluation of Explainable AI",
     "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
     "venue": "arXiv preprint arXiv:2506.15408",
@@ -222,6 +212,17 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
     "dateOrder": 9,
+    "bibtex": null
+  },
+  {
+    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
+    "authors": "K Watanabe, N Förster, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 257–270",
+    "year": "2025",
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "dateOrder": 12,
     "bibtex": null
   },
   {
@@ -244,17 +245,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:blknAaTinKkC",
     "citationForView": "AluAUmEAAAAJ:blknAaTinKkC",
     "dateOrder": 10,
-    "bibtex": null
-  },
-  {
-    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
-    "authors": "K Watanabe, N Förster, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 257–270",
-    "year": "2025",
-    "citations": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "dateOrder": 12,
     "bibtex": null
   },
   {
