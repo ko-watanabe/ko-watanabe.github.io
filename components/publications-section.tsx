@@ -131,7 +131,19 @@ const committees = [
 
 const reviews = [
   {
-    name: "AHs'26",
+    name: "CHI'26 (Poster Paper)",
+    count: 11,
+    url: "https://chi2026.acm.org/",
+    type: "conference",
+  },
+  {
+    name: "ETRA'26 (Short Paper)",
+    count: 4,
+    url: "https://chi2026.acm.org/",
+    type: "conference",
+  },
+  {
+    name: "AHs'26 (Full Paper)",
     count: 4,
     url: "https://www.augmented-humans.org",
     type: "conference",
@@ -149,7 +161,7 @@ const reviews = [
     type: "conference",
   },
   {
-    name: "CHI'26",
+    name: "CHI'26 (Full Paper)",
     count: 5,
     url: "https://chi2026.acm.org/",
     type: "conference",
