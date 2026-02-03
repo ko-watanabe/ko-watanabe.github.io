@@ -68,6 +68,12 @@ const committees = [
     image: "/committee/etra2026.png",
   },
   {
+    organization: "Gaze 2026",
+    role: "Program Committee",
+    url: "https://gazeworkshop.github.io/2026/",
+    image: "/committee/gaze2026.png",
+  },
+  {
     organization: "IUI 2026",
     role: "Program Committee",
     url: "https://iui.acm.org/2026/",
