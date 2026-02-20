@@ -137,7 +137,7 @@ const committees = [
 
 const reviews = [
   {
-    name: "CHI'26 (Poster Paper)",
+    name: "CHI'26 (Poster Paper AC + R3)",
     count: 11,
     url: "https://chi2026.acm.org/",
     type: "conference",
@@ -151,6 +151,12 @@ const reviews = [
   {
     name: "AHs'26 (Full Paper)",
     count: 4,
+    url: "https://www.augmented-humans.org",
+    type: "conference",
+  },
+  {
+    name: "AHs'26 (Poster & Demo)",
+    count: 58,
     url: "https://www.augmented-humans.org",
     type: "conference",
   },
