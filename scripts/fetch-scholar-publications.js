@@ -1,50 +1,132 @@
 // ビルド時にGoogle Scholarから論文データを取得してJSONファイルに保存するスクリプト
+// 注意: Google Scholarはボット検出が厳しいため、キャッシュデータを優先的に使用します
+// 手動で更新したい場合は: node scripts/fetch-scholar-publications.js --force
 const fs = require('fs')
 const path = require('path')
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer-extra')
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 const cheerio = require('cheerio')
+
+// ステルスプラグインを追加（ボット検出回避）
+puppeteer.use(StealthPlugin())
 
 const SCHOLAR_URL = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ'
 const SCHOLAR_URL_LATEST = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ&view_op=list_works&sortby=pubdate'
 
+// キャッシュファイルのパス
+const OUTPUT_PATH = path.join(process.cwd(), 'public', 'scholar-publications.json')
+
+// コマンドライン引数をチェック
+const forceRefresh = process.argv.includes('--force')
+const skipScraping = process.env.SKIP_SCHOLAR_SCRAPING === 'true' || process.env.CI === 'true'
+
 async function fetchScholarPublications() {
+  // キャッシュが存在し、強制更新でなく、スクレイピングをスキップする場合
+  if (!forceRefresh && skipScraping && fs.existsSync(OUTPUT_PATH)) {
+    try {
+      const existingData = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'))
+      if (existingData.length > 0) {
+        console.log(`✓ Using cached publications data: ${existingData.length} publications`)
+        console.log('  (Set SKIP_SCHOLAR_SCRAPING=false or use --force to attempt fresh scraping)')
+        return
+      }
+    } catch (error) {
+      console.warn('⚠ Failed to read cache, will attempt scraping')
+    }
+  }
+
+  // キャッシュが存在し、最近更新された場合はスキップ（24時間以内）
+  if (!forceRefresh && fs.existsSync(OUTPUT_PATH)) {
+    const stats = fs.statSync(OUTPUT_PATH)
+    const hoursSinceModified = (Date.now() - stats.mtimeMs) / (1000 * 60 * 60)
+    if (hoursSinceModified < 24) {
+      try {
+        const existingData = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'))
+        if (existingData.length > 0) {
+          console.log(`✓ Using recent cache (${Math.round(hoursSinceModified)}h old): ${existingData.length} publications`)
+          console.log('  (Use --force to refresh)')
+          return
+        }
+      } catch (error) {
+        // キャッシュ読み込みエラーは無視してスクレイピングを試みる
+      }
+    }
+  }
   let browser = null
   try {
-    console.log('Launching browser...')
+    console.log('Launching browser with stealth mode...')
     browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      headless: 'new', // 新しいヘッドレスモード（検出されにくい）
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-blink-features=AutomationControlled', // 自動化フラグを無効化
+        '--disable-features=IsolateOrigins,site-per-process',
+        '--window-size=1920,1080',
+      ],
     })
 
     const page = await browser.newPage()
 
-    // User-Agentを設定してボット検出を回避
-    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+    // WebDriverプロパティを削除（ボット検出対策）
+    await page.evaluateOnNewDocument(() => {
+      // webdriverプロパティを削除
+      Object.defineProperty(navigator, 'webdriver', {
+        get: () => undefined,
+      })
+      // プラグインを偽装
+      Object.defineProperty(navigator, 'plugins', {
+        get: () => [1, 2, 3, 4, 5],
+      })
+      // 言語設定を偽装
+      Object.defineProperty(navigator, 'languages', {
+        get: () => ['ja', 'en-US', 'en'],
+      })
+      // Chrome固有のプロパティを追加
+      window.chrome = {
+        runtime: {},
+      }
+    })
+
+    // User-Agentを設定（最新のChromeバージョンを使用）
+    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36')
     
     // 追加のヘッダーを設定
     await page.setExtraHTTPHeaders({
       'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Upgrade-Insecure-Requests': '1',
+      'Cache-Control': 'max-age=0',
     })
     
     // ビューポートを設定
-    await page.setViewport({ width: 1920, height: 1080 })
+    await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 })
+
+    // ランダム遅延関数（人間らしい動作をシミュレート）
+    const randomDelay = (min, max) => new Promise(resolve => 
+      setTimeout(resolve, Math.floor(Math.random() * (max - min + 1)) + min)
+    )
 
     // 引用件数順でデータを取得
     console.log('Navigating to Google Scholar (by citations)...')
     await page.goto(SCHOLAR_URL, {
-      waitUntil: 'domcontentloaded',
+      waitUntil: 'networkidle2', // ネットワークが安定するまで待つ
       timeout: 60000,
     })
 
-    // ページが完全に読み込まれるまで待つ
-    await new Promise(resolve => setTimeout(resolve, 5000))
+    // ページが完全に読み込まれるまで待つ（ランダム遅延）
+    await randomDelay(3000, 6000)
+    
+    // マウス移動をシミュレート（人間らしい動作）
+    await page.mouse.move(100, 200)
+    await randomDelay(500, 1000)
+    await page.mouse.move(300, 400)
     
     // スクロールしてコンテンツを読み込む
     await page.evaluate(() => {
       window.scrollTo(0, document.body.scrollHeight)
     })
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    await randomDelay(2000, 4000)
     
     // ページの状態を確認
     const pageTitle = await page.title()
@@ -66,6 +148,11 @@ async function fetchScholarPublications() {
         console.log('✓ Found publications list (gsc_a_t)')
       } catch (error2) {
         console.warn('Alternative selector also not found')
+        // デバッグ用スクリーンショットを保存
+        const screenshotPath = path.join(process.cwd(), 'debug-scholar-page.png')
+        await page.screenshot({ path: screenshotPath, fullPage: true })
+        console.log(`Debug screenshot saved to: ${screenshotPath}`)
+        
         // ページの内容を確認
         const pageContent = await page.evaluate(() => document.body.textContent)
         console.log('Page content preview:', pageContent.substring(0, 1000))
@@ -74,6 +161,9 @@ async function fetchScholarPublications() {
         console.log('HTML contains "gsc_a_tr":', htmlContent.includes('gsc_a_tr'))
         console.log('HTML contains "gsc_a_t":', htmlContent.includes('gsc_a_t'))
         console.log('HTML contains "publication":', htmlContent.toLowerCase().includes('publication'))
+        // CAPTCHAチェック
+        console.log('HTML contains "captcha":', htmlContent.toLowerCase().includes('captcha'))
+        console.log('HTML contains "robot":', htmlContent.toLowerCase().includes('robot'))
       }
     }
 
@@ -189,19 +279,24 @@ async function fetchScholarPublications() {
 
     // 最新順でデータを取得
     console.log('Navigating to Google Scholar (by date)...')
+    await randomDelay(2000, 4000) // ページ遷移前に待機
     await page.goto(SCHOLAR_URL_LATEST, {
-      waitUntil: 'domcontentloaded',
+      waitUntil: 'networkidle2',
       timeout: 60000,
     })
 
-    // ページが完全に読み込まれるまで待つ
-    await new Promise(resolve => setTimeout(resolve, 5000))
+    // ページが完全に読み込まれるまで待つ（ランダム遅延）
+    await randomDelay(3000, 6000)
+    
+    // マウス移動をシミュレート
+    await page.mouse.move(200, 300)
+    await randomDelay(500, 1000)
     
     // スクロールしてコンテンツを読み込む
     await page.evaluate(() => {
       window.scrollTo(0, document.body.scrollHeight)
     })
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    await randomDelay(2000, 4000)
     
     // ページの状態を確認
     const pageTitle2 = await page.title()
@@ -358,7 +453,7 @@ async function fetchScholarPublications() {
 
     console.log(`Found ${allPublications.length} publications (${sortedPublications.length} by citations, ${publicationsByDate.length} by date)`)
     
-    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
+    const outputPath = OUTPUT_PATH
     
     // スクレイピングが失敗した場合（0件の場合）、既存のファイルがあればそれを使用
     if (allPublications.length === 0) {
@@ -415,7 +510,7 @@ async function fetchScholarPublications() {
     console.error('Failed to fetch scholar publications:', error.message)
     console.error('Error stack:', error.stack)
     
-    const outputPath = path.join(process.cwd(), 'public', 'scholar-publications.json')
+    const outputPath = OUTPUT_PATH
     
     // エラー時、既存のファイルがあればそれを使用
     if (fs.existsSync(outputPath)) {

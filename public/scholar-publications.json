@@ -4,7 +4,7 @@
     "authors": "K Watanabe, T Sathyanarayana, A Dengel, S Ishimaru",
     "venue": "IEEE Access 11, 52886-52898",
     "year": "2023",
-    "citations": 30,
+    "citations": 28,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
     "bibtex": null
@@ -14,7 +14,7 @@
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
     "year": "2021",
-    "citations": 29,
+    "citations": 28,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null
@@ -24,7 +24,7 @@
     "authors": "C Chen, Y Arakawa, K Watanabe, S Ishimaru",
     "venue": "Sensors and Materials 34 (8), 3017",
     "year": "2022",
-    "citations": 20,
+    "citations": 19,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
     "bibtex": null
@@ -44,29 +44,9 @@
     "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
     "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
     "year": "2017",
-    "citations": 18,
+    "citations": 17,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
     "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
-    "bibtex": null
-  },
-  {
-    "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
-    "year": "2022",
-    "citations": 15,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
-    "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
-    "bibtex": null
-  },
-  {
-    "title": "Metacognition-engauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
-    "authors": "K Watanabe, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
-    "year": "2024",
-    "citations": 14,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
-    "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
     "bibtex": null
   },
   {
@@ -78,6 +58,26 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "dateOrder": 15,
+    "bibtex": null
+  },
+  {
+    "title": "Metacognition-EnGauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
+    "authors": "K Watanabe, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
+    "year": "2024",
+    "citations": 13,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
+    "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
+    "bibtex": null
+  },
+  {
+    "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
+    "year": "2022",
+    "citations": 13,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
+    "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
     "bibtex": null
   },
   {
@@ -118,7 +118,7 @@
     "citations": 8,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
     "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "dateOrder": 13,
+    "dateOrder": 14,
     "bibtex": null
   },
   {
@@ -126,7 +126,7 @@
     "authors": "N Tanaka, K Watanabe, S Ishimaru, A Dengel, S Ata, M Fujimoto",
     "venue": "Companion of the 2024 on ACM International Joint Conference on Pervasive and …",
     "year": "2024",
-    "citations": 8,
+    "citations": 7,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qUcmZB5y_30C",
     "citationForView": "AluAUmEAAAAJ:qUcmZB5y_30C",
     "bibtex": null
@@ -134,7 +134,7 @@
   {
     "title": "Gaze generation for avatars using gans",
     "authors": "D Dembinsky, K Watanabe, A Dengel, S Ishimaru",
-    "venue": "IEEE Access",
+    "venue": "IEEE Access 12, 101536-101548",
     "year": "2024",
     "citations": 7,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:dhFuZR0502QC",
@@ -144,28 +144,18 @@
   {
     "title": "Estimating self-confidence in video-based learning using eye-tracking and deep neural networks",
     "authors": "A Bhatt, K Watanabe, J Santhosh, A Dengel, S Ishimaru",
-    "venue": "IEEE Access",
+    "venue": "IEEE Access 12, 192219-192229",
     "year": "2024",
-    "citations": 6,
+    "citations": 5,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:TQgYirikUcIC",
     "citationForView": "AluAUmEAAAAJ:TQgYirikUcIC",
     "dateOrder": 19,
     "bibtex": null
   },
   {
-    "title": "How do programmers use the internet? Discovering domain knowledge from browsing and coding behaviors",
-    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
-    "venue": "2022 IEEE International Conferences on Internet of Things (iThings) and IEEE …",
-    "year": "2022",
-    "citations": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:zYLM7Y9cAGgC",
-    "citationForView": "AluAUmEAAAAJ:zYLM7Y9cAGgC",
-    "bibtex": null
-  },
-  {
-    "title": "Estimating unknown english words from user smartphone reading behaviors",
+    "title": "Estimating unknown English words from user smartphone reading behaviors",
     "authors": "R Higashimura, K Watanabe, A Vargo, M Iwata, A Dengel, K Kise",
-    "venue": "IEEE Access",
+    "venue": "IEEE Access 12, 140223-140234",
     "year": "2024",
     "citations": 5,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:ZeXyd9-uunAC",
@@ -173,14 +163,25 @@
     "bibtex": null
   },
   {
-    "title": "TrackThinkDashboard: Understanding Student Self-Regulated Learning in Programming Study",
+    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
     "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
     "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
     "year": "2025",
     "citations": 4,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
     "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "dateOrder": 8,
+    "dateOrder": 9,
+    "bibtex": null
+  },
+  {
+    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
+    "authors": "K Watanabe, N Förster, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 257–270",
+    "year": "2025",
+    "citations": 4,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "dateOrder": 13,
     "bibtex": null
   },
   {
@@ -194,7 +195,7 @@
     "bibtex": null
   },
   {
-    "title": "Learning cyclotron: An ecosystem of knowledge circulation",
+    "title": "Learning cyclotron: an ecosystem of knowledge circulation",
     "authors": "A Vargo, M Iwata, M Hutin, S Kobylyanskaya, I Vasilescu, O Augereau, ...",
     "venue": "Adjunct Proceedings of the 2022 ACM International Joint Conference on …",
     "year": "2022",
@@ -204,25 +205,14 @@
     "bibtex": null
   },
   {
-    "title": "Unifying VXAI: A Systematic Review and Framework for the Evaluation of Explainable AI",
+    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
     "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
     "venue": "arXiv preprint arXiv:2506.15408",
     "year": "2025",
     "citations": 3,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "dateOrder": 9,
-    "bibtex": null
-  },
-  {
-    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
-    "authors": "K Watanabe, N Förster, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 257–270",
-    "year": "2025",
-    "citations": 3,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "dateOrder": 12,
+    "dateOrder": 10,
     "bibtex": null
   },
   {
@@ -237,14 +227,25 @@
     "bibtex": null
   },
   {
-    "title": "EyeUnderstand: Dashboard for Gaze and Deep-Learning Driven Comprehension Estimation in Online Lectures",
+    "title": "EyeUnderstand: dashboard for gaze and deep-learning driven comprehension estimation in online lectures",
     "authors": "K Watanabe, G Gund, J Santhosh, H Sakagami, Y Matsuda, A Dengel, ...",
     "venue": "IEEE Access",
     "year": "2025",
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:blknAaTinKkC",
     "citationForView": "AluAUmEAAAAJ:blknAaTinKkC",
-    "dateOrder": 10,
+    "dateOrder": 11,
+    "bibtex": null
+  },
+  {
+    "title": "Human-in-the-Loop Annotation for Image-Based Engagement Estimation: Assessing the Impact of Model Reliability on Annotation Accuracy",
+    "authors": "S Yadnakudige Subramanya, K Watanabe, A Dengel, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 169-186",
+    "year": "2025",
+    "citations": 2,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
+    "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
+    "dateOrder": 12,
     "bibtex": null
   },
   {
@@ -259,31 +260,20 @@
     "bibtex": null
   },
   {
-    "title": "Human-in-the-Loop Annotation for Image-Based Engagement Estimation: Assessing the Impact of Model Reliability on Annotation Accuracy",
-    "authors": "S Yadnakudige Subramanya, K Watanabe, A Dengel, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 169-186",
-    "year": "2025",
-    "citations": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
-    "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
-    "dateOrder": 11,
-    "bibtex": null
-  },
-  {
     "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
     "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
-    "venue": "Japanese Journal of Radiology, 1-11",
+    "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
     "year": "2025",
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
     "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "dateOrder": 14,
+    "dateOrder": 6,
     "bibtex": null
   },
   {
     "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
     "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access",
+    "venue": "IEEE Access 13, 20456-20471",
     "year": "2025",
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
@@ -354,7 +344,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
     "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
-    "dateOrder": 6,
+    "dateOrder": 7,
     "bibtex": null
   },
   {
@@ -365,7 +355,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:NMxIlDl6LWMC",
     "citationForView": "AluAUmEAAAAJ:NMxIlDl6LWMC",
-    "dateOrder": 7,
+    "dateOrder": 8,
     "bibtex": null
   },
   {

@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fetch-scholar-publications.js",
+    "prebuild": "SKIP_SCHOLAR_SCRAPING=true node scripts/fetch-scholar-publications.js",
     "build": "next build",
     "start": "npx serve@latest out",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "update-publications": "node scripts/fetch-scholar-publications.js --force"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -62,14 +63,16 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "baseline-browser-mapping": "^2.9.0",
     "@tailwindcss/postcss": "^4.1.9",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.9.0",
     "cheerio": "^1.1.2",
     "postcss": "^8.5",
     "puppeteer": "^24.34.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
     "typescript": "^5"
