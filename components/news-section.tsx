@@ -8,8 +8,9 @@ import { useLanguage } from "@/contexts/language-context"
 
 const newsItemsJa = [
   {
-    date: "2026年1月",
-    title: "IJABCのジャーナルに3件、Position Paper に1件採択 🎉",
+    date: "2026年3月",
+    title: "室蘭・函館でABC2026に参加",
+    location: "Hokkaido, Japan 🇯🇵",
     links: [
       {
         text: "IJABC (International Journal of Affective Engineering)",
@@ -18,8 +19,44 @@ const newsItemsJa = [
     ],
   },
   {
+    date: "2026年3月",
+    title: "沖縄でAugmented Humansに参加",
+    location: "Okinawa, Japan 🇯🇵",
+  },
+  {
+    date: "2026年2月",
+    title: "Augmented Humans (Poster Paper)に採択 🎉",
+    location: "Okinawa, Japan 🇯🇵",
+    links: [
+      {
+        text: "Empowering Vocabulary Learning Through Teaching AI: Using LLMs as a Student to Perform Learning by Teaching in Vocabulary Acquisition",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
+    date: "2026年1月",
+    title: "IJABCのジャーナルに3件、Position Paper に1件採択 🎉",
+    location: "Hokkaido, Japan 🇯🇵",
+    links: [
+      {
+        text: "Estimating the Level of Surgical Skill During Robot-Assisted Surgery Simulation Using a Neck-Worn Wearable Camera",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+      {
+        text: "SensCogAR: Cognitive Load Estimation Via Movement Data in Assembly Tasks",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+      {
+        text: "SipSense: Acoustic Sensing of Beverage Type and Volume Using Dual-Microphone Wearable System",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
     date: "2026年1月",
     title: "Augmented Humans フルペーパーに採択 🎉",
+    location: "Okinawa, Japan 🇯🇵",
     links: [
       {
         text: "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
@@ -460,8 +497,20 @@ const newsItemsJa = [
 
 const newsItemsEn = [
   {
-    date: "January 2026",
-    title: "Accepted 3 papers in IJABC (Journal) and 1 Position Paper 🎉",
+    date: "March 2026",
+    title: "Attend Augmented Humans in Okinawa, Japan",
+    location: "Okinawa, Japan 🇯🇵",
+    links: [
+      {
+        text: "Augmented Humans",
+        url: "https://augmented-humans.org/",
+      },
+    ],
+  },
+  {
+    date: "March 2026",
+    title: "Attend ABC2026 in Muroran and Hakodate",
+    location: "Hokkaido, Japan 🇯🇵",
     links: [
       {
         text: "IJABC (International Journal of Affective Engineering)",
@@ -470,8 +519,43 @@ const newsItemsEn = [
     ],
   },
   {
+    date: "February 2026",
+    title: "Accepted in Augmented Humans (Poster Paper) 🎉",
+    location: "Okinawa, Japan 🇯🇵",
+    links: [
+      {
+        text: "Empowering Vocabulary Learning Through Teaching AI: Using LLMs as a Student to Perform Learning by Teaching in Vocabulary Acquisition",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
+    date: "January 2026",
+    title: "Accepted 3 papers in IJABC (Journal) and 1 Position Paper 🎉",
+    location: "Hokkaido, Japan 🇯🇵",
+    links: [
+      {
+        text: "Estimating the Level of Surgical Skill During Robot-Assisted Surgery Simulation Using a Neck-Worn Wearable Camera",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+      {
+        text: "SensCogAR: Cognitive Load Estimation Via Movement Data in Assembly Tasks",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+      {
+        text: "SipSense: Acoustic Sensing of Beverage Type and Volume Using Dual-Microphone Wearable System",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+      {
+        text: "HandyLabel: Towards Post-Processing to Real-Time Annotation Using Skeleton Based Hand Gesture Recognition",
+        // url: "https://www.jstage.jst.go.jp/browse/ijabc",
+      },
+    ],
+  },
+  {
     date: "January 2026",
     title: "Accepted in Augmented Humans (Full Paper) 🎉",
+    location: "Okinawa, Japan 🇯🇵",
     links: [
       {
         text: "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
@@ -485,8 +569,8 @@ const newsItemsEn = [
     location: "Tucson, Arizona, USA 🇺🇸",
     links: [
       {
-        text: "P2P-CV",
-        url: "https://p2pcv-wacv.github.io/p2pcv.github.io/",
+        text: "Towards Facilitated Fairness Assessment of AI-based Skin Lesion Classifiers Through GenAI-based Image Synthesis",
+        url: "https://openaccess.thecvf.com/content/WACV2026W/P2P/html/Watanabe_Towards_Facilitated_Fairness_Assessment_of_AI-based_Skin_Lesion_Classifiers_Through_WACVW_2026_paper.html",
       },
     ],
   },
