@@ -4,7 +4,7 @@
     "authors": "K Watanabe, T Sathyanarayana, A Dengel, S Ishimaru",
     "venue": "IEEE Access 11, 52886-52898",
     "year": "2023",
-    "citations": 28,
+    "citations": 31,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
     "bibtex": null
@@ -40,6 +40,17 @@
     "bibtex": null
   },
   {
+    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
+    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
+    "year": "2025",
+    "citations": 17,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "dateOrder": 17,
+    "bibtex": null
+  },
+  {
     "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
     "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
     "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
@@ -50,14 +61,13 @@
     "bibtex": null
   },
   {
-    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
-    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
-    "year": "2025",
-    "citations": 15,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "dateOrder": 15,
+    "title": "Metacognition-EnGauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
+    "authors": "K Watanabe, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
+    "year": "2024",
+    "citations": 14,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
+    "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
     "bibtex": null
   },
   {
@@ -68,16 +78,6 @@
     "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
-    "bibtex": null
-  },
-  {
-    "title": "Metacognition-EnGauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
-    "authors": "K Watanabe, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2024, 301-303",
-    "year": "2024",
-    "citations": 13,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
-    "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
     "bibtex": null
   },
   {
@@ -108,7 +108,7 @@
     "citations": 9,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
     "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "dateOrder": 14,
+    "dateOrder": 16,
     "bibtex": null
   },
   {
@@ -129,7 +129,7 @@
     "citations": 7,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "dateOrder": 10,
+    "dateOrder": 12,
     "bibtex": null
   },
   {
@@ -160,7 +160,27 @@
     "citations": 6,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:TQgYirikUcIC",
     "citationForView": "AluAUmEAAAAJ:TQgYirikUcIC",
-    "dateOrder": 19,
+    "bibtex": null
+  },
+  {
+    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
+    "authors": "K Watanabe, N Förster, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 257–270",
+    "year": "2025",
+    "citations": 5,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
+    "dateOrder": 15,
+    "bibtex": null
+  },
+  {
+    "title": "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
+    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
+    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference, 13031 …",
+    "year": "2025",
+    "citations": 5,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
+    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
     "bibtex": null
   },
   {
@@ -189,31 +209,9 @@
     "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
     "year": "2025",
     "citations": 4,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
     "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "dateOrder": 9,
-    "bibtex": null
-  },
-  {
-    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
-    "authors": "K Watanabe, N Förster, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 257–270",
-    "year": "2025",
-    "citations": 4,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "dateOrder": 13,
-    "bibtex": null
-  },
-  {
-    "title": "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
-    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
-    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference, 13031 …",
-    "year": "2025",
-    "citations": 3,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "dateOrder": 18,
+    "dateOrder": 11,
     "bibtex": null
   },
   {
@@ -224,7 +222,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:r0BpntZqJG4C",
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
-    "dateOrder": 4,
+    "dateOrder": 6,
     "bibtex": null
   },
   {
@@ -235,7 +233,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
     "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "dateOrder": 7,
+    "dateOrder": 9,
     "bibtex": null
   },
   {
@@ -246,7 +244,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:blknAaTinKkC",
     "citationForView": "AluAUmEAAAAJ:blknAaTinKkC",
-    "dateOrder": 11,
+    "dateOrder": 13,
     "bibtex": null
   },
   {
@@ -257,7 +255,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
     "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
-    "dateOrder": 12,
+    "dateOrder": 14,
     "bibtex": null
   },
   {
@@ -268,7 +266,29 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
     "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "dateOrder": 17,
+    "dateOrder": 19,
+    "bibtex": null
+  },
+  {
+    "title": "Identifying Hurdles to Making Sleep Wearables Data Actionable for Users: A Grounded Theory Study",
+    "authors": "HR Nolasco, A Vargo, C Blakely, K Watanabe, M Armstrong, M Stricker, ...",
+    "venue": "Electronics 15 (7), 1480",
+    "year": "2026",
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:lSLTfruPkqcC",
+    "citationForView": "AluAUmEAAAAJ:lSLTfruPkqcC",
+    "dateOrder": 0,
+    "bibtex": null
+  },
+  {
+    "title": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
+    "authors": "R Morita, S Frolov, BB Moser, K Watanabe, R Takahashi, A Dengel",
+    "venue": "arXiv preprint arXiv:2603.24086",
+    "year": "2026",
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:RYcK_YlVTxYC",
+    "citationForView": "AluAUmEAAAAJ:RYcK_YlVTxYC",
+    "dateOrder": 1,
     "bibtex": null
   },
   {
@@ -279,7 +299,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:J_g5lzvAfSwC",
     "citationForView": "AluAUmEAAAAJ:J_g5lzvAfSwC",
-    "dateOrder": 0,
+    "dateOrder": 2,
     "bibtex": null
   },
   {
@@ -290,7 +310,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
     "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
-    "dateOrder": 1,
+    "dateOrder": 3,
     "bibtex": null
   },
   {
@@ -301,7 +321,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:NaGl4SEjCO4C",
     "citationForView": "AluAUmEAAAAJ:NaGl4SEjCO4C",
-    "dateOrder": 2,
+    "dateOrder": 4,
     "bibtex": null
   },
   {
@@ -312,7 +332,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:RGFaLdJalmkC",
     "citationForView": "AluAUmEAAAAJ:RGFaLdJalmkC",
-    "dateOrder": 3,
+    "dateOrder": 5,
     "bibtex": null
   },
   {
@@ -323,7 +343,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:YFjsv_pBGBYC",
     "citationForView": "AluAUmEAAAAJ:YFjsv_pBGBYC",
-    "dateOrder": 5,
+    "dateOrder": 7,
     "bibtex": null
   },
   {
@@ -334,7 +354,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:BqipwSGYUEgC",
     "citationForView": "AluAUmEAAAAJ:BqipwSGYUEgC",
-    "dateOrder": 6,
+    "dateOrder": 8,
     "bibtex": null
   },
   {
@@ -345,7 +365,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:NMxIlDl6LWMC",
     "citationForView": "AluAUmEAAAAJ:NMxIlDl6LWMC",
-    "dateOrder": 8,
+    "dateOrder": 10,
     "bibtex": null
   },
   {
@@ -356,7 +376,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:4JMBOYKVnBMC",
     "citationForView": "AluAUmEAAAAJ:4JMBOYKVnBMC",
-    "dateOrder": 16,
+    "dateOrder": 18,
     "bibtex": null
   }
 ]

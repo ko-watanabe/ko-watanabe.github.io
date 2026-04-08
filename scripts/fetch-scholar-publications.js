@@ -5,7 +5,6 @@ const fs = require('fs')
 const path = require('path')
 const puppeteer = require('puppeteer-extra')
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
-const cheerio = require('cheerio')
 
 // ステルスプラグインを追加（ボット検出回避）
 puppeteer.use(StealthPlugin())
