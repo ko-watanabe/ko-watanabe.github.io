@@ -8,6 +8,27 @@ import { useLanguage } from "@/contexts/language-context"
 
 const newsItemsJa = [
   {
+    date: "2026年4月",
+    title: "WCCI 2026に論文が採択 🎉",
+    location: "Maastricht, Netherlands 🇳🇱",
+    links: [
+      {
+        text: "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
+        url: "https://arxiv.org/abs/2603.24086",
+      },
+    ],
+  },
+  {
+    date: "2026年4月",
+    title: "Electronicsに論文が採択 🎉",
+    links: [
+      {
+        text: "Identifying Hurdles to Making Sleep Wearables Data Actionable for Users: A Grounded Theory Study",
+        url: "https://www.mdpi.com/2079-9292/15/7/1480",
+      },
+    ],
+  },
+  {
     date: "2026年3月",
     title: "室蘭・函館でABC2026に参加",
     location: "Hokkaido, Japan 🇯🇵",
@@ -496,6 +517,27 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "April 2026",
+    title: "Accepted in WCCI 2026 🎉",
+    location: "Maastricht, Netherlands 🇳🇱",
+    links: [
+      {
+        text: "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
+        url: "https://arxiv.org/abs/2603.24086",
+      },
+    ],
+  },
+  {
+    date: "April 2026",
+    title: "Accepted in Electronics 🎉",
+    links: [
+      {
+        text: "Identifying Hurdles to Making Sleep Wearables Data Actionable for Users: A Grounded Theory Study",
+        url: "https://www.mdpi.com/2079-9292/15/7/1480",
+      },
+    ],
+  },
   {
     date: "March 2026",
     title: "Attend Augmented Humans in Okinawa, Japan",
