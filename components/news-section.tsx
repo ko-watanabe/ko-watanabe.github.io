@@ -9,6 +9,16 @@ import { useLanguage } from "@/contexts/language-context"
 const newsItemsJa = [
   {
     date: "2026年4月",
+    title: "Accepted in 23rd IFAC World Congress 🎉",
+    location: "Busan, Korea 🇰🇷",
+    links: [
+      {
+        text: "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
+      },
+    ],
+  },
+  {
+    date: "2026年4月",
     title: "WCCI 2026に論文が採択 🎉",
     location: "Maastricht, Netherlands 🇳🇱",
     links: [
@@ -517,6 +527,16 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "April 2026",
+    title: "Accepted in 23rd IFAC World Congress 🎉",
+    location: "Busan, Korea 🇰🇷",
+    links: [
+      {
+        text: "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
+      },
+    ],
+  },
   {
     date: "April 2026",
     title: "Accepted in WCCI 2026 🎉",
