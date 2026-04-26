@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fetch-scholar-publications.js --force",
+    "prebuild": "SKIP_SCHOLAR_SCRAPING=true node scripts/fetch-scholar-publications.js",
     "build": "next build",
     "start": "npx serve@latest out",
     "lint": "eslint .",
     "update-publications": "node scripts/fetch-scholar-publications.js --force",
-    "build:scrape": "yarn build"
+    "build:scrape": "SKIP_SCHOLAR_SCRAPING=false node scripts/fetch-scholar-publications.js --force && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
