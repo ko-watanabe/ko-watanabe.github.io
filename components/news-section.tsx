@@ -14,6 +14,7 @@ const newsItemsJa = [
     links: [
       {
         text: "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
+        url: "https://arxiv.org/abs/2512.08518",
       },
     ],
   },
@@ -534,6 +535,7 @@ const newsItemsEn = [
     links: [
       {
         text: "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
+        url: "https://arxiv.org/abs/2512.08518",
       },
     ],
   },

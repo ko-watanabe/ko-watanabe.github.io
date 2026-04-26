@@ -49,6 +49,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ### Build
 
 ```bash
+# To get the recent publication information
+yarn update-publications
+
 # Build for production
 yarn build
 
