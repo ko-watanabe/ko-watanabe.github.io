@@ -105,6 +105,13 @@ const workExperienceJa = [
     url: "https://www.dfki.de/web",
   },
   {
+    title: "客員助教",
+    company: "NAIST",
+    period: "2026年4月 - 現在",
+    type: "複業",
+    url: "https://isw3.naist.jp/Research/cs-ubi-ja.html",
+  },
+  {
     title: "技術顧問",
     company: "株式会社Mesh",
     period: "2024年12月 - 2025年8月",
@@ -236,6 +243,13 @@ const workExperienceEn = [
     period: "July 2024 - Present",
     type: "Full-time",
     url: "https://www.dfki.de/web",
+  },
+  {
+    title: "Affiliate Assistant Professor",
+    company: "NAIST",
+    period: "April 2026 - Present",
+    type: "Side project",
+    url: "https://isw3.naist.jp/Research/cs-ubi-en.html",
   },
   {
     title: "Technical Advisor",
