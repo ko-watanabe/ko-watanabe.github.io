@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Linkedin, ExternalLink } from "lucide-react"
+import { Github, Linkedin, ExternalLink, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
@@ -22,6 +22,7 @@ const content = {
 export function HeroSection() {
   const { language } = useLanguage()
   const texts = content[language]
+  const cvFile = language === "ja" ? "/cv/ko_watanabe_cv_ja.pdf" : "/cv/ko_watanabe_cv_en.pdf"
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-secondary/5 px-4 py-20">
@@ -98,6 +99,12 @@ export function HeroSection() {
             >
               <ExternalLink className="h-5 w-5" />
               ResearchGate
+            </a>
+          </Button>
+          <Button variant="outline" size="lg" asChild className="w-full md:w-auto">
+            <a href={cvFile} download className="gap-2">
+              <FileText className="h-5 w-5" />
+              CV
             </a>
           </Button>
         </div>
