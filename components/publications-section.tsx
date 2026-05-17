@@ -68,7 +68,7 @@ const committees = [
     image: "/committee/etra2026.png",
   },
   {
-    organization: "Gaze 2026",
+    organization: "Gaze 2026 (CVPR)",
     role: "Program Committee",
     url: "https://gazeworkshop.github.io/2026/",
     image: "/committee/gaze2026.png",
@@ -78,6 +78,12 @@ const committees = [
     role: "Program Committee",
     url: "https://iui.acm.org/2026/",
     image: "/committee/iui2026.png",
+  },
+  {
+    organization: "ACM AIES 2026 (AAAI)",
+    role: "Program Committee",
+    url: "https://www.aies-conference.com/2026/",
+    image: "/committee/aies2026.png",
   },
   {
     organization: "AHs 2026",
