@@ -173,6 +173,12 @@ const reviews = [
     type: "journal",
   },
   {
+    name: "Frontiers: Human Factors and Design in Immersive and Generative Media Technologies",
+    count: 1,
+    url: "https://www.frontiersin.org/research-topics/71298/human-factors-and-design-in-immersive-and-generative-media-technologies",
+    type: "journal",
+  },
+  {
     name: "IUI'26",
     count: 4,
     url: "https://iui.acm.org/2026/",

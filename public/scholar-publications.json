@@ -4,7 +4,7 @@
     "authors": "K Watanabe, T Sathyanarayana, A Dengel, S Ishimaru",
     "venue": "IEEE Access 11, 52886-52898",
     "year": "2023",
-    "citations": 36,
+    "citations": 37,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
     "bibtex": null
@@ -32,7 +32,7 @@
   {
     "title": "Quantitative Evaluation System for Online Meetings Based on Multimodal Microbehavior Analysis.",
     "authors": "C Chen, Y Arakawa, K Watanabe, S Ishimaru",
-    "venue": "Sensors & Materials 34",
+    "venue": "Sensors & Materials 34 (8, Part 1), 3017",
     "year": "2022",
     "citations": 19,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
@@ -80,6 +80,16 @@
     "bibtex": null
   },
   {
+    "title": "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
+    "authors": "V Shah, K Watanabe, B Moser, A Dengel",
+    "venue": "Proceedings of the 2025 Symposium on Eye Tracking Research and Applications …",
+    "year": "2025",
+    "citations": 12,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
+    "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
+    "bibtex": null
+  },
+  {
     "title": "Appearance-Based Gaze Estimation with Deep Neural Networks: From Data Collection to Evaluation",
     "authors": "A Bhatt, K Watanabe, A Dengel, S Ishimaru",
     "venue": "International Journal of Activity and Behavior Computing, 1-15",
@@ -90,13 +100,14 @@
     "bibtex": null
   },
   {
-    "title": "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
-    "authors": "V Shah, K Watanabe, B Moser, A Dengel",
-    "venue": "Proceedings of the 2025 Symposium on Eye Tracking Research and Applications …",
+    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
+    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
+    "venue": "arXiv preprint arXiv:2506.15408",
     "year": "2025",
     "citations": 11,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
+    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
+    "dateOrder": 19,
     "bibtex": null
   },
   {
@@ -107,17 +118,6 @@
     "citations": 11,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "citationForView": "AluAUmEAAAAJ:Wp0gIr-vW9MC",
-    "bibtex": null
-  },
-  {
-    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
-    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
-    "venue": "arXiv preprint arXiv:2506.15408",
-    "year": "2025",
-    "citations": 10,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
-    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "dateOrder": 19,
     "bibtex": null
   },
   {
@@ -181,6 +181,16 @@
     "bibtex": null
   },
   {
+    "title": "Webcam-based pupil diameter prediction benefits from upscaling",
+    "authors": "V Shah, BB Moser, K Watanabe, A Dengel",
+    "venue": "In Proceedings of the 17th International Conference on Agents and Artificial …",
+    "year": "2024",
+    "citations": 6,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:L8Ckcad2t8MC",
+    "citationForView": "AluAUmEAAAAJ:L8Ckcad2t8MC",
+    "bibtex": null
+  },
+  {
     "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
     "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
     "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
@@ -192,21 +202,11 @@
     "bibtex": null
   },
   {
-    "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
-    "authors": "K Watanabe, N Förster, S Ishimaru",
-    "venue": "International Conference on Human-Computer Interaction, 257–270",
-    "year": "2025",
-    "citations": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "bibtex": null
-  },
-  {
     "title": "Deep learning models for radiography body-part classification and chest radiograph projection/orientation classification: a multi-institutional study",
     "authors": "Y Mitsuyama, H Takita, SL Walston, K Watanabe, S Ishimaru, Y Miki, ...",
     "venue": "European Radiology, 1-15",
     "year": "2025",
-    "citations": 3,
+    "citations": 4,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:r0BpntZqJG4C",
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "dateOrder": 13,
