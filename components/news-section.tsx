@@ -9,12 +9,12 @@ import { useLanguage } from "@/contexts/language-context"
 const newsItemsJa = [
   {
     date: "2026年5月",
-    title: "GenAI Hackathon der Deutschen Polizeiに参加",
+    title: "「第3回 GenAI Hackathon of the German Police」に参加",
     location: "Wiesbaden, Germany 🇩🇪",
   },
   {
     date: "2026年4月",
-    title: "Accepted in 23rd IFAC World Congress 🎉",
+    title: "23rd IFAC World Congress に論文が採択 🎉",
     location: "Busan, Korea 🇰🇷",
     links: [
       {
@@ -534,8 +534,8 @@ const newsItemsJa = [
 
 const newsItemsEn = [
   {
-    date: "Maygs 2026",
-    title: "Joined GenAI Hackathon der Deutschen Polizei",
+    date: "May 2026",
+    title: "Joined: 3rd GenAI Hackathon of the German Police",
     location: "Wiesbaden, Germany 🇩🇪",
   },
   {
