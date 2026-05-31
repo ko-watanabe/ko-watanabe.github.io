@@ -282,7 +282,7 @@ const reviews = [
   },
   {
     name: "Springer Nature -Scientific Reports",
-    count: 3,
+    count: 4,
     url: "https://www.nature.com/srep/",
     type: "journal",
   },
