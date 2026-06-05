@@ -86,6 +86,12 @@ const committees = [
     image: "/committee/aies2026.png",
   },
   {
+    organization: "IWRM 2026 (UbiComp)",
+    role: "Program Committee",
+    url: "https://reality-mediation.github.io/2026/",
+    image: "/committee/ubicomp2026.png",
+  },
+  {
     organization: "AHs 2026",
     role: "Demo & Poster Chair",
     url: "https://www.augmented-humans.org/",
