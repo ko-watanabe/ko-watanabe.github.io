@@ -1,6 +1,5 @@
 import type React from "react"
 import type { Metadata } from "next"
-import Script from "next/script"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "next-themes"
@@ -59,14 +58,6 @@ export default function RootLayout({
             {children}
           </LanguageProvider>
         </ThemeProvider>
-        <Script id="cache-cleanup" strategy="beforeInteractive">
-          {`(function () {
-            var search = window.location.search
-            if (search.indexOf("v=") !== -1 || search.indexOf("_=") !== -1) {
-              window.history.replaceState(null, "", window.location.pathname)
-            }
-          })()`}
-        </Script>
         <Analytics />
       </body>
     </html>

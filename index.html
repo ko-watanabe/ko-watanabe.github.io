@@ -237,6 +237,7 @@
       (function () {
         var SITE_MARKER = "ko-watanabe-portfolio"
         var README_MARKERS = ["yarn install", "Getting Started", "Ko Watanabe - Portfolio Website"]
+        var MAINTENANCE_MARKERS = ["Site Update in Progress", "Deploying a new version"]
         var statusText = document.getElementById("status-text")
 
         function looksLikeReadme(text) {
@@ -245,7 +246,17 @@
           })
         }
 
+        function looksLikeMaintenance(html) {
+          return MAINTENANCE_MARKERS.some(function (marker) {
+            return html.indexOf(marker) !== -1
+          })
+        }
+
         function looksLikePortfolio(html) {
+          if (looksLikeMaintenance(html)) {
+            return false
+          }
+
           return (
             html.indexOf(SITE_MARKER) !== -1 ||
             (html.indexOf("Trustworthy AI") !== -1 && html.indexOf("_next/static") !== -1)
@@ -253,16 +264,13 @@
         }
 
         function bustCacheRedirect() {
-          var url = new URL(window.location.href)
-          url.searchParams.set("_", String(Date.now()))
-          window.location.replace(url.toString())
+          window.location.replace(window.location.origin + "/")
         }
 
         function checkForLiveSite() {
-          var url = new URL(window.location.origin + window.location.pathname)
-          url.searchParams.set("_", String(Date.now()))
+          var url = window.location.origin + "/?_=" + Date.now()
 
-          return fetch(url.toString(), {
+          return fetch(url, {
             cache: "no-store",
             headers: { "Cache-Control": "no-cache", Pragma: "no-cache" },
           })
@@ -274,9 +282,7 @@
                 if (statusText) {
                   statusText.textContent = "Update complete. Loading site..."
                 }
-                var nextUrl = new URL(window.location.origin + window.location.pathname)
-                nextUrl.searchParams.set("v", String(Date.now()))
-                window.location.replace(nextUrl.toString())
+                window.location.replace(window.location.origin + "/")
                 return true
               }
               return false

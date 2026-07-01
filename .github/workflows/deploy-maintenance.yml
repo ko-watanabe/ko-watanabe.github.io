@@ -1,0 +1,39 @@
+name: Deploy Maintenance Page
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-maintenance"
+  cancel-in-progress: true
+
+jobs:
+  deploy-maintenance:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload maintenance page
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './maintenance'
+
+      - name: Deploy maintenance page
+        id: deployment
+        uses: actions/deploy-pages@v4
