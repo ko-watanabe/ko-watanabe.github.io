@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Ko Watanabe — Site Update in Progress</title>
+    <style>
+      :root {
+        --background: #fafaf9;
+        --foreground: #1a1a2e;
+        --muted: #6b7280;
+        --accent: #2d6a7a;
+        --accent-glow: rgba(45, 106, 122, 0.25);
+        --card: rgba(255, 255, 255, 0.72);
+        --border: rgba(26, 26, 46, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--foreground);
+        background:
+          linear-gradient(135deg, var(--background) 0%, #f4f7f8 55%, rgba(45, 106, 122, 0.08) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.25rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(128, 128, 128, 0.04) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(128, 128, 128, 0.04) 1px, transparent 1px);
+        background-size: 14px 24px;
+        pointer-events: none;
+      }
+
+      .orb {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(60px);
+        opacity: 0.45;
+        animation: float 10s ease-in-out infinite;
+      }
+
+      .orb-a {
+        width: 18rem;
+        height: 18rem;
+        top: -4rem;
+        left: -3rem;
+        background: rgba(45, 106, 122, 0.18);
+      }
+
+      .orb-b {
+        width: 22rem;
+        height: 22rem;
+        right: -5rem;
+        bottom: -6rem;
+        background: rgba(45, 106, 122, 0.12);
+        animation-delay: -3s;
+      }
+
+      .panel {
+        position: relative;
+        z-index: 1;
+        width: min(100%, 42rem);
+        padding: 3rem 2.25rem;
+        border: 1px solid var(--border);
+        border-radius: 1.5rem;
+        background: var(--card);
+        backdrop-filter: blur(12px);
+        box-shadow:
+          0 24px 60px rgba(26, 26, 46, 0.08),
+          0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+        text-align: center;
+        animation: rise 0.8s ease-out both;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(45, 106, 122, 0.18);
+        background: rgba(45, 106, 122, 0.08);
+        color: var(--accent);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+      }
+
+      .pulse {
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 0 0 var(--accent-glow);
+        animation: pulse 1.8s ease-out infinite;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.75rem;
+      }
+
+      .subtitle {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 1rem;
+        color: var(--muted);
+        margin-bottom: 2rem;
+        line-height: 1.7;
+      }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.9rem 1.1rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid var(--border);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 0.95rem;
+        color: var(--foreground);
+        margin-bottom: 1.75rem;
+      }
+
+      .loader {
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 999px;
+        border: 2px solid rgba(45, 106, 122, 0.18);
+        border-top-color: var(--accent);
+        animation: spin 0.9s linear infinite;
+      }
+
+      .footer {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 0.9rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .footer strong {
+        color: var(--foreground);
+        font-weight: 600;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 var(--accent-glow);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(45, 106, 122, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(45, 106, 122, 0);
+        }
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(18px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <main class="panel">
+      <div class="badge">
+        <span class="pulse" aria-hidden="true"></span>
+        Maintenance
+      </div>
+
+      <h1>Ko Watanabe</h1>
+      <p class="subtitle">
+        The portfolio site is being refreshed with the latest updates.
+        Please check back in a few minutes.
+      </p>
+
+      <div class="status" id="status" role="status" aria-live="polite">
+        <span class="loader" aria-hidden="true"></span>
+        <span id="status-text">Deploying a new version...</span>
+      </div>
+
+      <p class="footer">
+        <strong>Trustworthy AI &amp; HCI Researcher</strong><br />
+        German Research Center for Artificial Intelligence (DFKI)
+      </p>
+    </main>
+    <script>
+      (function () {
+        var SITE_MARKER = "ko-watanabe-portfolio"
+        var README_MARKERS = ["yarn install", "Getting Started", "Ko Watanabe - Portfolio Website"]
+        var statusText = document.getElementById("status-text")
+
+        function looksLikeReadme(text) {
+          return README_MARKERS.every(function (marker) {
+            return text.indexOf(marker) !== -1
+          })
+        }
+
+        function looksLikePortfolio(html) {
+          return (
+            html.indexOf(SITE_MARKER) !== -1 ||
+            (html.indexOf("Trustworthy AI") !== -1 && html.indexOf("_next/static") !== -1)
+          )
+        }
+
+        function bustCacheRedirect() {
+          var url = new URL(window.location.href)
+          url.searchParams.set("_", String(Date.now()))
+          window.location.replace(url.toString())
+        }
+
+        function checkForLiveSite() {
+          var url = new URL(window.location.origin + window.location.pathname)
+          url.searchParams.set("_", String(Date.now()))
+
+          return fetch(url.toString(), {
+            cache: "no-store",
+            headers: { "Cache-Control": "no-cache", Pragma: "no-cache" },
+          })
+            .then(function (response) {
+              return response.text()
+            })
+            .then(function (html) {
+              if (looksLikePortfolio(html)) {
+                if (statusText) {
+                  statusText.textContent = "Update complete. Loading site..."
+                }
+                var nextUrl = new URL(window.location.origin + window.location.pathname)
+                nextUrl.searchParams.set("v", String(Date.now()))
+                window.location.replace(nextUrl.toString())
+                return true
+              }
+              return false
+            })
+            .catch(function () {
+              return false
+            })
+        }
+
+        var pageText = document.body ? document.body.innerText : ""
+        if (looksLikeReadme(pageText)) {
+          bustCacheRedirect()
+          return
+        }
+
+        checkForLiveSite()
+        window.setInterval(checkForLiveSite, 8000)
+      })()
+    </script>
+  </body>
+</html>
