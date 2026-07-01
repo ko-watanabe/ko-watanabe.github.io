@@ -50,7 +50,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ```bash
 # To get the recent publication information
-yarn update-publications
+ua
 
 # Build for production
 yarn build
