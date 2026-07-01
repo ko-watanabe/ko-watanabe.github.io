@@ -56,6 +56,12 @@ const fundingEn = [
 
 const committees = [
   {
+    organization: "ABC 2027",
+    role: "Program Committee",
+    url: "https://autocare.ai/abc2027",
+    image: "/committee/abc2027.png",
+  },
+  {
     organization: "CHI 2026",
     role: "Poster AC",
     url: "https://chi2026.acm.org/",

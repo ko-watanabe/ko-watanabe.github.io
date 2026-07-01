@@ -1,12 +1,117 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { CalendarRange, RotateCcw } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
+import { cn } from "@/lib/utils"
+
+type NewsItem = {
+  date: string
+  title: string
+  location?: string
+  links?: Array<{ text: string; url?: string }>
+}
+
+const ENGLISH_MONTHS: Record<string, number> = {
+  january: 1,
+  february: 2,
+  march: 3,
+  april: 4,
+  may: 5,
+  june: 6,
+  july: 7,
+  august: 8,
+  september: 9,
+  october: 10,
+  november: 11,
+  december: 12,
+}
+
+function parseNewsDate(date: string): { year: number; month: number } | null {
+  const jaMatch = date.match(/(\d{4})年(\d{1,2})月/)
+  if (jaMatch) {
+    return { year: Number(jaMatch[1]), month: Number(jaMatch[2]) }
+  }
+
+  const enMatch = date.match(/^([A-Za-z]+)\s+(?:\d{1,2},\s+)?(\d{4})$/)
+  if (enMatch) {
+    const month = ENGLISH_MONTHS[enMatch[1].toLowerCase()]
+    if (month) {
+      return { year: Number(enMatch[2]), month }
+    }
+  }
+
+  return null
+}
+
+function getAvailableYears(items: NewsItem[]) {
+  const years = new Set<number>()
+  for (const item of items) {
+    const parsed = parseNewsDate(item.date)
+    if (parsed) {
+      years.add(parsed.year)
+    }
+  }
+  return Array.from(years).sort((a, b) => b - a)
+}
+
+function getAvailableMonths(items: NewsItem[], year: string) {
+  const months = new Set<number>()
+  for (const item of items) {
+    const parsed = parseNewsDate(item.date)
+    if (parsed && (!year || parsed.year === Number(year))) {
+      months.add(parsed.month)
+    }
+  }
+  return Array.from(months).sort((a, b) => b - a)
+}
+
+function filterNewsItems(items: NewsItem[], year: string, month: string) {
+  if (!year && !month) {
+    return items
+  }
+
+  return items.filter((item) => {
+    const parsed = parseNewsDate(item.date)
+    if (!parsed) {
+      return false
+    }
+    if (year && parsed.year !== Number(year)) {
+      return false
+    }
+    if (month && parsed.month !== Number(month)) {
+      return false
+    }
+    return true
+  })
+}
 
 const newsItemsJa = [
+  {
+    date: "2026年6月",
+    title: "大阪大学と頭蓋脳波からの視聴映像再構成に関する研究の共同研究開始",
+    location: "Osaka, Japan 🇯🇵",
+    links: [
+      {
+        text: "頭蓋脳波からの視聴映像再構成に関する共同研究",
+        url: "https://www.med.osaka-u.ac.jp/pub/nsurg/wp-content/uploads/2026/06/99cdc02aded27318bf9d0c0bcc651cb2.pdf",
+      },
+    ],
+  },
+  {
+    date: "2026年6月",
+    title: "WCCIにて論文を発表",
+    location: "Maastricht, Netherlands 🇳🇱",
+    links: [
+      {
+        text: "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
+        url: "https://arxiv.org/abs/2603.24086",
+      },
+    ],
+  },
   {
     date: "2026年5月",
     title: "「第3回 GenAI Hackathon of the German Police」に参加",
@@ -534,6 +639,28 @@ const newsItemsJa = [
 
 const newsItemsEn = [
   {
+    date: "June 2026",
+    title: "Started joint research with Osaka University on audiovisual reconstruction from intracranial EEG",
+    location: "Osaka, Japan 🇯🇵",
+    links: [
+      {
+        text: "Joint research on audiovisual reconstruction from intracranial EEG",
+        url: "https://www.med.osaka-u.ac.jp/pub/nsurg/wp-content/uploads/2026/06/99cdc02aded27318bf9d0c0bcc651cb2.pdf",
+      },
+    ],
+  },
+  {
+    date: "June 2026",
+    title: "Presented work at WCCI 2026",
+    location: "Maastricht, Netherlands 🇳🇱",
+    links: [
+      {
+        text: "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
+        url: "https://arxiv.org/abs/2603.24086",
+      },
+    ],
+  },
+  {
     date: "May 2026",
     title: "Joined: 3rd GenAI Hackathon of the German Police",
     location: "Wiesbaden, Germany 🇩🇪",
@@ -1052,43 +1179,234 @@ export function NewsSection() {
   const { language } = useLanguage()
   const newsItems = language === 'ja' ? newsItemsJa : newsItemsEn
   const [displayCount, setDisplayCount] = useState(INITIAL_DISPLAY_COUNT)
+  const [filterYear, setFilterYear] = useState('')
+  const [filterMonth, setFilterMonth] = useState('')
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
 
-  const displayedItems = newsItems.slice(0, displayCount)
-  const hasMore = displayCount < newsItems.length
+  const isFilterActive = filterYear !== '' || filterMonth !== ''
+
+  const filteredItems = useMemo(
+    () => filterNewsItems(newsItems, filterYear, filterMonth),
+    [newsItems, filterYear, filterMonth],
+  )
+
+  const availableYears = useMemo(() => getAvailableYears(newsItems), [newsItems])
+  const availableMonths = useMemo(
+    () => getAvailableMonths(newsItems, filterYear),
+    [newsItems, filterYear],
+  )
+
+  useEffect(() => {
+    setDisplayCount(INITIAL_DISPLAY_COUNT)
+  }, [language, filterYear, filterMonth])
+
+  useEffect(() => {
+    if (filterMonth && !availableMonths.includes(Number(filterMonth))) {
+      setFilterMonth('')
+    }
+  }, [availableMonths, filterMonth])
+
+  const displayedItems = filteredItems.slice(0, displayCount)
+  const hasMore = displayCount < filteredItems.length
   const canShowLess = displayCount > INITIAL_DISPLAY_COUNT
 
   const handleLoadMore = () => {
-    setDisplayCount(prev => Math.min(prev + LOAD_MORE_COUNT, newsItems.length))
+    setDisplayCount(prev => Math.min(prev + LOAD_MORE_COUNT, filteredItems.length))
   }
 
   const handleShowLess = () => {
     setDisplayCount(prev => Math.max(prev - 3, INITIAL_DISPLAY_COUNT))
   }
 
+  const handleResetFilter = () => {
+    setFilterYear('')
+    setFilterMonth('')
+  }
+
   const content = {
     ja: {
       showMore: "もっと見る",
       showLess: "閉じる",
+      filterTitle: "期間で絞り込み",
+      toggleFilter: "期間で絞り込む",
+      closeFilter: "絞り込みを閉じる",
+      year: "年",
+      month: "月",
+      allYears: "すべて",
+      allMonths: "すべて",
+      reset: "リセット",
+      noResults: "該当するニュースはありません。",
+      monthLabel: (value: number) => `${value}月`,
+      activeFilter: (year: string, month: string) => {
+        if (year && month) return `${year}年${month}月`
+        if (year) return `${year}年`
+        if (month) return `${month}月`
+        return ""
+      },
     },
     en: {
       showMore: "Show More",
       showLess: "Show Less",
+      filterTitle: "Filter by period",
+      toggleFilter: "Filter by period",
+      closeFilter: "Close filter",
+      year: "Year",
+      month: "Month",
+      allYears: "All",
+      allMonths: "All",
+      reset: "Reset",
+      noResults: "No news found for this period.",
+      monthLabel: (value: number) =>
+        new Date(2000, value - 1, 1).toLocaleString('en', { month: 'short' }),
+      activeFilter: (year: string, month: string) => {
+        if (year && month) {
+          const monthName = new Date(2000, Number(month) - 1, 1).toLocaleString('en', { month: 'long' })
+          return `${monthName} ${year}`
+        }
+        if (year) return String(year)
+        if (month) {
+          return new Date(2000, Number(month) - 1, 1).toLocaleString('en', { month: 'long' })
+        }
+        return ""
+      },
     },
   }
 
   const texts = content[language]
 
+  const chipClassName = (active: boolean) =>
+    cn(
+      "rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all duration-200",
+      active
+        ? "border-secondary bg-secondary text-secondary-foreground shadow-sm"
+        : "border-border/80 bg-background/70 text-muted-foreground hover:border-secondary/35 hover:bg-background hover:text-foreground",
+    )
+
+  const activeFilterLabel = texts.activeFilter(filterYear, filterMonth)
+
   return (
     <section className="bg-muted/30 px-4 py-20" id="news">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="mb-12 text-balance text-center font-serif text-4xl font-bold tracking-tight md:text-5xl">
-          News
-        </h2>
+        <div className="mb-8 flex items-center justify-center gap-3">
+          <h2 className="text-balance text-center font-serif text-4xl font-bold tracking-tight md:text-5xl">
+            News
+          </h2>
+          <button
+            type="button"
+            onClick={() => setIsFilterOpen((open) => !open)}
+            aria-expanded={isFilterOpen}
+            aria-label={isFilterOpen ? texts.closeFilter : texts.toggleFilter}
+            className={cn(
+              "relative inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-200",
+              isFilterOpen
+                ? "border-secondary bg-secondary text-secondary-foreground shadow-sm"
+                : "border-border/80 bg-card/80 text-muted-foreground hover:border-secondary/35 hover:bg-card hover:text-foreground",
+            )}
+          >
+            <CalendarRange className="h-5 w-5" />
+            {isFilterActive && !isFilterOpen && (
+              <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-secondary ring-2 ring-background" />
+            )}
+          </button>
+        </div>
+
+        {isFilterOpen && (
+        <div className="mb-10 overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-card via-card to-secondary/5 p-5 shadow-sm animate-in fade-in slide-in-from-top-2 duration-200 md:p-6">
+          <div className="mb-5 flex items-center justify-between gap-3">
+            <div>
+              <p className="font-serif text-lg font-semibold tracking-tight text-foreground">
+                {texts.filterTitle}
+              </p>
+              {isFilterActive && (
+                <p className="text-sm text-muted-foreground">{activeFilterLabel}</p>
+              )}
+            </div>
+
+            {isFilterActive && (
+              <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
+                {filteredItems.length}
+              </Badge>
+            )}
+          </div>
+
+          <div className="space-y-5">
+            <div className="space-y-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                {texts.year}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setFilterYear('')}
+                  className={chipClassName(filterYear === '')}
+                >
+                  {texts.allYears}
+                </button>
+                {availableYears.map((year) => (
+                  <button
+                    key={year}
+                    type="button"
+                    onClick={() => setFilterYear(String(year))}
+                    className={chipClassName(filterYear === String(year))}
+                  >
+                    {year}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                {texts.month}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setFilterMonth('')}
+                  className={chipClassName(filterMonth === '')}
+                >
+                  {texts.allMonths}
+                </button>
+                {availableMonths.map((month) => (
+                  <button
+                    key={month}
+                    type="button"
+                    onClick={() => setFilterMonth(String(month))}
+                    className={chipClassName(filterMonth === String(month))}
+                  >
+                    {texts.monthLabel(month)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5 flex justify-end border-t border-border/60 pt-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={handleResetFilter}
+              disabled={!isFilterActive}
+              className="gap-2 rounded-full px-4 text-muted-foreground hover:text-foreground"
+            >
+              <RotateCcw className="h-4 w-4" />
+              {texts.reset}
+            </Button>
+          </div>
+        </div>
+        )}
 
         <div className="space-y-4">
-          {displayedItems.map((item, index) => (
+          {displayedItems.length === 0 ? (
+            <Card>
+              <CardContent className="p-6 text-center text-muted-foreground">
+                {texts.noResults}
+              </CardContent>
+            </Card>
+          ) : (
+            displayedItems.map((item) => (
             <Card
-              key={index}
+              key={`${item.date}-${item.title}`}
               className="transition-shadow hover:shadow-md"
             >
               <CardContent className="relative p-6">
@@ -1129,7 +1447,8 @@ export function NewsSection() {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            ))
+          )}
         </div>
 
         {(hasMore || canShowLess) && (
