@@ -3,6 +3,7 @@ import { AboutSection } from "@/components/about-section"
 import { PublicationsListSection } from "@/components/publications-list-section"
 import { NewsSection } from "@/components/news-section"
 import { ExperienceSection } from "@/components/experience-section"
+import { SupervisionSection } from "@/components/supervision-section"
 import { PublicationsSection } from "@/components/publications-section"
 import { ContactSection } from "@/components/contact-section"
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <PublicationsListSection />
       <NewsSection />
       <ExperienceSection />
+      <SupervisionSection />
       <PublicationsSection />
       <ContactSection />
     </main>
