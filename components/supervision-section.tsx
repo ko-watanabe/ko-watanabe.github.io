@@ -8,11 +8,13 @@ import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 
 type SuperviseeRole = "master" | "bachelor"
+type SupervisionCategory = "thesis" | "internship"
 
 type Supervisee = {
   name: string
-  role: SuperviseeRole
-  university: string
+  roles: SuperviseeRole[]
+  category: SupervisionCategory
+  university?: string
   thesisTitle?: string
   date?: string
   url?: string
@@ -39,7 +41,8 @@ function formatSupervisionDate(date: string, language: "ja" | "en") {
 const supervisees: Supervisee[] = [
   {
     name: "Tanuja Sathyanarayana",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "RPTU Kaiserslautern-Landau",
     thesisTitle:
       "Using Deep Neural Networks to Predict Engagement in Online Meetings Based on Facial Expressions",
@@ -48,7 +51,8 @@ const supervisees: Supervisee[] = [
   },
   {
     name: "David Dembinsky",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "RPTU Kaiserslautern-Landau",
     thesisTitle: "Generating Naturalistic Eye Gaze for Conversational Avatars",
     date: "2024-05-06",
@@ -56,7 +60,8 @@ const supervisees: Supervisee[] = [
   },
   {
     name: "Pooja Atul Pol",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "RPTU Kaiserslautern-Landau",
     thesisTitle: "Right-Left Brain Cognitive Activity Recognition Through Pupillometry",
     date: "2024-12-13",
@@ -64,7 +69,8 @@ const supervisees: Supervisee[] = [
   },
   {
     name: "Sahana Yadnakudige Subramanya",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "RPTU Kaiserslautern-Landau",
     thesisTitle:
       "Enhancing Emotion Recognition with Human-in-the-Loop User Feedback Annotation",
@@ -73,61 +79,87 @@ const supervisees: Supervisee[] = [
   },
   {
     name: "Arib Yousuf",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "RPTU Kaiserslautern-Landau",
     thesisTitle: "Estimation of Personal Identifiable Information in Skin Diagnosis Images",
     date: "2026-06-02",
     url: "https://rptu.de/",
   },
   {
+    name: "Gitesh Gund",
+    roles: ["master"],
+    category: "thesis",
+    university: "RPTU Kaiserslautern-Landau",
+    thesisTitle:
+      "Integrating Eye Tracking and Deep Learning for Enhanced Lecturer Feedback and Student's Comprehension in Online Video Education",
+    date: "2025-02-19",
+    url: "https://rptu.de/",
+  },
+  {
     name: "Noriyuki Tanaka",
-    role: "master",
+    roles: ["master"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2025-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Shunta Sato",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2025-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Soushi Yoshida",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2025-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Soki Kokado",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2025-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Takeshi Tai",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2025-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Ryogo Ueshima",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2024-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
   {
     name: "Noriyuki Tanaka",
-    role: "bachelor",
+    roles: ["bachelor"],
+    category: "thesis",
     university: "Osaka Metropolitan University",
     date: "2023-03-31",
     url: "https://www.omu.ac.jp/en/",
   },
+  { name: "Kanta Yamaoka", roles: ["bachelor"], category: "internship", url: "https://kanta-yamaoka.earth" },
+  { name: "Haruki Suzawa", roles: ["bachelor", "master"], category: "internship", url: "https://github.com/harukisuzawa" },
+  { name: "Haruka Sakagami", roles: ["master"], category: "internship" },
+  { name: "Seiya Tanaka", roles: ["master"], category: "internship" },
+  { name: "Riku Higashimura", roles: ["master"], category: "internship", url: "https://liku.jp/" },
+  { name: "Dai Shimizu", roles: ["bachelor"], category: "internship", url: "https://nulla1202.github.io/neuroisallineed/" },
+  { name: "Tokio Uchida", roles: ["master"], category: "internship" },
+  { name: "Ryugo Morita", roles: ["master"], category: "internship", url: "https://ryugo417.github.io/" },
 ]
 
 const INITIAL_DISPLAY_COUNT = 3
@@ -136,11 +168,16 @@ const LOAD_MORE_COUNT = 3
 const content = {
   ja: {
     title: "Supervision",
+    tabs: {
+      thesis: "Thesis",
+      internship: "Internship",
+    },
     showMore: "もっと見る",
     showLess: "閉じる",
     roleLabels: {
       master: "修士",
       bachelor: "学士",
+      both: "学士・修士",
     },
     countLabels: {
       master: "修士課程",
@@ -153,11 +190,16 @@ const content = {
   },
   en: {
     title: "Supervision",
+    tabs: {
+      thesis: "Thesis",
+      internship: "Internship",
+    },
     showMore: "Show More",
     showLess: "Show Less",
     roleLabels: {
       master: "Master",
       bachelor: "Bachelor",
+      both: "Bachelor & Master",
     },
     countLabels: {
       master: "Master Student",
@@ -170,14 +212,27 @@ const content = {
   },
 }
 
+function formatRoleLabel(roles: SuperviseeRole[], texts: (typeof content)["en"]) {
+  if (roles.includes("bachelor") && roles.includes("master")) {
+    return texts.roleLabels.both
+  }
+  return texts.roleLabels[roles[0]]
+}
+
 export function SupervisionSection() {
   const { language } = useLanguage()
   const texts = content[language]
+  const [activeCategory, setActiveCategory] = useState<SupervisionCategory>("thesis")
   const [displayCount, setDisplayCount] = useState(INITIAL_DISPLAY_COUNT)
+
+  const categorySupervisees = useMemo(
+    () => supervisees.filter((supervisee) => supervisee.category === activeCategory),
+    [activeCategory],
+  )
 
   const sortedSupervisees = useMemo(
     () =>
-      [...supervisees].sort((a, b) => {
+      [...categorySupervisees].sort((a, b) => {
         if (a.date && b.date) {
           return b.date.localeCompare(a.date)
         }
@@ -185,7 +240,7 @@ export function SupervisionSection() {
         if (b.date) return 1
         return 0
       }),
-    [],
+    [categorySupervisees],
   )
 
   const displayedSupervisees = sortedSupervisees.slice(0, displayCount)
@@ -194,10 +249,10 @@ export function SupervisionSection() {
 
   useEffect(() => {
     setDisplayCount(INITIAL_DISPLAY_COUNT)
-  }, [language])
+  }, [language, activeCategory])
 
-  const masterCount = supervisees.filter((s) => s.role === "master").length
-  const bachelorCount = supervisees.filter((s) => s.role === "bachelor").length
+  const masterCount = categorySupervisees.filter((s) => s.roles.includes("master")).length
+  const bachelorCount = categorySupervisees.filter((s) => s.roles.includes("bachelor")).length
 
   const handleLoadMore = () => {
     setDisplayCount((prev) => Math.min(prev + LOAD_MORE_COUNT, sortedSupervisees.length))
@@ -217,6 +272,18 @@ export function SupervisionSection() {
           <h2 className="text-balance text-center font-serif text-4xl font-bold tracking-tight md:text-5xl">
             {texts.title}
           </h2>
+          <div className="flex flex-wrap justify-center gap-2">
+            {(["thesis", "internship"] as const).map((category) => (
+              <Button
+                key={category}
+                variant={activeCategory === category ? "default" : "outline"}
+                size="sm"
+                onClick={() => setActiveCategory(category)}
+              >
+                {texts.tabs[category]}
+              </Button>
+            ))}
+          </div>
           <p className="text-center text-sm text-muted-foreground md:text-base">
             {texts.countSummary(texts.countLabels.master, masterCount)},{" "}
             {texts.countSummary(texts.countLabels.bachelor, bachelorCount)}
@@ -226,55 +293,79 @@ export function SupervisionSection() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {displayedSupervisees.map((supervisee) => (
             <Card
-              key={`${supervisee.name}-${supervisee.role}`}
+              key={`${supervisee.name}-${supervisee.roles.join("-")}-${supervisee.date ?? activeCategory}`}
               className="aspect-square gap-0 py-0 transition-shadow hover:shadow-md"
             >
-              <CardContent className="flex h-full flex-col p-4 md:p-5">
-                <div className="mb-3 flex items-start justify-between gap-2">
-                  <h3 className="line-clamp-2 text-base font-semibold leading-snug text-foreground">
-                    {supervisee.name}
+              {activeCategory === "internship" ? (
+                <CardContent className="flex h-full flex-col items-center justify-center p-4 text-center md:p-5">
+                  <h3 className="mb-4 text-base font-semibold leading-snug md:text-lg">
+                    {supervisee.url ? (
+                      <a
+                        href={supervisee.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-secondary hover:underline"
+                      >
+                        {supervisee.name}
+                      </a>
+                    ) : (
+                      <span className="text-foreground">{supervisee.name}</span>
+                    )}
                   </h3>
-                  <Badge variant="secondary" className="shrink-0 text-xs">
-                    {texts.roleLabels[supervisee.role]}
+                  <Badge variant="secondary" className="text-xs">
+                    {formatRoleLabel(supervisee.roles, texts)}
                   </Badge>
-                </div>
-
-                <dl className="flex min-h-0 flex-1 flex-col gap-2.5 text-xs md:text-sm">
-                  {supervisee.date && (
-                    <div>
-                      <dt className="font-medium text-muted-foreground">{texts.date}</dt>
-                      <dd className="mt-0.5 font-medium text-secondary">
-                        {formatSupervisionDate(supervisee.date, language)}
-                      </dd>
-                    </div>
-                  )}
-                  <div>
-                    <dt className="font-medium text-muted-foreground">{texts.university}</dt>
-                    <dd className="mt-0.5 line-clamp-2 text-foreground">
-                      {supervisee.url ? (
-                        <a
-                          href={supervisee.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-secondary hover:underline"
-                        >
-                          {supervisee.university}
-                        </a>
-                      ) : (
-                        supervisee.university
-                      )}
-                    </dd>
+                </CardContent>
+              ) : (
+                <CardContent className="flex h-full flex-col p-4 md:p-5">
+                  <div className="mb-3 flex items-start justify-between gap-2">
+                    <h3 className="line-clamp-2 text-base font-semibold leading-snug text-foreground">
+                      {supervisee.name}
+                    </h3>
+                    <Badge variant="secondary" className="shrink-0 text-xs">
+                      {formatRoleLabel(supervisee.roles, texts)}
+                    </Badge>
                   </div>
-                  {supervisee.thesisTitle && (
-                    <div className="min-h-0 flex-1">
-                      <dt className="font-medium text-muted-foreground">{texts.thesis}</dt>
-                      <dd className="mt-0.5 line-clamp-4 leading-relaxed text-foreground">
-                        {supervisee.thesisTitle}
-                      </dd>
-                    </div>
-                  )}
-                </dl>
-              </CardContent>
+
+                  <dl className="flex min-h-0 flex-1 flex-col gap-2.5 text-xs md:text-sm">
+                    {supervisee.date && (
+                      <div>
+                        <dt className="font-medium text-muted-foreground">{texts.date}</dt>
+                        <dd className="mt-0.5 font-medium text-secondary">
+                          {formatSupervisionDate(supervisee.date, language)}
+                        </dd>
+                      </div>
+                    )}
+                    {supervisee.university && (
+                      <div>
+                        <dt className="font-medium text-muted-foreground">{texts.university}</dt>
+                        <dd className="mt-0.5 line-clamp-2 text-foreground">
+                          {supervisee.url ? (
+                            <a
+                              href={supervisee.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-secondary hover:underline"
+                            >
+                              {supervisee.university}
+                            </a>
+                          ) : (
+                            supervisee.university
+                          )}
+                        </dd>
+                      </div>
+                    )}
+                    {supervisee.thesisTitle && (
+                      <div className="min-h-0 flex-1">
+                        <dt className="font-medium text-muted-foreground">{texts.thesis}</dt>
+                        <dd className="mt-0.5 line-clamp-4 leading-relaxed text-foreground">
+                          {supervisee.thesisTitle}
+                        </dd>
+                      </div>
+                    )}
+                  </dl>
+                </CardContent>
+              )}
             </Card>
           ))}
         </div>
