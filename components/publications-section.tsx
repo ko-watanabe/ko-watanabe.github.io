@@ -228,7 +228,7 @@ const reviews = [
   },
   {
     name: "BMC Medical Education",
-    count: 1,
+    count: 2,
     url: "https://link.springer.com/journal/12909",
     type: "journal",
   },
