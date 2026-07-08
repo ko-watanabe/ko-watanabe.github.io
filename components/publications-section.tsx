@@ -222,7 +222,7 @@ const reviews = [
   },
   {
     name: "npj Artificial Intelligence",
-    count: 1,
+    count: 2,
     url: "https://www.nature.com/npjai/",
     type: "journal",
   },
