@@ -396,14 +396,20 @@ export function PublicationsSection() {
 
   const [visibleAwardCount, setVisibleAwardCount] = useState(3)
   const [visibleFundingCount, setVisibleFundingCount] = useState(3)
+  // 4 rows × 3 columns (lg:grid-cols-3)
+  const initialCommitteeCount = 12
+  const [visibleCommitteeCount, setVisibleCommitteeCount] = useState(initialCommitteeCount)
 
   const displayedAwards = awards.slice(0, visibleAwardCount)
   const displayedFunding = funding.slice(0, visibleFundingCount)
+  const displayedCommittees = committees.slice(0, visibleCommitteeCount)
 
   const hasMoreAwards = awards.length > visibleAwardCount
   const hasMoreFunding = funding.length > visibleFundingCount
+  const hasMoreCommittees = committees.length > visibleCommitteeCount
   const canShowLessAwards = visibleAwardCount > 3
   const canShowLessFunding = visibleFundingCount > 3
+  const canShowLessCommittees = visibleCommitteeCount > initialCommitteeCount
 
   const handleShowMoreAwards = () => {
     setVisibleAwardCount(prev => Math.min(prev + 3, awards.length))
@@ -419,6 +425,14 @@ export function PublicationsSection() {
 
   const handleShowLessFunding = () => {
     setVisibleFundingCount(prev => Math.max(prev - 3, 3))
+  }
+
+  const handleShowMoreCommittees = () => {
+    setVisibleCommitteeCount(prev => Math.min(prev + initialCommitteeCount, committees.length))
+  }
+
+  const handleShowLessCommittees = () => {
+    setVisibleCommitteeCount(prev => Math.max(prev - initialCommitteeCount, initialCommitteeCount))
   }
 
   // ConferenceとJournalに分けてソート
@@ -610,7 +624,7 @@ export function PublicationsSection() {
                 <h3 className="text-xl font-bold">{texts.committeesTitle}</h3>
               </div>
               <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full min-w-0">
-                {committees.map((committee, index) => (
+                {displayedCommittees.map((committee, index) => (
                   <div
                     key={index}
                     className="relative w-full max-w-full rounded-md border border-border bg-background p-3 text-sm overflow-hidden min-w-0"
@@ -657,6 +671,28 @@ export function PublicationsSection() {
                   </div>
                 ))}
               </div>
+              {(hasMoreCommittees || canShowLessCommittees) && (
+                <div className="pt-4 flex gap-2">
+                  {hasMoreCommittees && (
+                    <Button
+                      variant="outline"
+                      onClick={handleShowMoreCommittees}
+                      className="flex-1"
+                    >
+                      {texts.showMore}
+                    </Button>
+                  )}
+                  {canShowLessCommittees && (
+                    <Button
+                      variant="outline"
+                      onClick={handleShowLessCommittees}
+                      className="flex-1"
+                    >
+                      {texts.showLess}
+                    </Button>
+                  )}
+                </div>
+              )}
             </CardContent>
           </Card>
 
