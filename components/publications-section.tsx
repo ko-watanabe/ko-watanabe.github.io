@@ -56,6 +56,12 @@ const fundingEn = [
 
 const committees = [
   {
+    organization: "ICMU 2027",
+    role: "TPC",
+    url: "https://www.icmu.org/icmu2027",
+    image: "/committee/icmu2027.png",
+  },
+  {
     organization: "ABC 2027",
     role: "Program Committee",
     url: "https://autocare.ai/abc2027",
@@ -142,7 +148,7 @@ const committees = [
   {
     organization: "ICMU 2025",
     role: "TPC",
-    url: "https://www.icmu.org/",
+    url: "https://www.icmu.org/icmu2025",
     image: "/committee/icmu2025.png",
   },
   {
