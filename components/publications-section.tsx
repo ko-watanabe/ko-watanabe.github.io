@@ -203,6 +203,12 @@ const reviews = [
     type: "conference",
   },
   {
+    name: "IWRM'26",
+    count: 1,
+    url: "https://reality-mediation.github.io/2026/",
+    type: "conference",
+  },
+  {
     name: "CHI'26 (Full Paper)",
     count: 5,
     url: "https://chi2026.acm.org/",
