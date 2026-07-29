@@ -221,6 +221,12 @@ const reviews = [
     type: "journal",
   },
   {
+    name: "Discover Computing",
+    count: 1,
+    url: "https://link.springer.com/journal/10791",
+    type: "journal",
+  },
+  {
     name: "ML4H'25",
     count: 4,
     url: "https://ahli.cc/ml4h/",
