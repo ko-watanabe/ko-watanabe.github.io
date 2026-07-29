@@ -91,6 +91,39 @@ function filterNewsItems(items: NewsItem[], year: string, month: string) {
 
 const newsItemsJa = [
   {
+    date: "2026年7月",
+    title: "IEEE/IAPR International Joint Conference on Biometrics 2026に採択 🎉",
+    location: "Rome, Italy 🇮🇹",
+    links: [
+      {
+        text: "国際会議のホームページ",
+        url: "https://ijcb2026.ieee-biometrics.org/",
+      },
+    ],
+  },
+  {
+    date: "2026年7月",
+    title: "AI4LifeScienceに採択 🎉",
+    location: "Mainz, Germany 🇩🇪",
+    links: [
+      {
+        text: "国際会議のホームページ",
+        url: "https://ai4sci.eu/ai4lifesciences/",
+      },
+    ],
+  },
+  {
+    date: "2026年7月",
+    title: "UbiComp 2026にポスター論文4本が採択 🎉",
+    location: "Shanghai, China 🇨🇳",
+    links: [
+      {
+        text: "国際会議のホームページ",
+        url: "https://www.ubicomp.org/ubicomp-iswc-2026/",
+      },
+    ],
+  },
+  {
     date: "2026年6月",
     title: "大阪大学と頭蓋脳波からの視聴映像再構成に関する研究の共同研究開始",
     location: "Osaka, Japan 🇯🇵",
@@ -638,6 +671,39 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "July 2026",
+    title: "Accepted at IEEE/IAPR International Joint Conference on Biometrics 2026 🎉",
+    location: "Rome, Italy 🇮🇹",
+    links: [
+      {
+        text: "Homepage to the conference",
+        url: "https://ijcb2026.ieee-biometrics.org/",
+      },
+    ],
+  },
+  {
+    date: "July 2026",
+    title: "Accepted at AI4LifeScience 🎉",
+    location: "Mainz, Germany 🇩🇪",
+    links: [
+      {
+        text: "Homepage to the conference",
+        url: "https://ai4sci.eu/ai4lifesciences/",
+      },
+    ],
+  },
+  {
+    date: "July 2026",
+    title: "Accepted 4 poster papers in UbiComp 2026 🎉",
+    location: "Shanghai, China 🇨🇳",
+    links: [
+      {
+        text: "Homepage to the conference",
+        url: "https://www.ubicomp.org/ubicomp-iswc-2026/",
+      },
+    ],
+  },
   {
     date: "June 2026",
     title: "Started joint research with Osaka University on audiovisual reconstruction from intracranial EEG",
@@ -1311,89 +1377,89 @@ export function NewsSection() {
         </div>
 
         {isFilterOpen && (
-        <div className="mb-10 overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-card via-card to-secondary/5 p-5 shadow-sm animate-in fade-in slide-in-from-top-2 duration-200 md:p-6">
-          <div className="mb-5 flex items-center justify-between gap-3">
-            <div>
-              <p className="font-serif text-lg font-semibold tracking-tight text-foreground">
-                {texts.filterTitle}
-              </p>
+          <div className="mb-10 overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-card via-card to-secondary/5 p-5 shadow-sm animate-in fade-in slide-in-from-top-2 duration-200 md:p-6">
+            <div className="mb-5 flex items-center justify-between gap-3">
+              <div>
+                <p className="font-serif text-lg font-semibold tracking-tight text-foreground">
+                  {texts.filterTitle}
+                </p>
+                {isFilterActive && (
+                  <p className="text-sm text-muted-foreground">{activeFilterLabel}</p>
+                )}
+              </div>
+
               {isFilterActive && (
-                <p className="text-sm text-muted-foreground">{activeFilterLabel}</p>
+                <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
+                  {filteredItems.length}
+                </Badge>
               )}
             </div>
 
-            {isFilterActive && (
-              <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
-                {filteredItems.length}
-              </Badge>
-            )}
-          </div>
-
-          <div className="space-y-5">
-            <div className="space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                {texts.year}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  type="button"
-                  onClick={() => setFilterYear('')}
-                  className={chipClassName(filterYear === '')}
-                >
-                  {texts.allYears}
-                </button>
-                {availableYears.map((year) => (
+            <div className="space-y-5">
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  {texts.year}
+                </p>
+                <div className="flex flex-wrap gap-2">
                   <button
-                    key={year}
                     type="button"
-                    onClick={() => setFilterYear(String(year))}
-                    className={chipClassName(filterYear === String(year))}
+                    onClick={() => setFilterYear('')}
+                    className={chipClassName(filterYear === '')}
                   >
-                    {year}
+                    {texts.allYears}
                   </button>
-                ))}
+                  {availableYears.map((year) => (
+                    <button
+                      key={year}
+                      type="button"
+                      onClick={() => setFilterYear(String(year))}
+                      className={chipClassName(filterYear === String(year))}
+                    >
+                      {year}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  {texts.month}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setFilterMonth('')}
+                    className={chipClassName(filterMonth === '')}
+                  >
+                    {texts.allMonths}
+                  </button>
+                  {availableMonths.map((month) => (
+                    <button
+                      key={month}
+                      type="button"
+                      onClick={() => setFilterMonth(String(month))}
+                      className={chipClassName(filterMonth === String(month))}
+                    >
+                      {texts.monthLabel(month)}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className="space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                {texts.month}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  type="button"
-                  onClick={() => setFilterMonth('')}
-                  className={chipClassName(filterMonth === '')}
-                >
-                  {texts.allMonths}
-                </button>
-                {availableMonths.map((month) => (
-                  <button
-                    key={month}
-                    type="button"
-                    onClick={() => setFilterMonth(String(month))}
-                    className={chipClassName(filterMonth === String(month))}
-                  >
-                    {texts.monthLabel(month)}
-                  </button>
-                ))}
-              </div>
+            <div className="mt-5 flex justify-end border-t border-border/60 pt-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleResetFilter}
+                disabled={!isFilterActive}
+                className="gap-2 rounded-full px-4 text-muted-foreground hover:text-foreground"
+              >
+                <RotateCcw className="h-4 w-4" />
+                {texts.reset}
+              </Button>
             </div>
           </div>
-
-          <div className="mt-5 flex justify-end border-t border-border/60 pt-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={handleResetFilter}
-              disabled={!isFilterActive}
-              className="gap-2 rounded-full px-4 text-muted-foreground hover:text-foreground"
-            >
-              <RotateCcw className="h-4 w-4" />
-              {texts.reset}
-            </Button>
-          </div>
-        </div>
         )}
 
         <div className="space-y-4">
@@ -1405,48 +1471,48 @@ export function NewsSection() {
             </Card>
           ) : (
             displayedItems.map((item) => (
-            <Card
-              key={`${item.date}-${item.title}`}
-              className="transition-shadow hover:shadow-md"
-            >
-              <CardContent className="relative p-6">
-                {(item as { location?: string }).location && (
-                  <div className="absolute right-4 top-4 z-10">
-                    <Badge variant="outline" className="text-xs">
-                      {(item as { location?: string }).location}
+              <Card
+                key={`${item.date}-${item.title}`}
+                className="transition-shadow hover:shadow-md"
+              >
+                <CardContent className="relative p-6">
+                  {(item as { location?: string }).location && (
+                    <div className="absolute right-4 top-4 z-10">
+                      <Badge variant="outline" className="text-xs">
+                        {(item as { location?: string }).location}
+                      </Badge>
+                    </div>
+                  )}
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start">
+                    <Badge variant="secondary" className="w-fit shrink-0">
+                      {item.date}
                     </Badge>
+                    <div className="flex-1 pr-20">
+                      <p className="mb-2 text-base leading-relaxed text-foreground">{item.title}</p>
+                      {item.links && (
+                        <ul className="space-y-1">
+                          {item.links.map((link, linkIndex) => (
+                            <li key={linkIndex}>
+                              {'url' in link && link.url ? (
+                                <a
+                                  href={link.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-sm text-secondary hover:underline"
+                                >
+                                  • {link.text}
+                                </a>
+                              ) : (
+                                <span className="text-sm text-muted-foreground">• {link.text}</span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
-                )}
-                <div className="flex flex-col gap-4 md:flex-row md:items-start">
-                  <Badge variant="secondary" className="w-fit shrink-0">
-                    {item.date}
-                  </Badge>
-                  <div className="flex-1 pr-20">
-                    <p className="mb-2 text-base leading-relaxed text-foreground">{item.title}</p>
-                    {item.links && (
-                      <ul className="space-y-1">
-                        {item.links.map((link, linkIndex) => (
-                          <li key={linkIndex}>
-                            {'url' in link && link.url ? (
-                              <a
-                                href={link.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm text-secondary hover:underline"
-                              >
-                                • {link.text}
-                              </a>
-                            ) : (
-                              <span className="text-sm text-muted-foreground">• {link.text}</span>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
             ))
           )}
         </div>
