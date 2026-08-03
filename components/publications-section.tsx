@@ -68,6 +68,12 @@ const committees = [
     image: "/committee/abc2027.png",
   },
   {
+    organization: "MUM 2026",
+    role: "Program Committee",
+    url: "https://www.mum-conf.org/2026/",
+    image: "/committee/mum2026.png",
+  },
+  {
     organization: "CHI 2026",
     role: "Poster AC",
     url: "https://chi2026.acm.org/",
@@ -108,12 +114,6 @@ const committees = [
     role: "Demo & Poster Chair",
     url: "https://www.augmented-humans.org/",
     image: "/committee/ahs2026.png",
-  },
-  {
-    organization: "MUM 2026",
-    role: "Program Committee",
-    url: "https://www.mum-conf.org/2026/",
-    image: "/committee/mum2026.png",
   },
   {
     organization: "IUI 2025",
