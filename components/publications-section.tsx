@@ -110,6 +110,12 @@ const committees = [
     image: "/committee/ahs2026.png",
   },
   {
+    organization: "MUM 2026",
+    role: "Program Committee",
+    url: "https://www.mum-conf.org/2026/",
+    image: "/committee/mum2026.png",
+  },
+  {
     organization: "IUI 2025",
     role: "Program Committee",
     url: "https://iui.acm.org/2025/reviewers.html",
@@ -224,6 +230,12 @@ const reviews = [
     name: "Discover Computing",
     count: 1,
     url: "https://link.springer.com/journal/10791",
+    type: "journal",
+  },
+  {
+    name: "Virtual Reality",
+    count: 1,
+    url: "https://link.springer.com/journal/10055",
     type: "journal",
   },
   {
