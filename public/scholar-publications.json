@@ -14,7 +14,7 @@
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
     "year": "2021",
-    "citations": 32,
+    "citations": 33,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null
@@ -24,7 +24,7 @@
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 24,
+    "citations": 25,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "bibtex": null
@@ -34,7 +34,7 @@
     "authors": "C Chen, Y Arakawa, K Watanabe, S Ishimaru",
     "venue": "Sensors and Materials 34 (8), 3017",
     "year": "2022",
-    "citations": 20,
+    "citations": 19,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
     "bibtex": null
@@ -50,23 +50,33 @@
     "bibtex": null
   },
   {
+    "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
+    "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
+    "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
+    "year": "2017",
+    "citations": 18,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
+    "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
+    "bibtex": null
+  },
+  {
     "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
     "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
     "venue": "ACM International Joint Conference on Pervasive and Ubiquitous Computing …",
     "year": "2022",
-    "citations": 18,
+    "citations": 17,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
     "bibtex": null
   },
   {
-    "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
-    "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
-    "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
-    "year": "2017",
-    "citations": 17,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
-    "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
+    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
+    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
+    "venue": "Transactions on Machine Learning Research",
+    "year": "2025",
+    "citations": 16,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
+    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
     "bibtex": null
   },
   {
@@ -77,16 +87,6 @@
     "citations": 15,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
     "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
-    "bibtex": null
-  },
-  {
-    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
-    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
-    "venue": "Transactions on Machine Learning Research",
-    "year": "2025",
-    "citations": 14,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
-    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
     "bibtex": null
   },
   {
@@ -120,6 +120,16 @@
     "bibtex": null
   },
   {
+    "title": "Tkg-dm: Training-free chroma key content generation diffusion model",
+    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
+    "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …",
+    "year": "2025",
+    "citations": 10,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
+    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
+    "bibtex": null
+  },
+  {
     "title": "Gaze generation for avatars using gans",
     "authors": "D Dembinsky, K Watanabe, A Dengel, S Ishimaru",
     "venue": "IEEE Access 12, 101536-101548",
@@ -140,23 +150,23 @@
     "bibtex": null
   },
   {
-    "title": "TKG-DM: Training-free Chroma Key Content Generation Diffusion Model",
-    "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
-    "venue": "Proceedings of the Computer Vision and Pattern Recognition Conference, 13031 …",
-    "year": "2025",
-    "citations": 9,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "bibtex": null
-  },
-  {
     "title": "Concentration Estimation in Online Video Lecture Using Multimodal Sensors",
     "authors": "N Tanaka, K Watanabe, S Ishimaru, A Dengel, S Ata, M Fujimoto",
     "venue": "Companion of the 2024 on ACM International Joint Conference on Pervasive and …",
     "year": "2024",
-    "citations": 8,
+    "citations": 9,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qUcmZB5y_30C",
     "citationForView": "AluAUmEAAAAJ:qUcmZB5y_30C",
+    "bibtex": null
+  },
+  {
+    "title": "Human-in-the-Loop Annotation for Image-Based Engagement Estimation: Assessing the Impact of Model Reliability on Annotation Accuracy",
+    "authors": "S Yadnakudige Subramanya, K Watanabe, A Dengel, S Ishimaru",
+    "venue": "International Conference on Human-Computer Interaction, 169-186",
+    "year": "2025",
+    "citations": 7,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
+    "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
     "bibtex": null
   },
   {
@@ -187,16 +197,7 @@
     "citations": 6,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
     "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "bibtex": null
-  },
-  {
-    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
-    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
-    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
-    "year": "2025",
-    "citations": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "dateOrder": 19,
     "bibtex": null
   },
   {
@@ -208,6 +209,17 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:r0BpntZqJG4C",
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "dateOrder": 5,
+    "bibtex": null
+  },
+  {
+    "title": "Towards facilitated fairness assessment of ai-based skin lesion classifiers through genai-based image synthesis",
+    "authors": "K Watanabe, S Frolov, A Hassan, D Dembinsky, A Lucieri, A Dengel",
+    "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer …",
+    "year": "2026",
+    "citations": 2,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
+    "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
+    "dateOrder": 14,
     "bibtex": null
   },
   {
@@ -233,28 +245,6 @@
     "bibtex": null
   },
   {
-    "title": "Towards facilitated fairness assessment of ai-based skin lesion classifiers through genai-based image synthesis",
-    "authors": "K Watanabe, S Frolov, A Hassan, D Dembinsky, A Lucieri, A Dengel",
-    "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer …",
-    "year": "2026",
-    "citations": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
-    "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
-    "dateOrder": 14,
-    "bibtex": null
-  },
-  {
-    "title": "Spectroscopy of Wigner crystal polarons in an atomically thin semiconductor",
-    "authors": "L Wang, F Menzel, F Pichler, P Knüppel, K Watanabe, T Taniguchi, ...",
-    "venue": "arXiv preprint arXiv:2512.16552",
-    "year": "2025",
-    "citations": 1,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:rO6llkc54NcC",
-    "citationForView": "AluAUmEAAAAJ:rO6llkc54NcC",
-    "dateOrder": 15,
-    "bibtex": null
-  },
-  {
     "title": "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
     "authors": "N Kushina, K Watanabe, A Kannan, A Ashok, A Dengel, K Berns",
     "venue": "arXiv preprint arXiv:2512.08518",
@@ -262,7 +252,7 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:NaGl4SEjCO4C",
     "citationForView": "AluAUmEAAAAJ:NaGl4SEjCO4C",
-    "dateOrder": 16,
+    "dateOrder": 15,
     "bibtex": null
   },
   {
@@ -273,7 +263,7 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:BqipwSGYUEgC",
     "citationForView": "AluAUmEAAAAJ:BqipwSGYUEgC",
-    "dateOrder": 19,
+    "dateOrder": 18,
     "bibtex": null
   },
   {
@@ -405,7 +395,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:RGFaLdJalmkC",
     "citationForView": "AluAUmEAAAAJ:RGFaLdJalmkC",
-    "dateOrder": 17,
+    "dateOrder": 16,
     "bibtex": null
   },
   {
@@ -416,7 +406,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&sortby=pubdate&citation_for_view=AluAUmEAAAAJ:YFjsv_pBGBYC",
     "citationForView": "AluAUmEAAAAJ:YFjsv_pBGBYC",
-    "dateOrder": 18,
+    "dateOrder": 17,
     "bibtex": null
   }
 ]
