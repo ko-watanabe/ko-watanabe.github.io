@@ -14,7 +14,7 @@
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
     "year": "2021",
-    "citations": 33,
+    "citations": 34,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null
@@ -30,6 +30,16 @@
     "bibtex": null
   },
   {
+    "title": "Hypermind builder: Pervasive user interface to create intelligent interactive documents",
+    "authors": "S Ishimaru, N Großmann, A Dengel, K Watanabe, Y Arakawa, C Heisel, ...",
+    "venue": "Proceedings of the 2018 ACM International Joint Conference and 2018 …",
+    "year": "2018",
+    "citations": 20,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
+    "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
+    "bibtex": null
+  },
+  {
     "title": "Quantitative evaluation system for online meetings based on multimodal microbehavior analysis",
     "authors": "C Chen, Y Arakawa, K Watanabe, S Ishimaru",
     "venue": "Sensors and Materials 34 (8), 3017",
@@ -37,16 +47,6 @@
     "citations": 19,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
-    "bibtex": null
-  },
-  {
-    "title": "Hypermind builder: Pervasive user interface to create intelligent interactive documents",
-    "authors": "S Ishimaru, N Großmann, A Dengel, K Watanabe, Y Arakawa, C Heisel, ...",
-    "venue": "Proceedings of the 2018 ACM International Joint Conference and 2018 …",
-    "year": "2018",
-    "citations": 19,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
-    "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
     "bibtex": null
   },
   {
