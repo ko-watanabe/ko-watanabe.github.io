@@ -56,6 +56,12 @@ const fundingEn = [
 
 const committees = [
   {
+    organization: "ML4H 2026",
+    role: "Program Chair",
+    url: "https://ahli.cc/ml4h/",
+    image: "/committee/ml4h2026.png",
+  },
+  {
     organization: "ICMU 2027",
     role: "TPC",
     url: "https://www.icmu.org/icmu2027",
