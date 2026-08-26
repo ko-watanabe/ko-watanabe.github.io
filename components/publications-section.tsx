@@ -58,7 +58,7 @@ const committees = [
   {
     organization: "ML4H 2026",
     role: "Program Chair",
-    url: "https://ahli.cc/ml4h/",
+    url: "https://ml4h.ahli.cc/",
     image: "/committee/ml4h2026.png",
   },
   {
