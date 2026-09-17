@@ -87,6 +87,15 @@ const supervisees: Supervisee[] = [
     url: "https://rptu.de/",
   },
   {
+    name: "Sudeshna Udaysingh Thakur",
+    roles: ["master"],
+    category: "thesis",
+    university: "RPTU Kaiserslautern-Landau",
+    thesisTitle: "Estimation of Personal Identifiable Information from Chest X-ray Images",
+    date: "2026-08-19",
+    url: "https://rptu.de/",
+  },
+  {
     name: "Gitesh Gund",
     roles: ["master"],
     category: "thesis",
