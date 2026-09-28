@@ -173,6 +173,18 @@ const committees = [
 
 const reviews = [
   {
+    name: "ML4H'26",
+    count: 4,
+    url: "https://ml4h.ahli.cc/",
+    type: "conference",
+  },
+  {
+    name: "MUM'26",
+    count: 5,
+    url: "https://www.mum-conf.org/2026/",
+    type: "conference",
+  },
+  {
     name: "CHI'26 (Poster Paper AC + R3)",
     count: 11,
     url: "https://chi2026.acm.org/",
