@@ -442,13 +442,26 @@ export function PublicationsSection() {
   const initialCommitteeCount = 12
   const [visibleCommitteeCount, setVisibleCommitteeCount] = useState(initialCommitteeCount)
 
+  const sortedCommittees = useMemo(() => {
+    const yearFrom = (organization: string) => {
+      const match = organization.match(/\b(20\d{2})\b/)
+      return match ? Number(match[1]) : 0
+    }
+
+    return [...committees].sort((a, b) => {
+      const yearDiff = yearFrom(b.organization) - yearFrom(a.organization)
+      if (yearDiff !== 0) return yearDiff
+      return a.organization.localeCompare(b.organization)
+    })
+  }, [])
+
   const displayedAwards = awards.slice(0, visibleAwardCount)
   const displayedFunding = funding.slice(0, visibleFundingCount)
-  const displayedCommittees = committees.slice(0, visibleCommitteeCount)
+  const displayedCommittees = sortedCommittees.slice(0, visibleCommitteeCount)
 
   const hasMoreAwards = awards.length > visibleAwardCount
   const hasMoreFunding = funding.length > visibleFundingCount
-  const hasMoreCommittees = committees.length > visibleCommitteeCount
+  const hasMoreCommittees = sortedCommittees.length > visibleCommitteeCount
   const canShowLessAwards = visibleAwardCount > 3
   const canShowLessFunding = visibleFundingCount > 3
   const canShowLessCommittees = visibleCommitteeCount > initialCommitteeCount
@@ -470,7 +483,7 @@ export function PublicationsSection() {
   }
 
   const handleShowMoreCommittees = () => {
-    setVisibleCommitteeCount(prev => Math.min(prev + initialCommitteeCount, committees.length))
+    setVisibleCommitteeCount(prev => Math.min(prev + initialCommitteeCount, sortedCommittees.length))
   }
 
   const handleShowLessCommittees = () => {
