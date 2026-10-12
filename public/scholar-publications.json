@@ -26,7 +26,7 @@
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 28,
+    "citations": 29,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "bibtex": null,
@@ -55,6 +55,17 @@
     "dateOrder": 50
   },
   {
+    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
+    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
+    "venue": "Transactions on Machine Learning Research",
+    "year": "2025",
+    "citations": 18,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
+    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
+    "bibtex": null,
+    "dateOrder": 22
+  },
+  {
     "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
     "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
     "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
@@ -64,17 +75,6 @@
     "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
     "bibtex": null,
     "dateOrder": 59
-  },
-  {
-    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
-    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
-    "venue": "Transactions on Machine Learning Research",
-    "year": "2025",
-    "citations": 17,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
-    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "bibtex": null,
-    "dateOrder": 22
   },
   {
     "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
@@ -180,7 +180,7 @@
     "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
     "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
     "year": "2025",
-    "citations": 8,
+    "citations": 9,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
     "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
     "bibtex": null,
@@ -231,6 +231,17 @@
     "dateOrder": 21
   },
   {
+    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 13, 20456-20471",
+    "year": "2025",
+    "citations": 6,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "bibtex": null,
+    "dateOrder": 30
+  },
+  {
     "title": "Estimating self-confidence in video-based learning using eye-tracking and deep neural networks",
     "authors": "A Bhatt, K Watanabe, J Santhosh, A Dengel, S Ishimaru",
     "venue": "IEEE Access 12, 192219-192229",
@@ -251,17 +262,6 @@
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "bibtex": null,
     "dateOrder": 5
-  },
-  {
-    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 13, 20456-20471",
-    "year": "2025",
-    "citations": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "bibtex": null,
-    "dateOrder": 30
   },
   {
     "title": "EyeUnderstand: dashboard for gaze and deep-learning driven comprehension estimation in online lectures",

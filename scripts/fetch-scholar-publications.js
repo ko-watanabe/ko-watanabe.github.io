@@ -9,8 +9,8 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 // ステルスプラグインを追加（ボット検出回避）
 puppeteer.use(StealthPlugin())
 
-const SCHOLAR_URL = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ'
-const SCHOLAR_URL_LATEST = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ&view_op=list_works&sortby=pubdate'
+const SCHOLAR_URL = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ&cstart=0&pagesize=100'
+const SCHOLAR_URL_LATEST = 'https://scholar.google.com/citations?hl=ja&user=AluAUmEAAAAJ&view_op=list_works&sortby=pubdate&cstart=0&pagesize=100'
 
 // キャッシュファイルのパス
 const OUTPUT_PATH = path.join(process.cwd(), 'public', 'scholar-publications.json')
@@ -221,6 +221,11 @@ async function fetchScholarPublications() {
               }
             }
           }
+          const yearCell = row.querySelector('td.gsc_a_y')
+          if (yearCell) {
+            const yearMatch = yearCell.textContent.trim().match(/\d{4}/)
+            if (yearMatch) year = yearMatch[0]
+          }
 
           // 引用件数
           let citations = 0
@@ -374,6 +379,11 @@ async function fetchScholarPublications() {
                 venue = secondText
               }
             }
+          }
+          const yearCell = row.querySelector('td.gsc_a_y')
+          if (yearCell) {
+            const yearMatch = yearCell.textContent.trim().match(/\d{4}/)
+            if (yearMatch) year = yearMatch[0]
           }
 
           // 引用件数
