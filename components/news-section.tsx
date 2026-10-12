@@ -91,6 +91,28 @@ function filterNewsItems(items: NewsItem[], year: string, month: string) {
 
 const newsItemsJa = [
   {
+    date: "2026年10月",
+    title: "AI4Science 2026に参加",
+    location: "Mainz, Germany 🇩🇪",
+    links: [
+      {
+        text: "国際会議のホームページ",
+        url: "https://ai4sci.eu/ai4lifesciences/",
+      },
+    ],
+  },
+  {
+    date: "2026年10月",
+    title: "UbiComp/ISWC 2026に参加",
+    location: "Shanghai, China 🇨🇳",
+    links: [
+      {
+        text: "国際会議のホームページ",
+        url: "https://www.ubicomp.org/ubicomp-iswc-2026/",
+      },
+    ],
+  },
+  {
     date: "2026年7月",
     title: "IEEE/IAPR International Joint Conference on Biometrics 2026に採択 🎉",
     location: "Rome, Italy 🇮🇹",
@@ -671,6 +693,28 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "October 2026",
+    title: "Attend AI4Science 2026",
+    location: "Mainz, Germany 🇩🇪",
+    links: [
+      {
+        text: "Homepage to the conference",
+        url: "https://ai4sci.eu/ai4lifesciences/",
+      },
+    ],
+  },
+  {
+    date: "October 2026",
+    title: "Attend UbiComp/ISWC 2026",
+    location: "Shanghai, China 🇨🇳",
+    links: [
+      {
+        text: "Homepage to the conference",
+        url: "https://www.ubicomp.org/ubicomp-iswc-2026/",
+      },
+    ],
+  },
   {
     date: "July 2026",
     title: "Accepted at IEEE/IAPR International Joint Conference on Biometrics 2026 🎉",
