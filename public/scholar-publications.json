@@ -26,7 +26,7 @@
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 29,
+    "citations": 31,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "bibtex": null,
@@ -231,17 +231,6 @@
     "dateOrder": 21
   },
   {
-    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 13, 20456-20471",
-    "year": "2025",
-    "citations": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "bibtex": null,
-    "dateOrder": 30
-  },
-  {
     "title": "Estimating self-confidence in video-based learning using eye-tracking and deep neural networks",
     "authors": "A Bhatt, K Watanabe, J Santhosh, A Dengel, S Ishimaru",
     "venue": "IEEE Access 12, 192219-192229",
@@ -262,6 +251,17 @@
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "bibtex": null,
     "dateOrder": 5
+  },
+  {
+    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 13, 20456-20471",
+    "year": "2025",
+    "citations": 5,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "bibtex": null,
+    "dateOrder": 30
   },
   {
     "title": "EyeUnderstand: dashboard for gaze and deep-learning driven comprehension estimation in online lectures",
