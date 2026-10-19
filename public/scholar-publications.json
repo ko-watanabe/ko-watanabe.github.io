@@ -26,11 +26,22 @@
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 31,
+    "citations": 32,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "bibtex": null,
     "dateOrder": 28
+  },
+  {
+    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
+    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
+    "venue": "Transactions on Machine Learning Research",
+    "year": "2025",
+    "citations": 20,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
+    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
+    "bibtex": null,
+    "dateOrder": 22
   },
   {
     "title": "Hypermind builder: Pervasive user interface to create intelligent interactive documents",
@@ -53,17 +64,6 @@
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
     "bibtex": null,
     "dateOrder": 50
-  },
-  {
-    "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
-    "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
-    "venue": "Transactions on Machine Learning Research",
-    "year": "2025",
-    "citations": 18,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
-    "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "bibtex": null,
-    "dateOrder": 22
   },
   {
     "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
@@ -92,7 +92,7 @@
     "authors": "V Shah, K Watanabe, B Moser, A Dengel",
     "venue": "Proceedings of the 2025 Symposium on Eye Tracking Research and Applications …",
     "year": "2025",
-    "citations": 15,
+    "citations": 16,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
     "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
     "bibtex": null,
@@ -231,6 +231,17 @@
     "dateOrder": 21
   },
   {
+    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 13, 20456-20471",
+    "year": "2025",
+    "citations": 6,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "bibtex": null,
+    "dateOrder": 30
+  },
+  {
     "title": "Estimating self-confidence in video-based learning using eye-tracking and deep neural networks",
     "authors": "A Bhatt, K Watanabe, J Santhosh, A Dengel, S Ishimaru",
     "venue": "IEEE Access 12, 192219-192229",
@@ -251,17 +262,6 @@
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "bibtex": null,
     "dateOrder": 5
-  },
-  {
-    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 13, 20456-20471",
-    "year": "2025",
-    "citations": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "bibtex": null,
-    "dateOrder": 30
   },
   {
     "title": "EyeUnderstand: dashboard for gaze and deep-learning driven comprehension estimation in online lectures",
@@ -396,6 +396,17 @@
     "dateOrder": 6
   },
   {
+    "title": "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
+    "authors": "K Tsuyuguchi, Y Chishima, K Watanabe, K Suzuki",
+    "venue": "Proceedings of the Augmented Humans International Conference 2026, 386-398",
+    "year": "2026",
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:HoB7MX3m0LUC",
+    "citationForView": "AluAUmEAAAAJ:HoB7MX3m0LUC",
+    "bibtex": null,
+    "dateOrder": 7
+  },
+  {
     "title": "Knowledge Transfer with AI",
     "authors": "K Watanabe, N Großmann, C Maerz, S Ishimaru, A Dengel",
     "venue": "The Future of Education with AI: Communications of NII Shonan Meetings, 51-86",
@@ -504,17 +515,6 @@
     "citationForView": "AluAUmEAAAAJ:lSLTfruPkqcC",
     "bibtex": null,
     "dateOrder": 4
-  },
-  {
-    "title": "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
-    "authors": "K Tsuyuguchi, Y Chishima, K Watanabe, K Suzuki",
-    "venue": "Proceedings of the Augmented Humans International Conference 2026, 386-398",
-    "year": "2026",
-    "citations": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:HoB7MX3m0LUC",
-    "citationForView": "AluAUmEAAAAJ:HoB7MX3m0LUC",
-    "bibtex": null,
-    "dateOrder": 7
   },
   {
     "title": "Empowering Vocabulary Learning Through Teaching AI: Using LLMs as a Student to Perform Learning by Teaching in Vocabulary Acquisition",
