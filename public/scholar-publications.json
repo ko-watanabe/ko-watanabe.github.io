@@ -8,7 +8,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
     "bibtex": null,
-    "dateOrder": 43
+    "dateOrder": 44
   },
   {
     "title": "Discaas: Micro behavior analysis on discussion by camera as a sensor",
@@ -19,18 +19,18 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
     "bibtex": null,
-    "dateOrder": 53
+    "dateOrder": 54
   },
   {
     "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 32,
+    "citations": 33,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
     "bibtex": null,
-    "dateOrder": 28
+    "dateOrder": 29
   },
   {
     "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
@@ -41,7 +41,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
     "bibtex": null,
-    "dateOrder": 22
+    "dateOrder": 23
   },
   {
     "title": "Hypermind builder: Pervasive user interface to create intelligent interactive documents",
@@ -52,7 +52,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
     "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
     "bibtex": null,
-    "dateOrder": 56
+    "dateOrder": 57
   },
   {
     "title": "Quantitative evaluation system for online meetings based on multimodal microbehavior analysis",
@@ -63,7 +63,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
     "bibtex": null,
-    "dateOrder": 50
+    "dateOrder": 51
   },
   {
     "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
@@ -74,7 +74,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
     "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
     "bibtex": null,
-    "dateOrder": 59
+    "dateOrder": 60
   },
   {
     "title": "Experience is the Best Teacher: Personalized Vocabulary Building Within the Context of Instagram Posts and Sentences from GPT-3",
@@ -85,7 +85,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
     "bibtex": null,
-    "dateOrder": 48
+    "dateOrder": 49
   },
   {
     "title": "PupilSense: A Novel Application for Webcam-Based Pupil Diameter Estimation",
@@ -96,7 +96,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
     "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
     "bibtex": null,
-    "dateOrder": 27
+    "dateOrder": 28
   },
   {
     "title": "Metacognition-EnGauge: Real-time augmentation of self-and-group engagement levels understanding by gauge interface in online meetings",
@@ -107,7 +107,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
     "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
     "bibtex": null,
-    "dateOrder": 39
+    "dateOrder": 40
   },
   {
     "title": "Appearance-Based Gaze Estimation with Deep Neural Networks: From Data Collection to Evaluation",
@@ -118,18 +118,29 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:YOwf2qJgpHMC",
     "citationForView": "AluAUmEAAAAJ:YOwf2qJgpHMC",
     "bibtex": null,
-    "dateOrder": 41
+    "dateOrder": 42
   },
   {
     "title": "Tkg-dm: Training-free chroma key content generation diffusion model",
     "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
     "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …",
     "year": "2025",
-    "citations": 12,
+    "citations": 13,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
     "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
     "bibtex": null,
-    "dateOrder": 23
+    "dateOrder": 24
+  },
+  {
+    "title": "Gaze generation for avatars using gans",
+    "authors": "D Dembinsky, K Watanabe, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 12, 101536-101548",
+    "year": "2024",
+    "citations": 11,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:dhFuZR0502QC",
+    "citationForView": "AluAUmEAAAAJ:dhFuZR0502QC",
+    "bibtex": null,
+    "dateOrder": 39
   },
   {
     "title": "Eye Movement in a Controlled Dialogue Setting",
@@ -140,7 +151,18 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "citationForView": "AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "bibtex": null,
-    "dateOrder": 40
+    "dateOrder": 41
+  },
+  {
+    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
+    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
+    "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
+    "year": "2025",
+    "citations": 10,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "bibtex": null,
+    "dateOrder": 20
   },
   {
     "title": "Concentration Estimation in Online Video Lecture Using Multimodal Sensors",
@@ -151,18 +173,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:qUcmZB5y_30C",
     "citationForView": "AluAUmEAAAAJ:qUcmZB5y_30C",
     "bibtex": null,
-    "dateOrder": 34
-  },
-  {
-    "title": "Gaze generation for avatars using gans",
-    "authors": "D Dembinsky, K Watanabe, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 12, 101536-101548",
-    "year": "2024",
-    "citations": 10,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:dhFuZR0502QC",
-    "citationForView": "AluAUmEAAAAJ:dhFuZR0502QC",
-    "bibtex": null,
-    "dateOrder": 38
+    "dateOrder": 35
   },
   {
     "title": "A privacy-aware browser extension to track user search behavior for programming course supplement",
@@ -173,18 +184,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:UeHWp8X0CEIC",
     "citationForView": "AluAUmEAAAAJ:UeHWp8X0CEIC",
     "bibtex": null,
-    "dateOrder": 52
-  },
-  {
-    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
-    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
-    "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
-    "year": "2025",
-    "citations": 9,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "bibtex": null,
-    "dateOrder": 19
+    "dateOrder": 53
   },
   {
     "title": "Human-in-the-Loop Annotation for Image-Based Engagement Estimation: Assessing the Impact of Model Reliability on Annotation Accuracy",
@@ -195,7 +195,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
     "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
     "bibtex": null,
-    "dateOrder": 25
+    "dateOrder": 26
   },
   {
     "title": "Estimating unknown English words from user smartphone reading behaviors",
@@ -206,7 +206,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:ZeXyd9-uunAC",
     "citationForView": "AluAUmEAAAAJ:ZeXyd9-uunAC",
     "bibtex": null,
-    "dateOrder": 35
+    "dateOrder": 36
   },
   {
     "title": "Webcam-based pupil diameter prediction benefits from upscaling",
@@ -217,7 +217,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:L8Ckcad2t8MC",
     "citationForView": "AluAUmEAAAAJ:L8Ckcad2t8MC",
     "bibtex": null,
-    "dateOrder": 37
+    "dateOrder": 38
   },
   {
     "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
@@ -228,7 +228,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
     "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
     "bibtex": null,
-    "dateOrder": 21
+    "dateOrder": 22
   },
   {
     "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
@@ -239,7 +239,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
     "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
     "bibtex": null,
-    "dateOrder": 30
+    "dateOrder": 31
   },
   {
     "title": "Estimating self-confidence in video-based learning using eye-tracking and deep neural networks",
@@ -250,7 +250,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:TQgYirikUcIC",
     "citationForView": "AluAUmEAAAAJ:TQgYirikUcIC",
     "bibtex": null,
-    "dateOrder": 31
+    "dateOrder": 32
   },
   {
     "title": "Deep learning models for radiography body-part classification and chest radiograph projection/orientation classification: a multi-institutional study",
@@ -261,7 +261,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:r0BpntZqJG4C",
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "bibtex": null,
-    "dateOrder": 5
+    "dateOrder": 6
   },
   {
     "title": "EyeUnderstand: dashboard for gaze and deep-learning driven comprehension estimation in online lectures",
@@ -272,7 +272,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:blknAaTinKkC",
     "citationForView": "AluAUmEAAAAJ:blknAaTinKkC",
     "bibtex": null,
-    "dateOrder": 24
+    "dateOrder": 25
   },
   {
     "title": "SensPS: Sensing Personal Space Comfortable Distance between Human-Human Using Multimodal Sensors",
@@ -283,7 +283,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
     "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
     "bibtex": null,
-    "dateOrder": 26
+    "dateOrder": 27
   },
   {
     "title": "Learning cyclotron: an ecosystem of knowledge circulation",
@@ -294,7 +294,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:kNdYIx-mwKoC",
     "citationForView": "AluAUmEAAAAJ:kNdYIx-mwKoC",
     "bibtex": null,
-    "dateOrder": 46
+    "dateOrder": 47
   },
   {
     "title": "Supporting smooth interruption in a video conference by dynamically changing background music depending on the amount of utterance",
@@ -305,7 +305,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:3fE2CSJIrl8C",
     "citationForView": "AluAUmEAAAAJ:3fE2CSJIrl8C",
     "bibtex": null,
-    "dateOrder": 47
+    "dateOrder": 48
   },
   {
     "title": "Feature Estimation of Global Language Processing in EEG Using Attention Maps",
@@ -316,7 +316,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:-f6ydRqryjwC",
     "citationForView": "AluAUmEAAAAJ:-f6ydRqryjwC",
     "bibtex": null,
-    "dateOrder": 32
+    "dateOrder": 33
   },
   {
     "title": "How do programmers use the internet? Discovering domain knowledge from browsing and coding behaviors",
@@ -327,7 +327,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:zYLM7Y9cAGgC",
     "citationForView": "AluAUmEAAAAJ:zYLM7Y9cAGgC",
     "bibtex": null,
-    "dateOrder": 49
+    "dateOrder": 50
   },
   {
     "title": "Towards facilitated fairness assessment of ai-based skin lesion classifiers through genai-based image synthesis",
@@ -338,7 +338,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
     "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
     "bibtex": null,
-    "dateOrder": 14
+    "dateOrder": 15
   },
   {
     "title": "Augmenting Online Meetings with Context-Aware Real-time Music Generation",
@@ -349,7 +349,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4JMBOYKVnBMC",
     "citationForView": "AluAUmEAAAAJ:4JMBOYKVnBMC",
     "bibtex": null,
-    "dateOrder": 29
+    "dateOrder": 30
   },
   {
     "title": "Comparing Web Browsing Behaviors with High and Low Information Literacy: A Case Study for Fact Check Against GPT Generated Fake News",
@@ -360,7 +360,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hC7cP41nSMkC",
     "citationForView": "AluAUmEAAAAJ:hC7cP41nSMkC",
     "bibtex": null,
-    "dateOrder": 33
+    "dateOrder": 34
   },
   {
     "title": "Edge-based Denoising Image Compression",
@@ -371,7 +371,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:IWHjjKOFINEC",
     "citationForView": "AluAUmEAAAAJ:IWHjjKOFINEC",
     "bibtex": null,
-    "dateOrder": 36
+    "dateOrder": 37
   },
   {
     "title": "TrackThink Camera: A Tool for Tracking Facial and Body Information while Web Browsing",
@@ -382,7 +382,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:M3ejUd6NZC8C",
     "citationForView": "AluAUmEAAAAJ:M3ejUd6NZC8C",
     "bibtex": null,
-    "dateOrder": 45
+    "dateOrder": 46
   },
   {
     "title": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation",
@@ -393,7 +393,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:RYcK_YlVTxYC",
     "citationForView": "AluAUmEAAAAJ:RYcK_YlVTxYC",
     "bibtex": null,
-    "dateOrder": 6
+    "dateOrder": 7
   },
   {
     "title": "FutureLetter: Augmenting Personal Writing for Future-Self Dialogue using LLMs",
@@ -404,7 +404,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:HoB7MX3m0LUC",
     "citationForView": "AluAUmEAAAAJ:HoB7MX3m0LUC",
     "bibtex": null,
-    "dateOrder": 7
+    "dateOrder": 8
   },
   {
     "title": "Knowledge Transfer with AI",
@@ -415,7 +415,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:J_g5lzvAfSwC",
     "citationForView": "AluAUmEAAAAJ:J_g5lzvAfSwC",
     "bibtex": null,
-    "dateOrder": 9
+    "dateOrder": 10
   },
   {
     "title": "SensHRPS: Sensing Comfortable Human-Robot Proxemics and Personal Space With Eye-Tracking",
@@ -426,7 +426,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:NaGl4SEjCO4C",
     "citationForView": "AluAUmEAAAAJ:NaGl4SEjCO4C",
     "bibtex": null,
-    "dateOrder": 15
+    "dateOrder": 16
   },
   {
     "title": "From Neck to Head: Bio-Impedance Sensing for Head Pose Estimation",
@@ -437,7 +437,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:BqipwSGYUEgC",
     "citationForView": "AluAUmEAAAAJ:BqipwSGYUEgC",
     "bibtex": null,
-    "dateOrder": 18
+    "dateOrder": 19
   },
   {
     "title": "ABCDE: Appearance-Based Confidence Detection by Evaluating Gaze Behavior Using Deep Learning",
@@ -448,7 +448,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:NMxIlDl6LWMC",
     "citationForView": "AluAUmEAAAAJ:NMxIlDl6LWMC",
     "bibtex": null,
-    "dateOrder": 20
+    "dateOrder": 21
   },
   {
     "title": "Combining the Knowledge of Experienced Programmers to Extract Useful Web Resources for Solving Programming Tasks",
@@ -459,7 +459,18 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:_kc_bZDykSQC",
     "citationForView": "AluAUmEAAAAJ:_kc_bZDykSQC",
     "bibtex": null,
-    "dateOrder": 44
+    "dateOrder": 45
+  },
+  {
+    "title": "Variation in Medical Ethics Recommendations Across Large Language Models: Case-Based Audit Study",
+    "authors": "Y Mitsuyama, K Watanabe, S Walston, H Takita, K Saito, S Ishimaru, ...",
+    "venue": "JMIR AI 5, e102713",
+    "year": "2026",
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4OULZ7Gr8RgC",
+    "citationForView": "AluAUmEAAAAJ:4OULZ7Gr8RgC",
+    "bibtex": null,
+    "dateOrder": 0
   },
   {
     "title": "Expanding the Range of Pre-Trained Gaze Estimation via Lightweight On-Device Fine-Tuning",
@@ -470,7 +481,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:zA6iFVUQeVQC",
     "citationForView": "AluAUmEAAAAJ:zA6iFVUQeVQC",
     "bibtex": null,
-    "dateOrder": 0
+    "dateOrder": 1
   },
   {
     "title": "Can AI Guess What You Know? Performance Comparison of Large Language Models for Human Domain Knowledge Estimation From Communication Logs",
@@ -481,7 +492,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:3s1wT3WcHBgC",
     "citationForView": "AluAUmEAAAAJ:3s1wT3WcHBgC",
     "bibtex": null,
-    "dateOrder": 1
+    "dateOrder": 2
   },
   {
     "title": "LimeCross: Context-Conditioned Layered Image Editing with Structural Consistency",
@@ -492,7 +503,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:SeFeTyx0c_EC",
     "citationForView": "AluAUmEAAAAJ:SeFeTyx0c_EC",
     "bibtex": null,
-    "dateOrder": 2
+    "dateOrder": 3
   },
   {
     "title": "EyeBrain: Left and Right Brain Lateralization Activity Classification Through Pupil Diameter and Fixation Duration",
@@ -503,7 +514,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:pqnbT2bcN3wC",
     "citationForView": "AluAUmEAAAAJ:pqnbT2bcN3wC",
     "bibtex": null,
-    "dateOrder": 3
+    "dateOrder": 4
   },
   {
     "title": "Identifying Hurdles to Making Sleep Wearables Data Actionable for Users: A Grounded Theory Study",
@@ -514,7 +525,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:lSLTfruPkqcC",
     "citationForView": "AluAUmEAAAAJ:lSLTfruPkqcC",
     "bibtex": null,
-    "dateOrder": 4
+    "dateOrder": 5
   },
   {
     "title": "Empowering Vocabulary Learning Through Teaching AI: Using LLMs as a Student to Perform Learning by Teaching in Vocabulary Acquisition",
@@ -525,7 +536,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:g5m5HwL7SMYC",
     "citationForView": "AluAUmEAAAAJ:g5m5HwL7SMYC",
     "bibtex": null,
-    "dateOrder": 8
+    "dateOrder": 9
   },
   {
     "title": "Using face, gaze, and code features detected with off-the-shelf equipment to derive student emotion in an introduction to programming context",
@@ -536,7 +547,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:u_35RYKgDlwC",
     "citationForView": "AluAUmEAAAAJ:u_35RYKgDlwC",
     "bibtex": null,
-    "dateOrder": 10
+    "dateOrder": 11
   },
   {
     "title": "Estimating the Level of Surgical Skill During Robot-Assisted Surgery Simulation Using a Neck-Worn Wearable Camera",
@@ -547,7 +558,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:70eg2SAEIzsC",
     "citationForView": "AluAUmEAAAAJ:70eg2SAEIzsC",
     "bibtex": null,
-    "dateOrder": 11
+    "dateOrder": 12
   },
   {
     "title": "SipSense: Acoustic Sensing of Beverage Type and Volume Using Dual-Microphone Wearable System",
@@ -558,7 +569,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:35N4QoGY0k4C",
     "citationForView": "AluAUmEAAAAJ:35N4QoGY0k4C",
     "bibtex": null,
-    "dateOrder": 12
+    "dateOrder": 13
   },
   {
     "title": "SensCogAR: Cognitive Load Estimation Via Movement Data in Assembly Tasks",
@@ -569,7 +580,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:vV6vV6tmYwMC",
     "citationForView": "AluAUmEAAAAJ:vV6vV6tmYwMC",
     "bibtex": null,
-    "dateOrder": 13
+    "dateOrder": 14
   },
   {
     "title": "HandyLabel: Towards Post-Processing to Real-Time Annotation Using Skeleton Based Hand Gesture Recognition",
@@ -580,7 +591,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:RGFaLdJalmkC",
     "citationForView": "AluAUmEAAAAJ:RGFaLdJalmkC",
     "bibtex": null,
-    "dateOrder": 16
+    "dateOrder": 17
   },
   {
     "title": "Push or Light: Nudging Standing to Break Prolonged Sitting",
@@ -591,7 +602,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:YFjsv_pBGBYC",
     "citationForView": "AluAUmEAAAAJ:YFjsv_pBGBYC",
     "bibtex": null,
-    "dateOrder": 17
+    "dateOrder": 18
   },
   {
     "title": "Accelerating Knowledge Transfer by Sensing and Actuating Social-Cognitive States",
@@ -602,7 +613,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4TOpqqG69KYC",
     "citationForView": "AluAUmEAAAAJ:4TOpqqG69KYC",
     "bibtex": null,
-    "dateOrder": 42
+    "dateOrder": 43
   },
   {
     "title": "ミーティング中のうなずきを対象としたヒューマンインザループ動画アノテーションシステムの構築と評価",
@@ -613,7 +624,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:5nxA0vEk-isC",
     "citationForView": "AluAUmEAAAAJ:5nxA0vEk-isC",
     "bibtex": null,
-    "dateOrder": 51
+    "dateOrder": 52
   },
   {
     "title": "学習者の眼球運動情報に基づくインタラクティブ教科書の作成用ツール HyperMind Builder の開発と評価",
@@ -624,7 +635,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:UebtZRa9Y70C",
     "citationForView": "AluAUmEAAAAJ:UebtZRa9Y70C",
     "bibtex": null,
-    "dateOrder": 54
+    "dateOrder": 55
   },
   {
     "title": "インタラクティブなデジタル教科書の作成用ツール Hyper Mind Builder の開発および評価",
@@ -635,7 +646,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:Zph67rFs4hoC",
     "citationForView": "AluAUmEAAAAJ:Zph67rFs4hoC",
     "bibtex": null,
-    "dateOrder": 55
+    "dateOrder": 56
   },
   {
     "title": "BLE ビーコンと反響音センシングによる屋内スポット推定",
@@ -646,7 +657,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hqOjcs7Dif8C",
     "citationForView": "AluAUmEAAAAJ:hqOjcs7Dif8C",
     "bibtex": null,
-    "dateOrder": 57
+    "dateOrder": 58
   },
   {
     "title": "内的活性度の振り返りを支援するための生体情報を含むキャンパスライフログシステムの設計",
@@ -657,7 +668,7 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:0EnyYjriUFMC",
     "citationForView": "AluAUmEAAAAJ:0EnyYjriUFMC",
     "bibtex": null,
-    "dateOrder": 58
+    "dateOrder": 59
   },
   {
     "title": "ABC Keynote",
@@ -668,6 +679,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:fPk4N6BV_jEC",
     "citationForView": "AluAUmEAAAAJ:fPk4N6BV_jEC",
     "bibtex": null,
-    "dateOrder": 60
+    "dateOrder": 61
   }
 ]
