@@ -1,0 +1,35 @@
+00:00:00.000 - 00:00:15.000  Useful, but not always right
+AI already helps us write, translate, and find information. Imagine a friendly assistant working beside you. It can save time, but a fluent answer can still be wrong.
+
+00:00:15.000 - 00:00:30.000  Useful AI needs warranted trust
+Trust means being willing to rely on something. Warranted trust means having good reasons for that reliance. The evidence we need changes when an answer affects our health, our rights, or our security.
+
+00:00:30.000 - 00:00:45.000  Three connected foundations
+The European approach connects three foundations: lawful, ethical, and robust. AI should follow laws, respect human rights, and work reliably. Seven dimensions turn these principles into practical questions.
+
+00:00:45.000 - 00:01:00.000  People can decide and intervene
+Human agency and oversight keep people involved in meaningful ways. In a clinic, an AI suggestion should support the professional’s judgment. People need clear limits, opportunities to intervene, and a path to help.
+
+00:01:00.000 - 00:01:15.000  Handle errors and changing threats
+Technical robustness and safety ask how systems handle mistakes, attacks, and unfamiliar situations. At an identity check, a detector must face changing deepfakes while avoiding unnecessary rejection of real people.
+
+00:01:15.000 - 00:01:30.000  Protect and govern the data
+Privacy and data governance concern how information is collected, protected, and used. Our assistant should not expose a student’s personal details. Good evaluation also asks whether the data are appropriate and representative.
+
+00:01:30.000 - 00:01:45.000  Explainability (XAI)
+Transparency includes explainability: understanding why an AI produced its result. Explainable AI, or X A I, provides tools for this. We must check that the explanation reflects the system and helps its users.
+
+00:01:45.000 - 00:02:00.000  Fairness across people
+Fairness asks who receives the benefits and who experiences the errors. A skin classifier may work differently across groups. Test relevant populations, including people missing from the training data.
+
+00:02:00.000 - 00:02:15.000  Look beyond the immediate user
+AI also affects communities and the environment. Consider access, jobs, energy, and resource use. A useful service should be evaluated beyond its immediate users, including people affected indirectly by its decisions.
+
+00:02:15.000 - 00:02:30.000  Responsibility stays with people
+Accountability keeps responsibility clear: who develops the system, checks it, and responds when something goes wrong? People need ways to question decisions and seek a remedy. A human organization must remain answerable.
+
+00:02:30.000 - 00:02:45.000  Turn principles into evidence
+How do we put these questions into practice? Evaluate the system for its intended use, document the evidence and its limits, and monitor what changes. Then improve the model, data, or surrounding process.
+
+00:02:45.000 - 00:03:00.000  What evidence would justify trust?
+Return to our assistant: useful AI deserves careful questions, not automatic belief. For each task, ask what evidence would justify relying on it. Warranted trust grows from evidence and responsibility.

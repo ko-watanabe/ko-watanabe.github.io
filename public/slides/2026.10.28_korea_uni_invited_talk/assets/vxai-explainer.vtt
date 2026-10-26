@@ -1,0 +1,186 @@
+WEBVTT
+
+1
+00:00:00.250 --> 00:00:02.575
+When artificial intelligence makes a
+decision,
+
+2
+00:00:02.625 --> 00:00:04.850
+we often ask: why?
+
+3
+00:00:04.950 --> 00:00:07.125
+Explainable AI gives us clues,
+
+4
+00:00:07.215 --> 00:00:09.140
+such as highlights on a picture.
+
+5
+00:00:10.250 --> 00:00:12.450
+But an explanation can look convincing
+
+6
+00:00:12.525 --> 00:00:14.100
+and still mislead us.
+
+7
+00:00:14.200 --> 00:00:16.375
+Highlighting the bird looks sensible.
+
+8
+00:00:16.425 --> 00:00:19.025
+Does it reflect what the model actually
+used?
+
+9
+00:00:20.250 --> 00:00:22.900
+From three hundred sixty-two publications,
+
+10
+00:00:22.950 --> 00:00:27.250
+the authors organized evaluation methods
+into forty-one groups:
+
+11
+00:00:27.325 --> 00:00:29.225
+a map for choosing tests.
+
+12
+00:00:30.250 --> 00:00:31.750
+The framework asks:
+
+13
+00:00:31.825 --> 00:00:33.825
+what kind of explanation do you have?
+
+14
+00:00:33.875 --> 00:00:35.350
+Which qualities matter?
+
+15
+00:00:35.425 --> 00:00:38.650
+And how does a test use or change the
+model and data?
+
+16
+00:00:40.250 --> 00:00:43.925
+Fidelity asks whether an explanation
+reflects the model.
+
+17
+00:00:44.000 --> 00:00:46.975
+Simplicity asks whether it stays concise.
+
+18
+00:00:47.075 --> 00:00:49.675
+Different tests reveal different
+qualities.
+
+19
+00:00:50.250 --> 00:00:52.425
+Combine complementary tests.
+
+20
+00:00:52.500 --> 00:00:54.675
+This is a review and framework.
+
+21
+00:00:54.750 --> 00:00:57.075
+Automated scores alone cannot tell us
+
+22
+00:00:57.125 --> 00:00:59.650
+whether people understand an explanation.
+
+23
+00:01:00.250 --> 00:01:02.725
+Now let's use the companion website.
+
+24
+00:01:02.800 --> 00:01:04.700
+Open the address on screen,
+
+25
+00:01:04.800 --> 00:01:06.550
+scroll to Metrics Overview,
+
+26
+00:01:06.690 --> 00:01:09.240
+and click Filter to reveal the options.
+
+27
+00:01:10.250 --> 00:01:12.775
+For a picture heatmap, choose F A,
+
+28
+00:01:12.825 --> 00:01:14.825
+meaning feature attributions.
+
+29
+00:01:14.875 --> 00:01:17.200
+Under Desiderata, choose Fidelity:
+
+30
+00:01:17.310 --> 00:01:19.685
+does the explanation reflect the model?
+
+31
+00:01:20.250 --> 00:01:23.040
+Next, choose contextuality level three:
+
+32
+00:01:23.115 --> 00:01:25.715
+changing inputs and observing the model.
+
+33
+00:01:25.815 --> 00:01:29.740
+Here, the filters narrow forty-one groups
+to three candidates.
+
+34
+00:01:30.250 --> 00:01:32.500
+Click Guided Perturbation Fidelity.
+
+35
+00:01:32.575 --> 00:01:35.875
+Read the approaches, variations, and
+references.
+
+36
+00:01:35.950 --> 00:01:37.900
+Helper Functions explains choices
+
+37
+00:01:37.950 --> 00:01:39.675
+such as how to change inputs.
+
+38
+00:01:40.250 --> 00:01:43.875
+Hide highlighted image regions, then
+observe the prediction.
+
+39
+00:01:43.925 --> 00:01:46.075
+Compare against random masking.
+
+40
+00:01:46.150 --> 00:01:48.175
+This gives evidence of faithfulness,
+
+41
+00:01:48.225 --> 00:01:49.700
+not automatic proof.
+
+42
+00:01:50.250 --> 00:01:52.075
+Use the site to choose tests,
+
+43
+00:01:52.125 --> 00:01:53.900
+then run them in your workflow.
+
+44
+00:01:53.975 --> 00:01:56.450
+Ask how the explanation was tested.

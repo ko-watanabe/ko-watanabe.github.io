@@ -1,0 +1,133 @@
+WEBVTT
+
+1
+00:00:00.599 --> 00:00:03.949
+Imagine opening a bank account with a video selfie.
+
+2
+00:00:03.949 --> 00:00:08.169
+An AI gatekeeper checks: real person, or deepfake?
+
+3
+00:00:08.169 --> 00:00:09.900
+But does it judge everyone fairly?
+
+4
+00:00:10.627 --> 00:00:14.077
+A deepfake is an AI-made or altered video.
+
+5
+00:00:14.077 --> 00:00:16.302
+Detection can fail in two ways:
+
+6
+00:00:16.302 --> 00:00:19.592
+suspecting a real person, or letting a fake one through.
+
+7
+00:00:20.361 --> 00:00:23.436
+False alarms could lock legitimate people out.
+
+8
+00:00:23.436 --> 00:00:25.961
+Missed fakes could help fraudsters slip in.
+
+9
+00:00:25.961 --> 00:00:30.580
+This paper asks whether those risks are shared equally across demographic groups.
+
+10
+00:00:31.294 --> 00:00:35.719
+The researchers built FairFaceBench, covering nine world regions,
+
+11
+00:00:35.719 --> 00:00:39.694
+two gender categories, and seven ways to create fake videos,
+
+12
+00:00:39.694 --> 00:00:41.987
+from face swaps to talking avatars.
+
+13
+00:00:42.711 --> 00:00:46.636
+They tested four detectors and compared demographic groups.
+
+14
+00:00:46.636 --> 00:00:51.661
+Instead of trusting one average score, they checked which groups faced more suspicion,
+
+15
+00:00:51.661 --> 00:00:53.574
+and where fakes were hardest to spot.
+
+16
+00:00:54.299 --> 00:00:57.894
+First, new technology exposed blind spots.
+
+17
+00:00:57.894 --> 00:01:02.594
+Before extra training, all four tested systems struggled with commercial talking
+
+18
+00:01:02.594 --> 00:01:06.224
+avatars from Veo three point one and Sora two.
+
+19
+00:01:06.944 --> 00:01:10.394
+Second, performance differed across demographic groups.
+
+20
+00:01:10.394 --> 00:01:13.119
+Some real faces drew more suspicion.
+
+21
+00:01:13.119 --> 00:01:17.169
+Some generated faces were harder to distinguish from real ones.
+
+22
+00:01:17.169 --> 00:01:19.041
+Averages can hide these gaps.
+
+23
+00:01:19.756 --> 00:01:24.606
+Extra training on this diverse benchmark improved all four detectors.
+
+24
+00:01:24.606 --> 00:01:27.731
+Their weakest demographic groups improved too.
+
+25
+00:01:27.731 --> 00:01:31.831
+The study measured better separation between real and fake faces,
+
+26
+00:01:31.831 --> 00:01:33.240
+not perfect detection.
+
+27
+00:01:33.894 --> 00:01:36.894
+But performance dropped on an older benchmark.
+
+28
+00:01:36.894 --> 00:01:39.819
+And these were tests on individual video frames,
+
+29
+00:01:39.819 --> 00:01:43.780
+not a guarantee that an entire identity-checking service is fair.
+
+30
+00:01:44.502 --> 00:01:48.952
+Trustworthy deepfake detection needs both security and fairness.
+
+31
+00:01:48.952 --> 00:01:52.247
+Look beyond averages, include diverse people,
+
+32
+00:01:52.247 --> 00:01:54.947
+and keep testing as deepfakes evolve.
+
+33
+00:01:54.947 --> 00:01:57.142
+Better protection should work for everyone.

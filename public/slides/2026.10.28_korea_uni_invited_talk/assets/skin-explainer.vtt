@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:00.568 --> 00:00:03.700
+Imagine an AI helping a doctor spot melanoma,
+
+2
+00:00:04.005 --> 00:00:05.900
+a dangerous form of skin cancer.
+
+3
+00:00:06.168 --> 00:00:09.612
+Promising. But would it work equally well for everyone?
+
+4
+00:00:10.509 --> 00:00:13.066
+To answer that, we need a fair test.
+
+5
+00:00:13.322 --> 00:00:16.329
+But real image collections don't represent every age,
+
+6
+00:00:16.584 --> 00:00:21.029
+sex, and skin type equally. Some groups have too few examples.
+
+7
+00:00:21.903 --> 00:00:26.060
+This paper asks: could generative AI help us build better tests?
+
+8
+00:00:26.365 --> 00:00:31.486
+Think of a crash-test lab for medical AI, using carefully controlled synthetic images.
+
+9
+00:00:32.410 --> 00:00:36.792
+The researchers trained an image generator on public skin-lesion data.
+
+10
+00:00:37.060 --> 00:00:40.405
+They could request melanoma images for different combinations of age,
+
+11
+00:00:40.710 --> 00:00:42.980
+sex, and Fitzpatrick skin type.
+
+12
+00:00:43.900 --> 00:00:47.345
+They created eighty-one thousand, six hundred images:
+
+13
+00:00:47.512 --> 00:00:51.995
+ninety-six combinations, with eight hundred and fifty images in each.
+
+14
+00:00:52.250 --> 00:00:55.132
+Every combination had the same number of examples.
+
+15
+00:00:56.013 --> 00:00:59.358
+Then, three existing detection models took the test.
+
+16
+00:00:59.613 --> 00:01:02.295
+The key question: when melanoma is present,
+
+17
+00:01:02.638 --> 00:01:04.720
+how often does each model spot it?
+
+18
+00:01:04.988 --> 00:01:08.458
+Compare that rate across groups, and gaps become visible.
+
+19
+00:01:09.364 --> 00:01:11.558
+Did the synthetic tests reflect reality?
+
+20
+00:01:11.826 --> 00:01:14.784
+Several patterns matched those in real images.
+
+21
+00:01:15.114 --> 00:01:19.558
+For example, some models detected melanoma more often in male groups,
+
+22
+00:01:19.738 --> 00:01:21.696
+while another showed the opposite pattern.
+
+23
+00:01:22.569 --> 00:01:25.414
+But a similar pattern isn't a perfect match.
+
+24
+00:01:25.682 --> 00:01:27.702
+Age-related results differed more.
+
+25
+00:01:27.969 --> 00:01:30.876
+And because these tests included only melanoma,
+
+26
+00:01:31.032 --> 00:01:34.289
+they couldn't tell us how often an AI raises a false alarm.
+
+27
+00:01:35.163 --> 00:01:38.383
+Synthetic images also need careful quality checks.
+
+28
+00:01:38.663 --> 00:01:40.633
+They can carry biases of their own.
+
+29
+00:01:40.888 --> 00:01:44.496
+Real patient data and clinical validation remain essential.
+
+30
+00:01:45.394 --> 00:01:50.306
+The takeaway? Generative AI could help researchers uncover gaps in medical AI
+
+31
+00:01:50.306 --> 00:01:53.826
+testing. A step toward checking who a system works for,
+
+32
+00:01:53.868 --> 00:01:55.676
+before we trust it to help people.

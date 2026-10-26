@@ -1,0 +1,179 @@
+1
+00:00:00,180 --> 00:00:04,630
+AI already helps us write, translate, and
+find information.
+
+2
+00:00:04,705 --> 00:00:07,730
+Imagine a friendly assistant working beside
+you.
+
+3
+00:00:07,805 --> 00:00:11,460
+It can save time, but a fluent answer can
+still be wrong.
+
+4
+00:00:15,180 --> 00:00:18,230
+Trust means being willing to rely on
+something.
+
+5
+00:00:18,330 --> 00:00:22,105
+Warranted trust means having good reasons
+for that reliance.
+
+6
+00:00:22,180 --> 00:00:28,080
+The evidence we need changes when an answer
+affects our health, our rights, or our
+security.
+
+7
+00:00:30,180 --> 00:00:35,840
+The European approach connects three
+foundations: lawful, ethical, and robust.
+
+8
+00:00:35,915 --> 00:00:40,540
+AI should follow laws, respect human rights,
+and work reliably.
+
+9
+00:00:40,665 --> 00:00:44,440
+Seven dimensions turn these principles into
+practical questions.
+
+10
+00:00:45,180 --> 00:00:49,880
+Human agency and oversight keep people
+involved in meaningful ways.
+
+11
+00:00:49,955 --> 00:00:54,605
+In a clinic, an AI suggestion should support
+the professional’s judgment.
+
+12
+00:00:54,680 --> 00:00:59,530
+People need clear limits, opportunities to
+intervene, and a path to help.
+
+13
+00:01:00,180 --> 00:01:07,480
+Technical robustness and safety ask how
+systems handle mistakes, attacks, and
+unfamiliar situations.
+
+14
+00:01:07,580 --> 00:01:14,805
+At an identity check, a detector must face
+changing deepfakes while avoiding
+unnecessary rejection of real people.
+
+15
+00:01:15,180 --> 00:01:21,305
+Privacy and data governance concern how
+information is collected, protected, and
+used.
+
+16
+00:01:21,355 --> 00:01:25,005
+Our assistant should not expose a student’s
+personal details.
+
+17
+00:01:25,105 --> 00:01:29,780
+Good evaluation also asks whether the data
+are appropriate and representative.
+
+18
+00:01:30,180 --> 00:01:35,880
+Transparency includes explainability:
+understanding why an AI produced its result.
+
+19
+00:01:35,955 --> 00:01:40,230
+Explainable AI, or X A I, provides tools for
+this.
+
+20
+00:01:40,280 --> 00:01:44,730
+We must check that the explanation reflects
+the system and helps its users.
+
+21
+00:01:45,180 --> 00:01:50,130
+Fairness asks who receives the benefits and
+who experiences the errors.
+
+22
+00:01:50,205 --> 00:01:53,480
+A skin classifier may work differently
+across groups.
+
+23
+00:01:53,555 --> 00:01:58,280
+Test relevant populations, including people
+missing from the training data.
+
+24
+00:02:00,180 --> 00:02:03,605
+AI also affects communities and the
+environment.
+
+25
+00:02:03,680 --> 00:02:07,580
+Consider access, jobs, energy, and resource
+use.
+
+26
+00:02:07,655 --> 00:02:14,630
+A useful service should be evaluated beyond
+its immediate users, including people
+affected indirectly by its decisions.
+
+27
+00:02:15,180 --> 00:02:22,705
+Accountability keeps responsibility clear:
+who develops the system, checks it, and
+responds when something goes wrong?
+
+28
+00:02:22,780 --> 00:02:26,580
+People need ways to question decisions and
+seek a remedy.
+
+29
+00:02:26,655 --> 00:02:29,780
+A human organization must remain answerable.
+
+30
+00:02:30,180 --> 00:02:32,705
+How do we put these questions into practice?
+
+31
+00:02:32,780 --> 00:02:39,680
+Evaluate the system for its intended use,
+document the evidence and its limits, and
+monitor what changes.
+
+32
+00:02:39,755 --> 00:02:43,530
+Then improve the model, data, or surrounding
+process.
+
+33
+00:02:45,180 --> 00:02:51,570
+Return to our assistant: useful AI deserves
+careful questions, not automatic belief.
+
+34
+00:02:51,620 --> 00:02:55,920
+For each task, ask what evidence would
+justify relying on it.
+
+35
+00:02:56,020 --> 00:02:59,595
+Warranted trust grows from evidence and
+responsibility.

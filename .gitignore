@@ -42,3 +42,7 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Slide working materials (not served; keep local until published to public/slides/)
+/content/*
+!/content/slides-drafts/README.md
