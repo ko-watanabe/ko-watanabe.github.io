@@ -63,14 +63,7 @@ dialog{background:var(--paper);color:var(--ink);border:1px solid #bfceb7;padding
 .research-area-copy{min-width:0}
 .research-area p{font-size:22px;line-height:1.3;margin:0 0 14px}
 .research-area .research-examples{font-size:21px;color:var(--muted);line-height:1.35;margin:0}
-.research-focus-bridge{display:none}
 .focus-illustration{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
-.focus-bridge-title{font-size:64px;font-weight:500;line-height:1.12;letter-spacing:-.04em;margin:0 0 22px}
-.focus-bridge-intro{font-size:32px;line-height:1.35;margin:0 0 30px}
-.focus-preview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px}
-.focus-preview .focus-illustration{height:230px;aspect-ratio:auto}
-.focus-preview h4{font-size:34px;font-weight:500;line-height:1.15;letter-spacing:-.02em;margin:18px 0 12px}
-.focus-preview p{font-size:26px;line-height:1.35;margin:0;color:var(--muted)}
 @media screen{
   .research-overview.research-focused .slide-content{justify-content:flex-start}
   .research-focused .research-heading h2{font-size:40px;color:var(--muted)}
@@ -82,8 +75,6 @@ dialog{background:var(--paper);color:var(--ink);border:1px solid #bfceb7;padding
   .research-focused .research-illustration{height:400px;aspect-ratio:auto;object-fit:contain}
   .research-focused .research-area p{font-size:34px;line-height:1.4;margin-bottom:28px}
   .research-focused .research-area .research-examples{font-size:29px;line-height:1.45;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin:0}
-  .research-focus-summary .research-map{display:none}
-  .research-focus-summary .research-focus-bridge{display:flex;flex:1;min-height:0;flex-direction:column;justify-content:center;animation:research-pickup .45s ease both}
   @keyframes research-pickup{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 }
 @media print{.research-step-controls{display:none!important}}

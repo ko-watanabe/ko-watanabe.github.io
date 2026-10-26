@@ -4,7 +4,7 @@ Open `/slides/2026.10.28_korea_uni_invited_talk/index.html` through the existing
 
 - 23 slides, in English; 51 minutes including films plus 5 minutes of discussion and 4 minutes of buffer in the 60-minute slot.
 - Arrow keys / Space / Page Up / Page Down: navigate. Home / End: first / last slide.
-- On P3, Next steps through enlarged views of the five research areas, then an illustrated preview of today's Trustworthy AI focus, before advancing to P4. Previous reverses these steps; All areas restores the overview. Works in full screen and windowed view, with buttons, keys and swipes. The page number remains 03 / 23 through the preview. Contents and direct slide links reset to the overview. Printing always uses the complete five-area map.
+- On P3, Next steps through enlarged views of the five research areas, then advances directly to P4 for today's Trustworthy AI focus. Previous reverses these steps; All areas restores the overview. Works in full screen and windowed view, with buttons, keys and swipes. The page number remains 03 / 23 while showing the five areas. Contents and direct slide links reset to the overview. Printing always uses the complete five-area map.
 - On Seven dimensions of trustworthiness, Next selects 01–07 in order before advancing the slide; Previous reverses the selection and returns to the overview. Clicking any dimension synchronizes the sequence. All dimensions, Contents and direct slide navigation restore the overview; the slide number stays unchanged during the seven steps. Button, keyboard and swipe navigation share this behavior.
 - F: full screen. O: contents. N: speaker notes and sources. R: replay slide animation.
 - T: start / pause the rehearsal timer. P: browser print / Save as PDF (16:9 pages).

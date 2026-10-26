@@ -52,8 +52,7 @@ const sections = $$('.slide', stage);
 const researchIndex = sections.findIndex((section) => section.classList.contains('research-overview'));
 const researchSection = sections[researchIndex];
 const researchAreas = researchSection ? $$('.research-area', researchSection) : [];
-const researchFocusBridge = researchSection ? $('.research-focus-bridge', researchSection) : null;
-const researchLastStep = researchAreas.length - 1 + (researchFocusBridge ? 1 : 0);
+const researchLastStep = researchAreas.length - 1;
 let researchStep = -1;
 const evidenceSection = sections.find((section) => section.classList.contains('trust-evidence'));
 const evidenceSteps = evidenceSection ? $$('.flow-step', evidenceSection) : [];
@@ -151,7 +150,7 @@ function updateNavigation() {
     ? (dimensionStep < 0 ? 'First dimension' : 'Next dimension')
     : onResearch && researchStep < researchAreas.length - 1
     ? 'Next research area'
-    : (onResearch && researchFocusBridge && researchStep === researchAreas.length - 1 ? 'Introduce today’s focus' : 'Next slide');
+    : 'Next slide';
   previous.setAttribute('aria-label', previousLabel);
   previous.title = `${previousLabel} (←)`;
   next.setAttribute('aria-label', nextLabel);
@@ -162,25 +161,19 @@ function setResearchStep(step, announce = true) {
   if (!researchSection || !researchAreas.length) return;
   researchStep = Math.max(-1, Math.min(researchLastStep, step));
   const focused = researchStep >= 0;
-  const showingFocus = !!researchFocusBridge && researchStep === researchAreas.length;
   researchSection.classList.toggle('research-focused', focused);
-  researchSection.classList.toggle('research-focus-summary', showingFocus);
-  const map = $('.research-map', researchSection);
-  if (showingFocus) map.setAttribute('aria-hidden', 'true');
-  else map.removeAttribute('aria-hidden');
-  if (researchFocusBridge) researchFocusBridge.setAttribute('aria-hidden', String(!showingFocus));
   researchAreas.forEach((area, index) => {
-    area.classList.toggle('is-spotlight', focused && !showingFocus && index === researchStep);
+    area.classList.toggle('is-spotlight', focused && index === researchStep);
     if (focused && index !== researchStep) area.setAttribute('aria-hidden', 'true');
     else area.removeAttribute('aria-hidden');
   });
   $('.research-step-controls', researchSection).hidden = !focused;
-  $('.research-step-counter', researchSection).textContent = showingFocus ? 'Today’s focus' : (focused ? `Area ${researchStep + 1} of ${researchAreas.length}` : '');
+  $('.research-step-counter', researchSection).textContent = focused ? `Area ${researchStep + 1} of ${researchAreas.length}` : '';
   if (announce && current === researchIndex) {
-    const title = showingFocus ? 'Today’s focus: Trustworthy AI' : (focused
+    const title = focused
       ? $('h3', researchAreas[researchStep]).textContent.replace(/\s+/g, ' ').replace(/&/g, ' & ').trim()
-      : 'All research areas');
-    $('#announcement').textContent = `Slide ${current + 1} of ${slides.length}. ${focused && !showingFocus ? `Area ${researchStep + 1} of ${researchAreas.length}. ` : ''}${title}`;
+      : 'All research areas';
+    $('#announcement').textContent = `Slide ${current + 1} of ${slides.length}. ${focused ? `Area ${researchStep + 1} of ${researchAreas.length}. ` : ''}${title}`;
   }
   updateNavigation();
 }
