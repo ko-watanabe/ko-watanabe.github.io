@@ -2,9 +2,9 @@
 
 Open `/slides/2026.10.28_korea_uni_invited_talk/index.html` through the existing Next.js server. The presentation is a standalone HTML/CSS/JS asset and is copied into `out/` by static export. No additional packages or build steps are needed for the deck itself.
 
-- 23 slides, in English; 51 minutes including films plus 5 minutes of discussion and 4 minutes of buffer in the 60-minute slot.
+- 24 slides, in English: 23 main slides plus one optional video appendix after Thank you. The main talk has 51 minutes including films plus 5 minutes of discussion and 4 minutes of buffer in the 60-minute slot. Allow two minutes from the buffer if showing the appendix.
 - Arrow keys / Space / Page Up / Page Down: navigate. Home / End: first / last slide.
-- On P3, Next steps through enlarged views of the five research areas, then advances directly to P4 for today's Trustworthy AI focus. Previous reverses these steps; All areas restores the overview. Works in full screen and windowed view, with buttons, keys and swipes. The page number remains 03 / 23 while showing the five areas. Contents and direct slide links reset to the overview. Printing always uses the complete five-area map.
+- On P3, Next steps through enlarged views of the five research areas, then advances directly to P4 for today's Trustworthy AI focus. Previous reverses these steps; All areas restores the overview. Works in full screen and windowed view, with buttons, keys and swipes. The page number remains 03 / 24 while showing the five areas. Contents and direct slide links reset to the overview. Printing always uses the complete five-area map.
 - On Seven dimensions of trustworthiness, Next selects 01–07 in order before advancing the slide; Previous reverses the selection and returns to the overview. Clicking any dimension synchronizes the sequence. All dimensions, Contents and direct slide navigation restore the overview; the slide number stays unchanged during the seven steps. Button, keyboard and swipe navigation share this behavior.
 - F: full screen. O: contents. N: speaker notes and sources. R: replay slide animation.
 - T: start / pause the rehearsal timer. P: browser print / Save as PDF (16:9 pages).
@@ -15,6 +15,8 @@ Open `/slides/2026.10.28_korea_uni_invited_talk/index.html` through the existing
 Edit content, timings and presenter notes in `slides.js`; edit appearance in `deck.css`; presentation behavior is in `deck.js`.
 
 ## Media and sources
+
+The appendix on P24, after Thank you, plays the speaker-supplied `medgen_hannover 1.mp4` as `assets/medgen-hannover.mp4` (1:33, H.264/AAC, 1280×720). The video is an unchanged local copy; its poster is extracted from the 3-second frame. It uses the existing local video controls and stops on slide navigation.
 
 The DFKI films, logo and photographs were extracted from the supplied `DFKI_Facts.pptx`. Paper previews, source PDFs and figures come from the four supplied research papers. The source taxonomy for the seven dimensions is page 11 of the supplied `trustworth_ai.pdf`. Source details and policy references are attached to each slide's Notes panel. P3 maps five research areas. P4 introduces explainability, fairness, and AI ethics and bias through three illustrations, questions and research examples, then leads into the DFKI introduction. The ethics theme centers on the JMIR AI case-based audit of medical ethics recommendations across LLMs. It describes recommendation tendencies, not a test of ethical correctness or discrimination. Full paper titles and sources are in the Notes panel. The five research illustrations are conceptual scenes created with the built-in image generation tool. They show gaze sensing, interactive learning, everyday interaction, medical-AI evaluation and image generation. Saved assets and the full prompts are in `assets/research-illustrations/README.md`. P8 marks the transition from the DFKI introduction to the main topic, Trustworthy AI, with a staged section heading. The schedule includes 1 minute of buffer in the 60-minute slot.
 

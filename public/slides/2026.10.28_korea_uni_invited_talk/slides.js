@@ -290,6 +290,14 @@ export const slides = [
       'If discussion needs a prompt, ask: what is the hardest trustworthiness claim to test in your own research? Or: which dimension is least well covered by our current benchmarks?',
       'Keep the contact address visible throughout the discussion. The Contents control lets you jump back to any paper, and Notes contains the source PDFs and external references.'
     ], cue: 'Reserve five minutes for questions and discussion.', sources: [source('Contact information · provided by the speaker')]
+  },
+  {
+    title: 'Synthetic Data Generation', section: 'Appendix', minutes: 2, dark: true, kind: 'video',
+    html: `<h2 class="reveal">Synthetic Data Generation</h2><div class="video-frame local-player reveal" data-video="${asset('medgen-hannover.mp4')}" data-poster="${asset('medgen-hannover-poster.jpg')}"><button class="video-cover has-poster" data-play style="background-image:url('${asset('medgen-hannover-poster.jpg')}');--poster:url('${asset('medgen-hannover-poster.jpg')}')" aria-label="Play Synthetic Data Generation appendix video"><span class="play-disc" aria-hidden="true">▶</span><strong>Synthetic Data Generation</strong><small>Supplementary video · 1:33</small></button></div><div class="video-caption reveal"><p class="film-question">Appendix · supplementary video</p><a href="${asset('medgen-hannover.mp4')}" target="_blank" rel="noopener">Open video ↗</a></div>`,
+    notes: [
+      'Optional supplementary film supplied by the speaker: medgen_hannover 1.mp4. The original video is hosted locally and runs for approximately 1 minute 33 seconds.',
+      'Use this appendix after the Thank you page if useful during follow-up discussion. Playback starts on request and stops when navigating away.'
+    ], cue: 'Optional appendix: allow two minutes if showing the complete film.', sources: [source('Speaker-supplied MedGen Hannover video · original file', asset('medgen-hannover.mp4'))]
   }
 ];
 
