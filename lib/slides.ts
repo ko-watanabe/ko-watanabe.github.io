@@ -16,6 +16,12 @@ export const slidesJa: SlideItem[] = [
     url: "/slides/2026.10.28_korea_uni_invited_talk/index.html",
   },
   {
+    title: "ヨーロッパで活躍する日本人博士によるキャリアトーク",
+    event: "筑波大学主催 Career Talks by Japanese Ph.D. Professionals Working in Europe",
+    date: "2026-11-26",
+    location: "ルール大学ボーフム（ドイツ）",
+  },
+  {
     title: "公立はこだて未来大学 招待講義",
     event: "公立はこだて未来大学 招待講義",
     date: "2026-12-04",
@@ -29,15 +35,20 @@ export const slidesEn: SlideItem[] = [
     title: "Korea University Invited Lecture",
     event: "Korea University Invited Lecture",
     date: "2026-10-28",
-    location: "Korea University",
+    location: "Online",
     url: "/slides/2026.10.28_korea_uni_invited_talk/index.html",
+  },
+  {
+    title: "Career Talks by Japanese Ph.D. Professionals Working in Europe",
+    event: "Hosted by the University of Tsukuba",
+    date: "2026-11-26",
+    location: "Ruhr University Bochum, Germany",
   },
   {
     title: "Future University Hakodate Invited Lecture",
     event: "Future University Hakodate Invited Lecture",
     date: "2026-12-04",
-    location: "Future University Hakodate",
-    // url: "/slides/2026.12.04_future_hakodate_university_invited_lecture/",
+    location: "Future University Hakodate, Hokkaido, Japan",
   },
 ]
 
