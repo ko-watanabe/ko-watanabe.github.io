@@ -92,6 +92,17 @@ function filterNewsItems(items: NewsItem[], year: string, month: string) {
 const newsItemsJa = [
   {
     date: "2026年10月",
+    title: "高麗大学で招待講演",
+    location: "Online",
+    links: [
+      {
+        text: "スライド",
+        url: "https://ko-watanabe.github.io/slides/2026.10.28_korea_uni_invited_talk/index.html",
+      },
+    ],
+  },
+  {
+    date: "2026年10月",
     title: "UbiComp/ISWC 2026に参加",
     location: "Shanghai, China 🇨🇳",
     links: [
@@ -693,6 +704,17 @@ const newsItemsJa = [
 ]
 
 const newsItemsEn = [
+  {
+    date: "October 2026",
+    title: "Invited Lecture at Korea University",
+    location: "Online",
+    links: [
+      {
+        text: "Slides",
+        url: "https://ko-watanabe.github.io/slides/2026.10.28_korea_uni_invited_talk/index.html",
+      },
+    ],
+  },
   {
     date: "October 2026",
     title: "Attend UbiComp/ISWC 2026",
