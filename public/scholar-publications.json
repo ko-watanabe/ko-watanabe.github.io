@@ -11,6 +11,17 @@
     "bibtex": null
   },
   {
+    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
+    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
+    "year": "2025",
+    "citations": 34,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
+    "dateOrder": 32,
+    "bibtex": null
+  },
+  {
     "title": "Discaas: Micro behavior analysis on discussion by camera as a sensor",
     "authors": "K Watanabe, Y Soneda, Y Matsuda, Y Nakamura, Y Arakawa, A Dengel, ...",
     "venue": "Sensors 21 (17), 5719",
@@ -22,22 +33,11 @@
     "bibtex": null
   },
   {
-    "title": "GenAIReading: Augmenting Human Cognition with Interactive Digital Textbooks Using Large Language Models and Image Generation Models",
-    "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
-    "year": "2025",
-    "citations": 33,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "dateOrder": 32,
-    "bibtex": null
-  },
-  {
     "title": "Unifying VXAI: a systematic review and framework for the evaluation of explainable AI",
     "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
     "venue": "Transactions on Machine Learning Research",
     "year": "2025",
-    "citations": 20,
+    "citations": 21,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
     "dateOrder": 26,
@@ -132,6 +132,17 @@
     "bibtex": null
   },
   {
+    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
+    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
+    "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
+    "year": "2025",
+    "citations": 11,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
+    "dateOrder": 23,
+    "bibtex": null
+  },
+  {
     "title": "Gaze generation for avatars using gans",
     "authors": "D Dembinsky, K Watanabe, A Dengel, S Ishimaru",
     "venue": "IEEE Access 12, 101536-101548",
@@ -151,17 +162,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "citationForView": "AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "dateOrder": 44,
-    "bibtex": null
-  },
-  {
-    "title": "Comparative performance of large language models in structuring head CT radiology reports: multi-institutional validation study in Japan",
-    "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
-    "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
-    "year": "2025",
-    "citations": 10,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "dateOrder": 23,
     "bibtex": null
   },
   {
@@ -209,6 +209,17 @@
     "bibtex": null
   },
   {
+    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
+    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
+    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
+    "year": "2025",
+    "citations": 7,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "dateOrder": 25,
+    "bibtex": null
+  },
+  {
     "title": "Webcam-based pupil diameter prediction benefits from upscaling",
     "authors": "V Shah, BB Moser, K Watanabe, A Dengel",
     "venue": "In Proceedings of the 17th International Conference on Agents and Artificial …",
@@ -217,28 +228,6 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:L8Ckcad2t8MC",
     "citationForView": "AluAUmEAAAAJ:L8Ckcad2t8MC",
     "dateOrder": 41,
-    "bibtex": null
-  },
-  {
-    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
-    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
-    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
-    "year": "2025",
-    "citations": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "dateOrder": 25,
-    "bibtex": null
-  },
-  {
-    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 13, 20456-20471",
-    "year": "2025",
-    "citations": 6,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "dateOrder": 34,
     "bibtex": null
   },
   {
@@ -261,6 +250,17 @@
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:r0BpntZqJG4C",
     "citationForView": "AluAUmEAAAAJ:r0BpntZqJG4C",
     "dateOrder": 9,
+    "bibtex": null
+  },
+  {
+    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 13, 20456-20471",
+    "year": "2025",
+    "citations": 5,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "dateOrder": 34,
     "bibtex": null
   },
   {
