@@ -173,6 +173,24 @@ const committees = [
 
 const reviews = [
   {
+    name: "ICASSP'27",
+    count: 4,
+    url: "https://2027.ieeeicassp.org/",
+    type: "conference",
+  },
+  {
+    name: "ICLR'27 Workshop",
+    count: 4,
+    url: "https://iclr.cc/Conferences/2027",
+    type: "conference",
+  },
+  {
+    name: "FAccT'27",
+    count: 3,
+    url: "https://facctconference.org/2027/cfp.html",
+    type: "conference",
+  },
+  {
     name: "ML4H'26",
     count: 4,
     url: "https://ml4h.ahli.cc/",
