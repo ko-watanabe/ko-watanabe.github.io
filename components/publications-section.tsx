@@ -191,6 +191,18 @@ const reviews = [
     type: "conference",
   },
   {
+    name: "CHI'27",
+    count: 3,
+    url: "https://chi2027.acm.org/",
+    type: "conference",
+  },
+  {
+    name: "IUI'27",
+    count: 4,
+    url: "https://iui.acm.org/2027/",
+    type: "conference",
+  },
+  {
     name: "ML4H'26",
     count: 4,
     url: "https://ml4h.ahli.cc/",
