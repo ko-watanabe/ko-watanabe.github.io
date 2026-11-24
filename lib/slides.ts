@@ -20,6 +20,7 @@ export const slidesJa: SlideItem[] = [
     event: "筑波大学主催 Career Talks by Japanese Ph.D. Professionals Working in Europe",
     date: "2026-11-26",
     location: "ルール大学ボーフム（ドイツ）",
+    url: "/slides/2026.11.26_career_talk_tsukuba/index.html",
   },
   {
     title: "公立はこだて未来大学 招待講義",
@@ -43,6 +44,7 @@ export const slidesEn: SlideItem[] = [
     event: "Hosted by the University of Tsukuba",
     date: "2026-11-26",
     location: "Ruhr University Bochum, Germany",
+    url: "/slides/2026.11.26_career_talk_tsukuba/index.html",
   },
   {
     title: "Future University Hakodate Invited Lecture",

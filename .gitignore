@@ -46,3 +46,13 @@ next-env.d.ts
 # Slide working materials (not served; keep local until published to public/slides/)
 /content/*
 !/content/slides-drafts/README.md
+/SLIDE-md/
+/SLIDE-PATTERN/
+/SLIDE-DECK/
+/SLIDE-SCENARIO/
+
+# Cursor local config / skills
+.cursor/
+
+# Local debug screenshots
+debug-*.png
