@@ -7,7 +7,7 @@
     "citations": 40,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:ULOm3_A8WrAC",
     "citationForView": "AluAUmEAAAAJ:ULOm3_A8WrAC",
-    "dateOrder": 47,
+    "dateOrder": 48,
     "bibtex": null
   },
   {
@@ -15,10 +15,10 @@
     "authors": "R Morita, K Watanabe, J Zhou, A Dengel, S Ishimaru",
     "venue": "Proceedings of the Augmented Humans International Conference 2025, 289–301",
     "year": "2025",
-    "citations": 34,
+    "citations": 35,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:j3f4tGmQtD8C",
     "citationForView": "AluAUmEAAAAJ:j3f4tGmQtD8C",
-    "dateOrder": 32,
+    "dateOrder": 33,
     "bibtex": null
   },
   {
@@ -29,7 +29,7 @@
     "citations": 34,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:W7OEmFMy1HYC",
     "citationForView": "AluAUmEAAAAJ:W7OEmFMy1HYC",
-    "dateOrder": 57,
+    "dateOrder": 58,
     "bibtex": null
   },
   {
@@ -37,10 +37,10 @@
     "authors": "D Dembinsky, A Lucieri, S Frolov, H Najjar, K Watanabe, A Dengel",
     "venue": "Transactions on Machine Learning Research",
     "year": "2025",
-    "citations": 21,
+    "citations": 24,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hMod-77fHWUC",
     "citationForView": "AluAUmEAAAAJ:hMod-77fHWUC",
-    "dateOrder": 26,
+    "dateOrder": 27,
     "bibtex": null
   },
   {
@@ -51,7 +51,18 @@
     "citations": 20,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:qjMakFHDy7sC",
     "citationForView": "AluAUmEAAAAJ:qjMakFHDy7sC",
-    "dateOrder": 60,
+    "dateOrder": 61,
+    "bibtex": null
+  },
+  {
+    "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
+    "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
+    "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
+    "year": "2017",
+    "citations": 20,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
+    "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
+    "dateOrder": 64,
     "bibtex": null
   },
   {
@@ -62,18 +73,7 @@
     "citations": 19,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:9yKSN-GCB0IC",
     "citationForView": "AluAUmEAAAAJ:9yKSN-GCB0IC",
-    "dateOrder": 54,
-    "bibtex": null
-  },
-  {
-    "title": "Smart gyms need smart mirrors: design of a smart gym concept through contextual inquiry",
-    "authors": "AAE Hippocrate, ET Luhanga, T Masashi, K Watanabe, K Yasumoto",
-    "venue": "Proceedings of the 2017 ACM International Joint Conference on Pervasive and …",
-    "year": "2017",
-    "citations": 18,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:2osOgNQ5qMEC",
-    "citationForView": "AluAUmEAAAAJ:2osOgNQ5qMEC",
-    "dateOrder": 63,
+    "dateOrder": 55,
     "bibtex": null
   },
   {
@@ -84,7 +84,7 @@
     "citations": 17,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:JV2RwH3_ST0C",
     "citationForView": "AluAUmEAAAAJ:JV2RwH3_ST0C",
-    "dateOrder": 31,
+    "dateOrder": 32,
     "bibtex": null
   },
   {
@@ -95,7 +95,7 @@
     "citations": 17,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:MXK_kJrjxJIC",
     "citationForView": "AluAUmEAAAAJ:MXK_kJrjxJIC",
-    "dateOrder": 52,
+    "dateOrder": 53,
     "bibtex": null
   },
   {
@@ -106,7 +106,7 @@
     "citations": 16,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4DMP91E08xMC",
     "citationForView": "AluAUmEAAAAJ:4DMP91E08xMC",
-    "dateOrder": 43,
+    "dateOrder": 44,
     "bibtex": null
   },
   {
@@ -114,10 +114,10 @@
     "authors": "R Morita, S Frolov, BB Moser, T Shirakawa, K Watanabe, A Dengel, ...",
     "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …",
     "year": "2025",
-    "citations": 14,
+    "citations": 15,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hFOr9nPyWt4C",
     "citationForView": "AluAUmEAAAAJ:hFOr9nPyWt4C",
-    "dateOrder": 27,
+    "dateOrder": 28,
     "bibtex": null
   },
   {
@@ -128,7 +128,7 @@
     "citations": 14,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:YOwf2qJgpHMC",
     "citationForView": "AluAUmEAAAAJ:YOwf2qJgpHMC",
-    "dateOrder": 45,
+    "dateOrder": 46,
     "bibtex": null
   },
   {
@@ -136,10 +136,10 @@
     "authors": "H Takita, SL Walston, Y Mitsuyama, K Watanabe, S Ishimaru, D Ueda",
     "venue": "Japanese Journal of Radiology 43 (9), 1445-1455",
     "year": "2025",
-    "citations": 11,
+    "citations": 13,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:bEWYMUwI8FkC",
     "citationForView": "AluAUmEAAAAJ:bEWYMUwI8FkC",
-    "dateOrder": 23,
+    "dateOrder": 24,
     "bibtex": null
   },
   {
@@ -150,7 +150,7 @@
     "citations": 11,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:dhFuZR0502QC",
     "citationForView": "AluAUmEAAAAJ:dhFuZR0502QC",
-    "dateOrder": 42,
+    "dateOrder": 43,
     "bibtex": null
   },
   {
@@ -161,7 +161,7 @@
     "citations": 11,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:Wp0gIr-vW9MC",
     "citationForView": "AluAUmEAAAAJ:Wp0gIr-vW9MC",
-    "dateOrder": 44,
+    "dateOrder": 45,
     "bibtex": null
   },
   {
@@ -172,7 +172,7 @@
     "citations": 10,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:qUcmZB5y_30C",
     "citationForView": "AluAUmEAAAAJ:qUcmZB5y_30C",
-    "dateOrder": 38,
+    "dateOrder": 39,
     "bibtex": null
   },
   {
@@ -183,7 +183,18 @@
     "citations": 10,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:UeHWp8X0CEIC",
     "citationForView": "AluAUmEAAAAJ:UeHWp8X0CEIC",
-    "dateOrder": 56,
+    "dateOrder": 57,
+    "bibtex": null
+  },
+  {
+    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
+    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
+    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
+    "year": "2025",
+    "citations": 8,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
+    "dateOrder": 26,
     "bibtex": null
   },
   {
@@ -194,7 +205,7 @@
     "citations": 8,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:isC4tDSrTZIC",
     "citationForView": "AluAUmEAAAAJ:isC4tDSrTZIC",
-    "dateOrder": 29,
+    "dateOrder": 30,
     "bibtex": null
   },
   {
@@ -205,18 +216,7 @@
     "citations": 8,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:ZeXyd9-uunAC",
     "citationForView": "AluAUmEAAAAJ:ZeXyd9-uunAC",
-    "dateOrder": 39,
-    "bibtex": null
-  },
-  {
-    "title": "Trackthinkdashboard: Understanding student self-regulated learning in programming study",
-    "authors": "K Watanabe, Y Matsuda, Y Nakamura, Y Arakawa, S Ishimaru",
-    "venue": "International Journal of Activity and Behavior Computing 2025 (1), 1-17",
-    "year": "2025",
-    "citations": 7,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "citationForView": "AluAUmEAAAAJ:iH-uZ7U-co4C",
-    "dateOrder": 25,
+    "dateOrder": 40,
     "bibtex": null
   },
   {
@@ -227,7 +227,18 @@
     "citations": 7,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:L8Ckcad2t8MC",
     "citationForView": "AluAUmEAAAAJ:L8Ckcad2t8MC",
-    "dateOrder": 41,
+    "dateOrder": 42,
+    "bibtex": null
+  },
+  {
+    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
+    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
+    "venue": "IEEE Access 13, 20456-20471",
+    "year": "2025",
+    "citations": 6,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
+    "dateOrder": 35,
     "bibtex": null
   },
   {
@@ -238,7 +249,7 @@
     "citations": 6,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:TQgYirikUcIC",
     "citationForView": "AluAUmEAAAAJ:TQgYirikUcIC",
-    "dateOrder": 35,
+    "dateOrder": 36,
     "bibtex": null
   },
   {
@@ -253,14 +264,14 @@
     "bibtex": null
   },
   {
-    "title": "Img2Vocab: Explore Words Tied to Your Life With LLMs and Social Media Images",
-    "authors": "K Yamaoka, K Watanabe, K Kise, A Dengel, S Ishimaru",
-    "venue": "IEEE Access 13, 20456-20471",
-    "year": "2025",
+    "title": "Supporting smooth interruption in a video conference by dynamically changing background music depending on the amount of utterance",
+    "authors": "H Suzawa, K Watanabe, M Iwamura, K Kise, A Dengel, S Ishimaru",
+    "venue": "Adjunct Proceedings of the 2022 ACM International Joint Conference on …",
+    "year": "2022",
     "citations": 5,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "citationForView": "AluAUmEAAAAJ:R3hNpaxXUhUC",
-    "dateOrder": 34,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:3fE2CSJIrl8C",
+    "citationForView": "AluAUmEAAAAJ:3fE2CSJIrl8C",
+    "dateOrder": 52,
     "bibtex": null
   },
   {
@@ -271,7 +282,7 @@
     "citations": 4,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:blknAaTinKkC",
     "citationForView": "AluAUmEAAAAJ:blknAaTinKkC",
-    "dateOrder": 28,
+    "dateOrder": 29,
     "bibtex": null
   },
   {
@@ -282,7 +293,7 @@
     "citations": 4,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:e5wmG9Sq2KIC",
     "citationForView": "AluAUmEAAAAJ:e5wmG9Sq2KIC",
-    "dateOrder": 30,
+    "dateOrder": 31,
     "bibtex": null
   },
   {
@@ -293,18 +304,18 @@
     "citations": 4,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:kNdYIx-mwKoC",
     "citationForView": "AluAUmEAAAAJ:kNdYIx-mwKoC",
-    "dateOrder": 50,
+    "dateOrder": 51,
     "bibtex": null
   },
   {
-    "title": "Supporting smooth interruption in a video conference by dynamically changing background music depending on the amount of utterance",
-    "authors": "H Suzawa, K Watanabe, M Iwamura, K Kise, A Dengel, S Ishimaru",
-    "venue": "Adjunct Proceedings of the 2022 ACM International Joint Conference on …",
-    "year": "2022",
-    "citations": 4,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:3fE2CSJIrl8C",
-    "citationForView": "AluAUmEAAAAJ:3fE2CSJIrl8C",
-    "dateOrder": 51,
+    "title": "Augmenting Online Meetings with Context-Aware Real-time Music Generation",
+    "authors": "H Suzawa, K Watanabe, A Dengel, S Ishimaru",
+    "venue": "Proceedings of the Augmented Humans International Conference 2025, 487–490",
+    "year": "2025",
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4JMBOYKVnBMC",
+    "citationForView": "AluAUmEAAAAJ:4JMBOYKVnBMC",
+    "dateOrder": 34,
     "bibtex": null
   },
   {
@@ -315,7 +326,7 @@
     "citations": 3,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:-f6ydRqryjwC",
     "citationForView": "AluAUmEAAAAJ:-f6ydRqryjwC",
-    "dateOrder": 36,
+    "dateOrder": 37,
     "bibtex": null
   },
   {
@@ -326,7 +337,7 @@
     "citations": 3,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:zYLM7Y9cAGgC",
     "citationForView": "AluAUmEAAAAJ:zYLM7Y9cAGgC",
-    "dateOrder": 53,
+    "dateOrder": 54,
     "bibtex": null
   },
   {
@@ -348,18 +359,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:O3NaXMp0MMsC",
     "citationForView": "AluAUmEAAAAJ:O3NaXMp0MMsC",
-    "dateOrder": 18,
-    "bibtex": null
-  },
-  {
-    "title": "Augmenting Online Meetings with Context-Aware Real-time Music Generation",
-    "authors": "H Suzawa, K Watanabe, A Dengel, S Ishimaru",
-    "venue": "Proceedings of the Augmented Humans International Conference 2025, 487–490",
-    "year": "2025",
-    "citations": 2,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4JMBOYKVnBMC",
-    "citationForView": "AluAUmEAAAAJ:4JMBOYKVnBMC",
-    "dateOrder": 33,
+    "dateOrder": 19,
     "bibtex": null
   },
   {
@@ -370,7 +370,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hC7cP41nSMkC",
     "citationForView": "AluAUmEAAAAJ:hC7cP41nSMkC",
-    "dateOrder": 37,
+    "dateOrder": 38,
     "bibtex": null
   },
   {
@@ -381,7 +381,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:IWHjjKOFINEC",
     "citationForView": "AluAUmEAAAAJ:IWHjjKOFINEC",
-    "dateOrder": 40,
+    "dateOrder": 41,
     "bibtex": null
   },
   {
@@ -392,7 +392,7 @@
     "citations": 2,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:M3ejUd6NZC8C",
     "citationForView": "AluAUmEAAAAJ:M3ejUd6NZC8C",
-    "dateOrder": 49,
+    "dateOrder": 50,
     "bibtex": null
   },
   {
@@ -425,7 +425,18 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:NaGl4SEjCO4C",
     "citationForView": "AluAUmEAAAAJ:NaGl4SEjCO4C",
-    "dateOrder": 19,
+    "dateOrder": 20,
+    "bibtex": null
+  },
+  {
+    "title": "Push or Light: Nudging Standing to Break Prolonged Sitting",
+    "authors": "S Yoshida, K Watanabe, A Dengel, S Ishimaru, S Ata, M Fujimoto",
+    "venue": "Companion of the 2025 ACM International Joint Conference on Pervasive and …",
+    "year": "2025",
+    "citations": 1,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:YFjsv_pBGBYC",
+    "citationForView": "AluAUmEAAAAJ:YFjsv_pBGBYC",
+    "dateOrder": 22,
     "bibtex": null
   },
   {
@@ -436,7 +447,7 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:BqipwSGYUEgC",
     "citationForView": "AluAUmEAAAAJ:BqipwSGYUEgC",
-    "dateOrder": 22,
+    "dateOrder": 23,
     "bibtex": null
   },
   {
@@ -447,7 +458,7 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:NMxIlDl6LWMC",
     "citationForView": "AluAUmEAAAAJ:NMxIlDl6LWMC",
-    "dateOrder": 24,
+    "dateOrder": 25,
     "bibtex": null
   },
   {
@@ -458,7 +469,7 @@
     "citations": 1,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:_kc_bZDykSQC",
     "citationForView": "AluAUmEAAAAJ:_kc_bZDykSQC",
-    "dateOrder": 48,
+    "dateOrder": 49,
     "bibtex": null
   },
   {
@@ -572,6 +583,17 @@
     "bibtex": null
   },
   {
+    "title": "Parametric Affect: An Empirical Study on Pitch and Tempo in Generative Music",
+    "authors": "Ö Salman, K Watanabe, J Melo, A Dengel, S Ishimaru",
+    "venue": "N/A",
+    "year": "2026",
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:a0OBvERweLwC",
+    "citationForView": "AluAUmEAAAAJ:a0OBvERweLwC",
+    "dateOrder": 14,
+    "bibtex": null
+  },
+  {
     "title": "Using face, gaze, and code features detected with off-the-shelf equipment to derive student emotion in an introduction to programming context",
     "authors": "M Carreon12, K Watanabe, T Matsui, Y Matsuda, S Ishimaru, H Suwa, ...",
     "venue": "N/A",
@@ -579,7 +601,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:u_35RYKgDlwC",
     "citationForView": "AluAUmEAAAAJ:u_35RYKgDlwC",
-    "dateOrder": 14,
+    "dateOrder": 15,
     "bibtex": null
   },
   {
@@ -590,7 +612,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:70eg2SAEIzsC",
     "citationForView": "AluAUmEAAAAJ:70eg2SAEIzsC",
-    "dateOrder": 15,
+    "dateOrder": 16,
     "bibtex": null
   },
   {
@@ -601,7 +623,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:35N4QoGY0k4C",
     "citationForView": "AluAUmEAAAAJ:35N4QoGY0k4C",
-    "dateOrder": 16,
+    "dateOrder": 17,
     "bibtex": null
   },
   {
@@ -612,7 +634,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:vV6vV6tmYwMC",
     "citationForView": "AluAUmEAAAAJ:vV6vV6tmYwMC",
-    "dateOrder": 17,
+    "dateOrder": 18,
     "bibtex": null
   },
   {
@@ -623,17 +645,6 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:RGFaLdJalmkC",
     "citationForView": "AluAUmEAAAAJ:RGFaLdJalmkC",
-    "dateOrder": 20,
-    "bibtex": null
-  },
-  {
-    "title": "Push or Light: Nudging Standing to Break Prolonged Sitting",
-    "authors": "S Yoshida, K Watanabe, A Dengel, S Ishimaru, S Ata, M Fujimoto",
-    "venue": "Companion of the 2025 ACM International Joint Conference on Pervasive and …",
-    "year": "2025",
-    "citations": 0,
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:YFjsv_pBGBYC",
-    "citationForView": "AluAUmEAAAAJ:YFjsv_pBGBYC",
     "dateOrder": 21,
     "bibtex": null
   },
@@ -645,7 +656,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:4TOpqqG69KYC",
     "citationForView": "AluAUmEAAAAJ:4TOpqqG69KYC",
-    "dateOrder": 46,
+    "dateOrder": 47,
     "bibtex": null
   },
   {
@@ -656,7 +667,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:5nxA0vEk-isC",
     "citationForView": "AluAUmEAAAAJ:5nxA0vEk-isC",
-    "dateOrder": 55,
+    "dateOrder": 56,
     "bibtex": null
   },
   {
@@ -667,7 +678,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:UebtZRa9Y70C",
     "citationForView": "AluAUmEAAAAJ:UebtZRa9Y70C",
-    "dateOrder": 58,
+    "dateOrder": 59,
     "bibtex": null
   },
   {
@@ -678,7 +689,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:Zph67rFs4hoC",
     "citationForView": "AluAUmEAAAAJ:Zph67rFs4hoC",
-    "dateOrder": 59,
+    "dateOrder": 60,
     "bibtex": null
   },
   {
@@ -689,7 +700,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:hqOjcs7Dif8C",
     "citationForView": "AluAUmEAAAAJ:hqOjcs7Dif8C",
-    "dateOrder": 61,
+    "dateOrder": 62,
     "bibtex": null
   },
   {
@@ -700,7 +711,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:0EnyYjriUFMC",
     "citationForView": "AluAUmEAAAAJ:0EnyYjriUFMC",
-    "dateOrder": 62,
+    "dateOrder": 63,
     "bibtex": null
   },
   {
@@ -711,7 +722,7 @@
     "citations": 0,
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=AluAUmEAAAAJ&pagesize=100&citation_for_view=AluAUmEAAAAJ:fPk4N6BV_jEC",
     "citationForView": "AluAUmEAAAAJ:fPk4N6BV_jEC",
-    "dateOrder": 64,
+    "dateOrder": 65,
     "bibtex": null
   }
 ]
