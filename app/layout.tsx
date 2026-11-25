@@ -10,7 +10,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Ko Watanabe - Trustworthy AI & HCI Researcher",
+  title: "Ko Watanabe - Trustworthy AI & Human-Centered AI Researcher",
   description: "ドイツDFKIの研究者。AI、HCI、機械学習を専門としています。",
   generator: "ko-watanabe-portfolio",
   icons: {

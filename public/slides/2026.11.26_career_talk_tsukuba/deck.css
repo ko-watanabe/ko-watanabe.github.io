@@ -230,6 +230,167 @@ dialog::backdrop{background:#3D2A1Ebb;backdrop-filter:blur(5px)}
 #notes-sources li{font-size:13px;line-height:1.5;margin-bottom:10px;overflow-wrap:anywhere}
 #notes-content .cue{font-size:14px;color:var(--muted);border-left:3px solid var(--primary);padding-left:15px}
 
+/* Mobile / small screens: reflow instead of shrinking the 1600×900 stage */
+.is-mobile{--scale:1}
+.is-mobile body{overflow:auto;overflow-x:hidden;-webkit-text-size-adjust:100%}
+.is-mobile #viewport{
+  position:relative;
+  inset:auto;
+  width:100%;
+  min-height:calc(100dvh - 68px - env(safe-area-inset-bottom,0px));
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+  padding-bottom:calc(68px + env(safe-area-inset-bottom,0px));
+}
+.is-mobile #stage{
+  position:relative;
+  left:auto;top:auto;
+  width:100%;
+  height:auto;
+  min-height:calc(100dvh - 68px - env(safe-area-inset-bottom,0px));
+  transform:none;
+}
+.is-mobile .slide,
+.is-mobile .slide.active{
+  display:none;
+  width:100%;
+  height:auto;
+  min-height:calc(100dvh - 68px - env(safe-area-inset-bottom,0px));
+  padding:20px 18px 24px;
+  overflow:visible;
+}
+.is-mobile .slide.active{display:flex}
+.is-mobile .slide-blobs{display:none}
+.is-mobile .slide-header{padding-bottom:10px;font-size:12px;gap:8px}
+.is-mobile .slide-header .frame-dots{display:none}
+.is-mobile .slide-content{padding-top:12px;justify-content:flex-start}
+.is-mobile .slide-panel{padding:16px 14px;border-radius:4px}
+.is-mobile .slide-footer{font-size:12px;gap:12px;padding-top:12px;flex-wrap:wrap}
+.is-mobile .eyebrow{font-size:14px;margin-bottom:10px}
+.is-mobile h1{font-size:clamp(28px,8vw,40px);margin-bottom:14px}
+.is-mobile h2{font-size:clamp(24px,6.5vw,34px);margin-bottom:14px}
+.is-mobile h3{font-size:20px;margin-bottom:8px}
+.is-mobile p, .is-mobile li{font-size:16px;line-height:1.55}
+.is-mobile .lead{font-size:17px!important;line-height:1.5;max-width:none}
+.is-mobile .small{font-size:14px}
+.is-mobile .keyline{font-size:16px;padding-left:14px;margin:14px 0;border-left-width:4px}
+.is-mobile .two-col,
+.is-mobile .two-col.wide-left,
+.is-mobile .thanks .two-col,
+.is-mobile .chapter-with-photo{
+  grid-template-columns:1fr;
+  gap:20px;
+  align-items:stretch;
+  height:auto;
+}
+.is-mobile .intro .profile-wrap{width:100%;max-width:280px;margin:0 auto}
+.is-mobile .profile,
+.is-mobile .intro .profile{width:100%;height:auto;aspect-ratio:1;max-width:280px}
+.is-mobile .affiliation-logos{gap:16px;flex-wrap:wrap}
+.is-mobile .affiliation-logos img{height:48px;width:64px}
+.is-mobile .affiliation{font-size:15px}
+.is-mobile .interest{font-size:18px;margin-top:12px}
+.is-mobile .photo-wide{height:180px}
+.is-mobile .note-photo,
+.is-mobile .note-photo.focus-top,
+.is-mobile .note-photo.tall,
+.is-mobile .photo-stack .note-photo,
+.is-mobile .photo-stack .note-photo.focus-top{
+  height:auto;
+  max-height:220px;
+  object-fit:cover;
+}
+.is-mobile .photo-stack{gap:12px}
+.is-mobile .note-figure figcaption{font-size:13px}
+.is-mobile .cover .slide-content{padding-top:8px;gap:20px}
+.is-mobile .cover h1{font-size:clamp(26px,7.5vw,36px);max-width:none}
+.is-mobile .cover .seed{
+  position:relative;
+  right:auto;top:auto;
+  width:100%;
+  margin:8px 0 4px;
+}
+.is-mobile .seed p{font-size:15px;padding:10px 0}
+.is-mobile .cover-logo{width:120px;height:99px;margin-bottom:10px;padding:0}
+.is-mobile .cover .title-bottom{flex-direction:column;align-items:flex-start;gap:12px}
+.is-mobile .presenter{font-size:18px}
+.is-mobile .role,.is-mobile .cover-event{font-size:14px;text-align:left}
+.is-mobile .roadmap-row{
+  grid-template-columns:72px 1fr;
+  gap:8px 12px;
+  padding:12px 0;
+}
+.is-mobile .roadmap-row b{font-size:14px}
+.is-mobile .roadmap-row h3{font-size:16px;grid-column:2}
+.is-mobile .roadmap-row p{
+  grid-column:2;
+  text-align:left;
+  white-space:normal;
+  font-size:13px;
+}
+.is-mobile .purpose-grid,
+.is-mobile .decision-grid,
+.is-mobile .path-map,
+.is-mobile .conclusion-points{
+  grid-template-columns:1fr;
+  gap:12px;
+}
+.is-mobile .purpose-grid article,
+.is-mobile .decision-grid article,
+.is-mobile .conclusion-points article,
+.is-mobile .path-map article{padding:14px}
+.is-mobile .purpose-grid h3,
+.is-mobile .decision-grid h3,
+.is-mobile .conclusion-points h3{font-size:18px}
+.is-mobile .purpose-grid p,
+.is-mobile .decision-grid p,
+.is-mobile .conclusion-points p,
+.is-mobile .path-map p{font-size:14px}
+.is-mobile .path-map h3{font-size:17px}
+.is-mobile .role-grid{grid-template-columns:1fr;gap:0}
+.is-mobile .role-grid article{padding:12px 0}
+.is-mobile .role-grid h3{font-size:18px}
+.is-mobile .role-grid p{font-size:14px}
+.is-mobile .big-number{font-size:48px}
+.is-mobile .stat-line{gap:12px;padding:10px 0}
+.is-mobile .stat-line p{font-size:15px}
+.is-mobile .organization h2{font-size:clamp(24px,6.5vw,34px);max-width:none}
+.is-mobile .chapter-bridge{font-size:15px;margin-bottom:16px}
+.is-mobile .chapter-title{font-size:clamp(28px,8vw,40px);margin-bottom:14px}
+.is-mobile .chapter-question{font-size:17px;margin-bottom:20px}
+.is-mobile .chapter-route{flex-wrap:wrap;gap:10px 14px;font-size:14px;padding-top:14px}
+.is-mobile .chapter-photo img{height:200px}
+.is-mobile .message-list article{grid-template-columns:44px 1fr;gap:12px;padding:12px 0}
+.is-mobile .message-list strong{width:36px;height:36px;font-size:13px}
+.is-mobile .message-list h3{font-size:17px}
+.is-mobile .message-list p{font-size:14px}
+.is-mobile .process-list li{font-size:15px;padding:10px 0 10px 44px}
+.is-mobile .process-list li:before{width:28px;height:28px;font-size:11px;top:8px}
+.is-mobile .flat-list li{padding:10px 0 10px 18px;font-size:15px}
+.is-mobile .flat-list li:before{width:6px;height:6px;top:1.2em}
+.is-mobile .thanks h1{font-size:clamp(28px,8vw,40px)}
+.is-mobile .contact{font-size:20px;word-break:break-all}
+.is-mobile .thanks-links{margin-top:16px;font-size:14px}
+.is-mobile .controls{
+  height:calc(68px + env(safe-area-inset-bottom,0px));
+  padding:0 10px env(safe-area-inset-bottom,0px);
+  gap:8px;
+}
+.is-mobile .controls .back-link span,
+.is-mobile #section-name,
+.is-mobile .control-divider{display:none}
+.is-mobile .tools{gap:2px}
+.is-mobile .controls button{padding:10px 8px;font-size:12px;min-height:44px}
+.is-mobile .controls .arrow{padding:6px 12px;font-size:22px}
+.is-mobile .slide-position{font-size:12px}
+.is-mobile #fullscreen-button{font-size:0}
+.is-mobile #fullscreen-button:after{content:"⛶";font-size:18px}
+.is-mobile #outline-list{grid-template-columns:1fr}
+.is-mobile dialog{width:min(100vw - 24px,940px);padding:18px 16px;max-height:min(87dvh,100dvh - 24px)}
+.is-mobile .dialog-top{gap:12px;margin-bottom:14px;padding-bottom:12px}
+.is-mobile .dialog-top h2{font-size:22px}
+.is-mobile .notice{bottom:calc(78px + env(safe-area-inset-bottom,0px));font-size:14px;padding:12px 16px}
+
 @media(max-width:750px){.controls{padding:0 10px;gap:12px}.controls .back-link span,#section-name,.control-divider{display:none}.tools{gap:0}.controls button{padding:10px 8px;font-size:11px}.controls .arrow{padding:5px 11px}.slide-position{font-size:11px}#outline-list{grid-template-columns:repeat(2,1fr)}dialog{padding:24px}.dialog-top h2{font-size:26px}}
 @media(max-width:430px){#fullscreen-button{font-size:0}#fullscreen-button:after{content:"⛶";font-size:20px}.controls{gap:9px}.controls .arrow{padding:4px 9px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

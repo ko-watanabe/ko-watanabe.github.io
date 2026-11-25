@@ -14,7 +14,7 @@ const content = {
     scholarLink: "https://scholar.google.com/citations?user=AluAUmEAAAAJ&hl=ja",
   },
   en: {
-    description: "I am a Trustworthy AI & HCI Researcher based in Kaiserslautern, Germany. My area of expertise encompasses the entire Artificial Intelligence (AI) product implementation: from an idea or design to generation of machine learning function, developing software using web clouds, some backend techniques, model implementation, and improving the model after deploying the service. Also, Trustworthy AI such as explainability and fairness (or more) of AI is my interest.",
+    description: "I am a Trustworthy AI & Human-Centered AI Researcher based in Kaiserslautern, Germany. My area of expertise encompasses the entire Artificial Intelligence (AI) product implementation: from an idea or design to generation of machine learning function, developing software using web clouds, some backend techniques, model implementation, and improving the model after deploying the service. Also, Trustworthy AI such as explainability and fairness (or more) of AI is my interest.",
     scholarLink: "https://scholar.google.com/citations?user=AluAUmEAAAAJ&hl=en",
   },
 }
@@ -54,7 +54,7 @@ export function HeroSection() {
           </h1>
         </div>
 
-        <p className="mb-4 text-xl text-foreground md:text-2xl">Trustworthy AI & HCI Researcher</p>
+        <p className="mb-4 text-xl text-foreground md:text-2xl">Trustworthy AI & Human-Centered AI Researcher</p>
 
         <p className="mb-8 text-lg text-muted-foreground md:text-xl">
           <span className="md:hidden">DFKI GmbH</span>

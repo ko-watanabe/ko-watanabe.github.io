@@ -24,12 +24,23 @@ function notify(message) {
   noticeTimeout = setTimeout(() => { $('#notice').hidden = true; }, 5500);
 }
 
+const mobileQuery = matchMedia('(max-width: 900px), (max-height: 560px)');
+function isMobileLayout() {
+  return mobileQuery.matches;
+}
 function scaleStage() {
+  const mobile = isMobileLayout();
+  document.documentElement.classList.toggle('is-mobile', mobile);
+  if (mobile) {
+    document.documentElement.style.setProperty('--scale', '1');
+    return;
+  }
   const scale = Math.min(viewport.clientWidth / 1600, viewport.clientHeight / 900);
   document.documentElement.style.setProperty('--scale', String(scale));
 }
 new ResizeObserver(scaleStage).observe(viewport);
 window.addEventListener('resize', scaleStage);
+mobileQuery.addEventListener('change', scaleStage);
 scaleStage();
 
 slides.forEach((slide, index) => {
@@ -99,6 +110,10 @@ function goTo(index, updateHash = true) {
   $$('#outline-list button').forEach((button, i) => button.setAttribute('aria-current', String(i === current)));
   if (updateHash) history.pushState(null, '', `#${current + 1}`);
   updateNotes();
+  if (isMobileLayout()) {
+    viewport.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }
 }
 
 window.addEventListener('hashchange', () => goTo(readHash(), false));
@@ -240,11 +255,11 @@ document.addEventListener('keydown', (event) => {
   else if (key === 't') toggleTimer();
 });
 viewport.addEventListener('pointerdown', (event) => {
-  if (!event.isPrimary || event.target.closest('button,a,video,iframe')) return;
+  if (!event.isPrimary || event.target.closest('button,a,video,iframe') || isMobileLayout()) return;
   pointerStart = { x: event.clientX, y: event.clientY };
 });
 viewport.addEventListener('pointerup', (event) => {
-  if (!pointerStart) return;
+  if (!pointerStart || isMobileLayout()) return;
   const dx = event.clientX - pointerStart.x;
   const dy = event.clientY - pointerStart.y;
   pointerStart = null;

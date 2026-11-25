@@ -1,6 +1,6 @@
 # Ko Watanabe - Portfolio Website
 
-Personal academic portfolio website for Ko Watanabe, Medicine Trustworthy AI & HCI Researcher at DFKI.
+Personal academic portfolio website for Ko Watanabe, Medicine Trustworthy AI & Human-Centered AI at DFKI.
 
 🌐 **Live Site**: [https://ko-watanabe.github.io/](https://ko-watanabe.github.io/)
 
