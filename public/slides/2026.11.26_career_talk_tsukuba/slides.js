@@ -25,19 +25,6 @@ export const slides = [
     ]
   },
   {
-    title: '今日の話',
-    section: 'はじめに',
-    minutes: 1,
-    html: `<p class="eyebrow reveal">SPRING / BOOST 支援学生の皆さんへ</p><h2 class="reveal">今日の話</h2><p class="lead reveal">博士取得後のキャリア、とくに海外での働き方を、<br>体験に基づいて紹介し、キャリアの参考になれば嬉しい。</p><div class="purpose-grid reveal"><article><span>01</span><h3>参考キャリア例</h3><p>学部・修士・企業・ドイツ博士・ポスドクの流れ</p></article><article><span>02</span><h3>仕組みの紹介</h3><p>ドイツの博士・研究所雇用・ビザと生活</p></article><article><span>03</span><h3>選択肢を広げる</h3><p>アカデミア／産業／日独の橋渡し</p></article></div>`,
-    notes: [
-      '本イベントの趣旨は、支援学生が博士取得後の多様なキャリアパス、特に海外におけるキャリアパスへの理解を深めることです。',
-      '私の話は「こうすべき」ではなく「こうなった」です。同じ選択が合う人も合わない人もいます。判断材料の一つとして受け取ってください。',
-      '後半では、ドイツ博士の制度的な特徴、研究員として給与を得ながら学位を取る働き方、博士後の広がりにも触れます。'
-    ],
-    cue: '3つの目的を指差しながら、30分の地図を共有する。',
-    sources: []
-  },
-  {
     title: '自己紹介',
     section: 'はじめに',
     minutes: 2,
@@ -264,21 +251,6 @@ export const slides = [
     ],
     cue: '最も時間をかけてよいスライド。具体エピソードを1つずつ添える。',
     sources: []
-  },
-  {
-    title: '多様なキャリアパスの地図',
-    section: 'メッセージ',
-    minutes: 2,
-    html: `<p class="eyebrow reveal">一例に過ぎない私の位置</p><h2 class="reveal">多様なキャリアパスの地図</h2><div class="path-map"><article class="reveal"><h3>アカデミア</h3><p>大学教員 · ポスドク · 研究所研究員</p></article><article class="reveal is-me"><h3>応用研究機関</h3><p>DFKI のような RTO · 産学のあいだ</p></article><article class="reveal"><h3>産業</h3><p>企業研究 · エンジニア · スタートアップ</p></article><article class="reveal"><h3>越境・複業・起業</h3><p>日欧の橋渡し · 客員 · 副業的プロジェクト</p></article></div><p class="lead reveal" style="margin-top:34px;font-size:30px">大事なのは、どの選択がワクワクするか。<br>自分の価値観・制約・好奇心に合う組み合わせを探すこと。</p>`,
-    notes: [
-      '私はいま「応用研究機関」に重心がありつつ、大学客員やコミュニティ活動で越境しています。純粋アカデミアでも、完全産業でもありません。',
-      '欧州には Fraunhofer、Max Planck、大学、スタートアップなど、日本とラベルが異なる選択肢があります。名前より「何に時間を使うか」で比較するとよいです。',
-      '学生には、今の興味がどの象限に近いか自問してもらう。移動は後からでもできます。'
-    ],
-    cue: '自分のカードを「is-me」として示し、他の象限も同等に尊重する。',
-    sources: [
-      source('個人サイト', 'https://ko-watanabe.github.io/')
-    ]
   },
   {
     title: '今日のまとめ',
