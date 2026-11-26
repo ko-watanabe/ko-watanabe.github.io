@@ -7,9 +7,14 @@ const viewport = $('#viewport');
 const outline = $('#outline-dialog');
 const notes = $('#notes-dialog');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const motionRequestedOff = new URLSearchParams(location.search).get('motion') === 'off';
+const params = new URLSearchParams(location.search);
+const motionRequestedOff = params.get('motion') === 'off';
+const isLocalHost = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+// Speaker notes stay local-only for now; later we can embed recorded talk audio for the public deck.
+const presenterMode = isLocalHost;
 let motionDisabled = reducedMotion.matches || motionRequestedOff;
 document.documentElement.classList.toggle('reduce-motion', motionDisabled);
+document.documentElement.classList.toggle('is-presenter', presenterMode);
 let current = -1;
 let noticeTimeout;
 let pointerStart;
@@ -133,7 +138,15 @@ function toggleDialog(dialog) {
   }
 }
 $('#outline-button').addEventListener('click', () => toggleDialog(outline));
-$('#notes-button').addEventListener('click', () => toggleDialog(notes));
+const notesButton = $('#notes-button');
+if (presenterMode) {
+  notesButton?.addEventListener('click', () => toggleDialog(notes));
+} else {
+  notesButton?.setAttribute('hidden', '');
+  notes?.setAttribute('hidden', '');
+  const outlineHint = $('.dialog-hint', outline);
+  if (outlineHint) outlineHint.textContent = outlineHint.textContent.replace(/\s*N ノート\s*/, ' ');
+}
 $$('.close-dialog').forEach((button) => button.addEventListener('click', () => button.closest('dialog').close()));
 $$('dialog').forEach((dialog) => dialog.addEventListener('click', (event) => {
   if (event.target !== dialog) return;
@@ -142,6 +155,7 @@ $$('dialog').forEach((dialog) => dialog.addEventListener('click', (event) => {
 }));
 
 function updateNotes() {
+  if (!presenterMode) return;
   const slide = slides[current];
   const start = slides.slice(0, current).reduce((sum, item) => sum + item.minutes, 0);
   $('#notes-timing').textContent = `スライド ${current + 1} · ${slide.minutes} 分 · 予定 ${start}:00–${start + slide.minutes}:00`;
@@ -240,7 +254,7 @@ setInterval(updateClock, 1000);
 document.addEventListener('keydown', (event) => {
   if (event.ctrlKey || event.metaKey || event.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)) return;
   const key = event.key.toLowerCase();
-  if (key === 'n' && !outline.open) { event.preventDefault(); toggleDialog(notes); return; }
+  if (key === 'n' && presenterMode && !outline.open) { event.preventDefault(); toggleDialog(notes); return; }
   if (key === 'o' && !notes.open) { event.preventDefault(); toggleDialog(outline); return; }
   if ($('dialog[open]')) return;
   if (event.target.closest('video,iframe')) return;

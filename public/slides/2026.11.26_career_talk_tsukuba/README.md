@@ -14,10 +14,11 @@ Visual design follows the [SLIDE.md](https://github.com/sho-ai-magic/slide.md) s
 - Audience: University of Tsukuba SPRING/BOOST supported doctoral students; career paths after the Ph.D., especially overseas.
 - Venue listing: Ruhr University Bochum, Germany · hosted by the University of Tsukuba.
 - Arrow keys / Space / Page Up / Page Down: navigate. Home / End: first / last slide.
-- F: full screen. O: contents. N: speaker notes and sources. R: replay slide animation.
+- F: full screen. O: contents. R: replay slide animation.
 - T: start / pause the rehearsal timer (30:00). P: browser print / Save as PDF (16:9 pages).
 - Touch: swipe horizontally. URL hashes (`#14`) link to individual slides.
 - System reduced-motion preferences are honored. Add `?motion=off` for a static presentation without entrance animations.
+- Speaker notes (and the Notes button / `N` shortcut) are available only on localhost for now. On the public site they stay hidden until recorded talk audio is embedded later.
 
 Edit content, timings and presenter notes in `slides.js`; edit appearance in `deck.css`; presentation behavior is in `deck.js`.
 
