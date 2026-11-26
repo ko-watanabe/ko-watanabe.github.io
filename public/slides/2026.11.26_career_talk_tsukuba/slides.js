@@ -42,10 +42,10 @@ export const slides = [
     section: 'はじめに',
     minutes: 2,
     className: 'intro',
-    html: `<div class="two-col"><div><p class="eyebrow reveal">Self-introduction</p><h2 class="reveal">渡邉 洸</h2><p class="lead reveal">Senior Researcher<br>ドイツ人工知能研究センター（DFKI）</p><p class="small reveal">カイザースラウテルン、ドイツ</p><div class="rule reveal"></div><p class="affiliation reveal">客員准教授 · 奈良先端科学技術大学院大学（NAIST）<br>Visiting Researcher · 大阪公立大学</p><p class="interest reveal">Human–Centered AI<br><span class="study-topic">& Trustworthy AI</span></p></div><figure class="profile-wrap reveal"><img class="profile" src="/ko-watanabe.jpg" alt="渡邉洸の肖像写真" width="460" height="490"><div class="affiliation-logos" aria-label="所属機関"><div><img src="${asset('dfki-logo.svg')}" alt="DFKI" width="100" height="83"><span>DFKI</span></div><div><img src="${asset('naist-logo-transparent.png')}" alt="NAIST" width="85" height="81"><span>NAIST</span></div><div><img src="${asset('omu-logo.svg')}" alt="大阪公立大学" width="85" height="85"><span>OMU</span></div></div></figure></div>`,
+    html: `<div class="two-col"><div><p class="eyebrow reveal">Self-introduction</p><h2 class="reveal">渡邉 洸</h2><p class="lead reveal">Senior Researcher<br>ドイツ人工知能研究センター（DFKI）</p><p class="small reveal">カイザースラウテルン、ドイツ</p><div class="rule reveal"></div><p class="affiliation reveal">客員助教 · 奈良先端科学技術大学院大学（NAIST）<br>Visiting Researcher · 大阪公立大学</p><p class="interest reveal">Human–Centered AI<br><span class="study-topic">& Trustworthy AI</span></p></div><figure class="profile-wrap reveal"><img class="profile" src="/ko-watanabe.jpg" alt="渡邉洸の肖像写真" width="460" height="490"><div class="affiliation-logos" aria-label="所属機関"><div><img src="${asset('dfki-logo.svg')}" alt="DFKI" width="100" height="83"><span>DFKI</span></div><div><img src="${asset('naist-logo-transparent.png')}" alt="NAIST" width="85" height="81"><span>NAIST</span></div><div><img src="${asset('omu-logo.svg')}" alt="大阪公立大学" width="85" height="85"><span>OMU</span></div></div></figure></div>`,
     notes: [
       '現在は DFKI のシニア研究員として、Trustworthy AI と HCI の接点で研究しています。カイザースラウテルンを拠点にしています。',
-      'NAIST では客員准教授、大阪公立大学でも Visiting Researcher として、日本側の研究コミュニティとも橋を渡しています。',
+      'NAIST では客員助教、大阪公立大学でも Visiting Researcher として、日本側の研究コミュニティとも橋を渡しています。',
       '博士はドイツの RPTU Kaiserslautern-Landau（旧カイザースラウテルン工科大学）で2024年に取得。専門は教育・認知支援寄りの HCI から、いまは医療AI・公平性・説明可能性など Trustworthy AI へ広がっています。'
     ],
     cue: '顔写真と所属ロゴで「誰が話しているか」を短く固定する。',
